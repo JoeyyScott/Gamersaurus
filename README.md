@@ -121,9 +121,13 @@ I tested my colour contrasts against the AAA guidelines using [this tool](https:
 
 #### Images
 
-**Logo image**: ![Logo image](static/images/readme/logo.png)
+**Logo image**:
 
-**Background image**: ![Background image to be tiled](static/images/readme/background.png)
+![Logo image](static/images/readme/logo.png)
+
+**Background image**:
+
+![Background image to be tiled](static/images/readme/background.png)
 
 + This is a logo I created myself using GIMP and 2 icons from [Flat Icon](https://www.flaticon.com). I used the colour from inside the book as a background for the tileable image.
 + The two icons I used were Dictionary [here](https://www.flaticon.com/free-icon/big-dictionary_85601?term=dictionary&page=1&position=1&page=1&position=1&related_id=85601&origin=search) and Controller [here](https://www.flaticon.com/free-icon/console_686589?term=controller&page=1&position=2&page=1&position=2&related_id=686589&origin=search).
