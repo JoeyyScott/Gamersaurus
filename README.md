@@ -142,7 +142,7 @@ These SchoolBell font was chosen as it resembles handwriting on a school white b
 
 | Mobile | Tablet |  PC  |
 | :----: |:-----: | :--: |
-| [index.html]() | [index.html]() | [index.html]() |
+| [index.html](static/wireframes/mobile/index-mobile.png) | [index.html]() | [index.html]() |
 | [thesaurus.html]() | [thesaurus.html]() | [thesaurus.html]() |
 | [register.html]() | [register.html]() | [register.html]() |
 | [login.html]() | [login.html]() | [login.html]() |
