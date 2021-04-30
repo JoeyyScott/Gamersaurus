@@ -142,14 +142,14 @@ These SchoolBell font was chosen as it resembles handwriting on a school white b
 
 | Mobile | Tablet |  PC  |
 | :----: |:-----: | :--: |
-| [index.html](static/wireframes/mobile/index-mobile.png) | [index.html]() | [index.html]() |
-| [thesaurus.html]() | [thesaurus.html]() | [thesaurus.html]() |
-| [register.html]() | [register.html]() | [register.html]() |
-| [login.html]() | [login.html]() | [login.html]() |
-| [profile.html]() | [profile.html]() | [profile.html]() |
-| [contact.html]() | [contact.html]() | [contact.html]() |
-| [404.html]() | [404.html]() | [404.html]() |
-| [Add/Edit Word]() | [Add/Edit Word]() | [Add/Edit Word]() |
+| [index.html](wireframes/mobile/index-mobile.png) | [index.html](wireframes/tablet/index-tablet.png) | [index.html](wireframes/pc/index-pc.png) |
+| [thesaurus.html](wireframes/mobile/thesaurus-mobile.png) | [thesaurus.html](wireframes/tablet/thesaurus-tablet.png) | [thesaurus.html](wireframes/pc/thesaurus-pc.png) |
+| [register.html](wireframes/mobile/register-mobile.png) | [register.html](wireframes/tablet/register-tablet.png) | [register.html](wireframes/pc/register-pc.png) |
+| [login.html](wireframes/mobile/login-mobile.png) | [login.html](wireframes/tablet/login-tablet.png) | [login.html](wireframes/pc/login-pc.png) |
+| [profile.html](wireframes/mobile/profile-mobile.png) | [profile.html](wireframes/tablet/profile-tablet.png) | [profile.html](wireframes/pc/profile-pc.png) |
+| [contact.html](wireframes/mobile/contact-mobile.png) | [contact.html](wireframes/tablet/contact-tablet.png) | [contact.html](wireframes/pc/contact-pc.png) |
+| [404.html](wireframes/mobile/404-mobile.png) | [404.html](wireframes/tablet/404-tablet.png) | [404.html](wireframes/pc/404-pc.png) |
+| [Add/Edit Word](wireframes/mobile/addword-mobile.png) | [Add/Edit Word](wireframes/tablet/addword-tablet.png) | [Add/Edit Word](wireframes/pc/addword-pc.png) |
 
 ## Database Schema
 
