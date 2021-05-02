@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% block terms %}
+{% block contentmain %}
 
     <h2>Current Gamersaurus Terms</h2>
 
-    {% for term in contentmain %}
+    {% for term in terms %}
         {{ term.term }}<br>
         {{ term.definition }}<br>
         {{ term.example }}<br>
