@@ -1,0 +1,28 @@
+/* General rules and background image */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url("../images/background.png");
+    background-color: #fcf7f8;
+    background-position: top;
+    color: #f3ca40;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Containers */
+.container-title {
+    width: 75vw;
+    margin: 2vw auto 0;
+}
+
+/* Core Styling */
+.gsStyle {
+    background-color: #000D24;
+    border: 1px solid #F3CA40;
+}
+
+h1 {
+    font-size: 2rem;
+}

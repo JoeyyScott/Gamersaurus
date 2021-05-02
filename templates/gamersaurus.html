@@ -1,12 +1,15 @@
 {% extends "base.html" %}
 {% block contentmain %}
 
-    <h2>Current Gamersaurus Terms</h2>
+    <div class="container-title gsStyle">
 
-    {% for term in terms %}
+        <h1>Current Gamersaurus Terms</h1>
+    </div>
+        {% for term in terms %}
         {{ term.term }}<br>
         {{ term.definition }}<br>
         {{ term.example }}<br>
-    {% endfor %}
+        {% endfor %}
+
 
 {% endblock %}
