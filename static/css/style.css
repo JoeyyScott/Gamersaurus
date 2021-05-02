@@ -23,6 +23,31 @@ body {
     border: 1px solid #F3CA40;
 }
 
+a {
+    color: #f3ca40;
+}
+
 h1 {
+    font-size: 1.5rem;
+    margin: 1vw 1vw 2vw;
+}
+
+/* Nav */
+nav {
+    background-color: #000D24;
+    width: 80vw;
+    margin: 0 10vw;
+    color: #f3ca40;
+}
+
+nav a, .sidenav li a, nav ul a {
+    color: #f3ca40;
+}
+
+.sidenav {
+    width: 75vw;
+}
+
+.logo {
     font-size: 2rem;
 }
