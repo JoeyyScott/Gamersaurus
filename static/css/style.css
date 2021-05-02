@@ -17,6 +17,11 @@ body {
     margin: 2vw auto 0;
 }
 
+.container-content {
+    width: 90vw;
+    margin: 2vw auto 0;
+}
+
 /* Core Styling */
 .gsStyle {
     background-color: #000D24;
@@ -50,4 +55,18 @@ nav a, .sidenav li a, nav ul a {
 
 .logo {
     font-size: 2rem;
+}
+
+/* Buttons */
+.buttonStyle {
+    color: #f3ca40;
+    float: none;
+    font-size: 1.5rem;
+    padding: 5vw 10vw;
+}
+
+/* Icons */
+.input-field .icons {
+    font-size: 2rem;
+    padding: 1vh 10vw 0 0;
 }
