@@ -76,7 +76,7 @@ nav a, .sidenav li a, nav ul a {
 
 /* Input fields */
 .input-field {
-    margin: 0;
+    margin: 2vh 0 0 0;
 }
 
 .input-field .icons {
@@ -86,7 +86,8 @@ nav a, .sidenav li a, nav ul a {
 }
 
 .input-field [type=text],
-.input-field [type=password] {
+.input-field [type=password],
+textarea {
     color: #f3ca40;
 }
 

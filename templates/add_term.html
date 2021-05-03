@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block contentmain %}
+    <div class="container-content gsStyle">
+        <h1>Add Task</h1>
+        <div class="row">
+            <form class="col s12" method="POST" action="">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-scroll prefix"></i>
+                        <input id="term" name="term" minlength="5" maxlength="50"
+                            type="text" class="validate" required>
+                        <label for="term">Term</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="far fa-question-circle prefix"></i>
+                        <textarea id="definition" name="definition" minlength="5"
+                            maxlength="200" class="materialize-textarea validate"></textarea>
+                        <label for="definition">Definition</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="fas fa-comments prefix"></i>
+                        <textarea id="example" name="example" minlength="5"
+                            maxlength="200" class="materialize-textarea validate"></textarea>
+                        <label for="example">Example</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
