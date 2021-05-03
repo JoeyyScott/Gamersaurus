@@ -99,8 +99,19 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_term")
+@app.route("/add_term", methods=["GET", "POST"])
 def add_term():
+    if request.method == "POST":
+        term = {
+            "term": request.form.get("term"),
+            "definition": request.form.get("definition"),
+            "example": request.form.get("example"),
+            "submitted_by": session["user"]
+        }
+        mongo.db.thesaurus.insert_one(term)
+        flash("Term Successfully Added")
+        return redirect(url_for("get_gs"))
+
     return render_template("add_term.html")
 
 
