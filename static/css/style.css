@@ -8,7 +8,6 @@ body {
     background-position: top;
     color: #f3ca40;
     text-align: center;
-    overflow: hidden;
 }
 
 /* Containers */
@@ -76,6 +75,10 @@ nav a, .sidenav li a, nav ul a {
 }
 
 /* Input fields */
+.input-field {
+    margin: 0;
+}
+
 .input-field .icons {
     font-size: 2rem;
     /* padding: 0 10vw 0 0; */
