@@ -1,19 +1,19 @@
 {% extends "base.html" %}
 {% block contentmain %}
-    <div class="container-title gsStyle">
+    <div class="container-content gsStyle">
         <h1>Register an account with Gamersaurus</h1>
-    </div>
 
-    <div class="row">
-        <!-- <div class="container-content"> -->
+
+        <div class="row">
+            <div class="container-content">
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
                 <div class="card-panel gsStyle">
                     <!-- Username field -->
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="prefix fas fa-user-tag icons"></i>
-                            <input id="username" name="username" type="text" minlength="5"
-                            maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                            <input id="username" name="username" type="text" minlength="5" maxlength="15"
+                                pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                             <label for="username">Choose a username</label>
                         </div>
                     </div>
@@ -21,8 +21,8 @@
                     <div class="row">
                         <div class="input-field col s12">
                             <i class="prefix fas fa-user-lock icons"></i>
-                            <input id="password" name="password" type="password" minlength="5"
-                                maxlength="15" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                            <input id="password" name="password" type="password" minlength="5" maxlength="15"
+                                pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                             <label for="username">Choose a password</label>
                         </div>
                     </div>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </form>
-        <!-- </div> -->
+            </div>
+        </div>
     </div>
-
 {% endblock %}

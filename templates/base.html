@@ -50,8 +50,10 @@
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for msg in messages %}
-                    <div class="row flashes gsStyle">
-                        <h2>{{msg}}</h2>
+                    <div class="row container-flashes">
+                        <div class="col s12 m8 flashes gsStyle">
+                            <h2>{{ msg }}</h2>
+                        </div>
                     </div>
                 {% endfor %}
             {% endif %}
