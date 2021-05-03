@@ -22,7 +22,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_gs")
 def get_gs():
-    terms = mongo.db.thesaurus.find()
+    terms = list(mongo.db.thesaurus.find())
     return render_template("gamersaurus.html", terms=terms)
 
 

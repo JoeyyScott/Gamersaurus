@@ -2,14 +2,23 @@
 {% block contentmain %}
 
     <div class="container-title gsStyle">
-
         <h1>Current Gamersaurus Terms</h1>
     </div>
+    <!-- Credit for materialize collapsible accordion -->
+    <ul class="collapsible gsStyle">
         {% for term in terms %}
-        {{ term.term }}<br>
-        {{ term.definition }}<br>
-        {{ term.example }}<br>
+        <li>
+            <div class="collapsible-header gsStyle">
+                <i class="far fa-caret-square-down"></i>
+                {{ term.term }}
+            </div>
+            <div class="collapsible-body gsStyle">
+                <p>Definition: {{ term.definition }}</p>
+                <p>Example: {{ term.example }}</p>
+                <p>Submitted by: {{ term.submitted_by }}</p>
+            </div>
+        </li>
         {% endfor %}
-
+    </ul>
 
 {% endblock %}
