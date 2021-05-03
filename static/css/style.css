@@ -65,8 +65,32 @@ nav a, .sidenav li a, nav ul a {
     padding: 5vw 10vw;
 }
 
-/* Icons */
+/* Input fields */
 .input-field .icons {
     font-size: 2rem;
     padding: 1vh 10vw 0 0;
+    color: #f3ca40;
+}
+
+.input-field [type=text],
+.input-field [type=password] {
+    color: #f3ca40;
+}
+
+.input-field label {
+    color: #f3ca40;
+  }
+
+.input-field input[type=text]:focus + label {
+    color:#f3ca40;
+}
+
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #c0960c;
+    box-shadow: 0 1px 0 0 #f3ca40;
+    color: #f3ca40;
+}
+
+.input-field .prefix.active {
+    color: #f3ca40;
 }

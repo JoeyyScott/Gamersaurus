@@ -1,38 +1,38 @@
 {% extends "base.html" %}
 {% block contentmain %}
-<div class="container-title gsStyle">
-    <h1>Register an account with Gamersaurus</h1>
-</div>
+    <div class="container-title gsStyle">
+        <h1>Register an account with Gamersaurus</h1>
+    </div>
 
-<div class="row">
-    <div class="container-content">
-    <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
-        <div class="card-panel gsStyle">
-            <!-- Username field -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="prefix fas fa-user-tag icons"></i>
-                    <input id="username" name="username" type="text" class="validate">
-                    <label for="username">Choose a username</label>
+    <div class="row">
+        <div class="container-content">
+            <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
+                <div class="card-panel gsStyle">
+                    <!-- Username field -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="prefix fas fa-user-tag icons"></i>
+                            <input id="username" name="username" type="text" class="validate">
+                            <label for="username">Choose a username</label>
+                        </div>
+                    </div>
+                    <!-- Password field -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="prefix fas fa-user-lock icons"></i>
+                            <input id="password" name="password" type="password" class="validate">
+                            <label for="username">Choose a password</label>
+                        </div>
+                    </div>
+                    <!-- Register button -->
+                    <div class="row">
+                        <button type="submit" class="s4 gsStyle buttonStyle">
+                            Register <i class="fas fa-sign-in-alt icons"></i>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            <!-- Password field -->
-            <div class="row">
-                <div class="input-field col s12">
-                    <i class="prefix fas fa-user-lock icons"></i>
-                    <input id="password" name="password" type="password" class="validate">
-                    <label for="username">Choose a password</label>
-                </div>
-            </div>
-            <!-- Register button -->
-            <div class="row">
-                <button type="submit" class="s4 gsStyle buttonStyle">
-                    Register <i class="fas fa-sign-in-alt icons"></i>
-                </button>
-            </div>
+            </form>
         </div>
-        </form>
-    </div>
     </div>
 
-    {% endblock %}
+{% endblock %}

@@ -45,8 +45,23 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </header>
-    {% block contentmain %}
-    {% endblock %}
+
+    <section>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for msg in messages %}
+                    <div class="row flashes gsStyle">
+                        <h2>{{msg}}</h2>
+                    </div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    </section>
+
+    <main class="container">
+        {% block contentmain %}
+        {% endblock %}
+    </main>
 
     <!-- jQuery credit -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
