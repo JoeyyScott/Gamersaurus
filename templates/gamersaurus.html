@@ -9,8 +9,16 @@
         {% for term in terms %}
         <li>
             <div class="collapsible-header gsStyle">
-                <i class="far fa-caret-square-down"></i>
-                {{ term.term }}
+                <div class="col s6 termTitle">
+                    {{ term.term }}
+                </div>
+                <div class="col s3">
+                    <a href="" class="buttonEdit gsStyle">Edit</a>
+                    <a href="" class="buttonDelete gsStyle">Delete</a>
+                </div>
+                <div class="col s3">
+                    <i class="far fa-caret-square-down"></i>
+                </div>
             </div>
             <div class="collapsible-body gsStyle">
                 <p>Definition: {{ term.definition }}</p>
