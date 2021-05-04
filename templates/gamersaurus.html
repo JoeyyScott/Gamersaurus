@@ -13,8 +13,10 @@
                     {{ term.term }}
                 </div>
                 <div class="col s3">
-                    <a href="{{ url_for('edit_term', term_id=term._id) }}" class="buttonEdit gsStyle">Edit</a>
-                    <a href="" class="buttonDelete gsStyle">Delete</a>
+                    {% if session.user|lower == term.submitted_by|lower %}
+                        <a href="{{ url_for('edit_term', term_id=term._id) }}" class="buttonEdit gsStyle">Edit</a>
+                        <a href="" class="buttonDelete gsStyle">Delete</a>
+                    {% endif %}
                 </div>
                 <div class="col s3">
                     <i class="far fa-caret-square-down"></i>
