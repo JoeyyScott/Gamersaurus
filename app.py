@@ -117,6 +117,16 @@ def add_term():
 
 @app.route("/edit_term/<term_id>", methods=["GET", "POST"])
 def edit_term(term_id):
+    if request.method == "POST":
+        submit = {
+            "term": request.form.get("term"),
+            "definition": request.form.get("definition"),
+            "example": request.form.get("example"),
+            "submitted_by": session["user"]
+        }
+        mongo.db.thesaurus.update({"_id": ObjectId(term_id)}, submit)
+        flash("Term Successfully Updated")
+
     term = mongo.db.thesaurus.find_one({"_id": ObjectId(term_id)})
     return render_template("edit_term.html", term=term)
 
