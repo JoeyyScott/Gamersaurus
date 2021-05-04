@@ -131,6 +131,13 @@ def edit_term(term_id):
     return render_template("edit_term.html", term=term)
 
 
+@app.route("/delete_task/<term_id>")
+def delete_term(term_id):
+    mongo.db.thesaurus.remove({"_id": ObjectId(term_id)})
+    flash("Term Successfully Deleted")
+    return redirect(url_for("get_gs"))
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
