@@ -8,18 +8,18 @@
     <ul class="collapsible gsStyle">
         {% for term in terms %}
         <li>
-            <div class="collapsible-header gsStyle">
-                <div class="col s6 termTitle">
+            <div class="collapsible-header row container-terms gsStyle">
+                <div class="col s12 m4 l2 termTitle center-align">
                     {{ term.term }}
                 </div>
-                <div class="col s3">
+                <div class="col s12 m4 l8 center-align">
                     {% if session.user|lower == term.submitted_by|lower %}
-                        <a href="{{ url_for('edit_term', term_id=term._id) }}" class="buttonEdit gsStyle">Edit</a>
-                        <a href="{{ url_for('delete_term', term_id=term._id) }}" class="buttonDelete gsStyle">Delete</a>
+                        <a href="{{ url_for('edit_term', term_id=term._id) }}" class="buttonEdit buttonStyle gsStyle">Edit</a>
+                        <a href="{{ url_for('delete_term', term_id=term._id) }}" class="buttonDelete buttonStyle gsStyle">Delete</a>
                     {% endif %}
                 </div>
-                <div class="col s3">
-                    <i class="far fa-caret-square-down"></i>
+                <div class="col s12 m4 l2 container-icon">
+                    <i class="far fa-caret-square-down center-align iconExCl"></i>
                 </div>
             </div>
             <div class="collapsible-body gsStyle">

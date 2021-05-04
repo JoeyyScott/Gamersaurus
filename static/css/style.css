@@ -26,6 +26,9 @@ body {
     margin: 2vh auto 0;
     padding: 0;
 }
+.container-terms {
+    margin-bottom: 0;
+}
 
 /* Core Styling */
 .gsStyle {
@@ -70,23 +73,11 @@ nav a, .sidenav li a, nav ul a {
 /* Buttons */
 .buttonStyle {
     color: #f3ca40;
-    float: none;
-    font-size: 1.5rem;
-    padding: 5vw 10vw;
-}
-
-.buttonEdit, .buttonDelete {
-    font-size: 1.3rem;
-    padding: 0.5vh 2vw;
-    margin: 1vw;
-}
-
-.buttonDelete {
-    border: 1px solid #f6783b;
-}
-
-.btn-small {
-    color: #f3ca40;
+    /* padding: 1vw 5vw; */
+    width: 20vw;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 1vw;
 }
 
 /* Input fields */
@@ -128,4 +119,13 @@ textarea {
 .termTitle {
     margin: 1vw;
     font-weight: 750;
+    font-size: 1rem;
+    display: inline;
+    vertical-align: middle;
+    float: none;
+}
+
+/* Icons */
+.iconExCl {
+    padding-left: 15vw;
 }
