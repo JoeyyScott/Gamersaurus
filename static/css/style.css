@@ -85,6 +85,10 @@ nav a, .sidenav li a, nav ul a {
     border: 1px solid #f6783b;
 }
 
+.btn-small {
+    color: #f3ca40;
+}
+
 /* Input fields */
 .input-field {
     margin: 1.5vh 0 0 0;

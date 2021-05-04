@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% block contentmain %}
     <div class="container-content gsStyle">
-        <h1>Submit a term to the Gamersaurus!</h1>
+        <h1>Edit a term in the Gamersaurus</h1>
         <div class="row">
-            <form class="col s12" method="POST" action="{{ url_for('add_term') }}">
+            <form class="col s12" method="POST" action="{{ url_for('edit_term', term_id=term._id) }}">
                 <!-- Term name -->
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="fas fa-scroll prefix"></i>
-                        <input id="term" name="term" minlength="2" maxlength="50"
-                            pattern="^[a-zA-Z0-9 ]{2,50}$" type="text" class="validate" required>
+                        <input id="term" name="term" minlength="2" maxlength="50" value="{{ term.term }}"
+                            pattern="^[a-zA-Z0-9 ]{2,15}$" type="text" class="validate" required>
                         <label for="term">Term</label>
                     </div>
                 </div>
@@ -18,7 +18,9 @@
                     <div class="input-field col s12">
                         <i class="far fa-question-circle prefix"></i>
                         <textarea id="definition" name="definition" minlength="5" maxlength="200"
-                            pattern="^[a-zA-Z0-9 ]{5,200}$" class="materialize-textarea validate" required></textarea>
+                            pattern="^[a-zA-Z0-9 ]{5,200}$" class="materialize-textarea validate" required>
+                                {{- term.definition -}} 
+                            </textarea>
                         <label for="definition">Definition</label>
                     </div>
                 </div>
@@ -27,16 +29,21 @@
                     <div class="input-field col s12">
                         <i class="fas fa-comments prefix"></i>
                         <textarea id="example" name="example" minlength="5" maxlength="200"
-                            pattern="^[a-zA-Z0-9 ]{5,200}$" class="materialize-textarea validate" required></textarea>
+                            pattern="^[a-zA-Z0-9 ]{5,200}$" class="materialize-textarea validate" required>
+                                {{- term.example -}}
+                            </textarea>
                         <label for="example">Example</label>
                     </div>
                 </div>
                 <!-- Submit button -->
                 <div class="row">
                     <div class="col s12">
-                        <button class="s4 gsStyle buttonStyle" type="submit">
-                            <i class="fas fa-plus-square right">Add Term</i>
+                        <button class="gsStyle btn-small" type="submit">
+                            <i class="fas fa-edit"></i> Edit Term
                         </button>
+                        <a href="{{ url_for('get_gs') }}" class="gsStyle btn-small">
+                            <i class="fas fa-times-circle"></i> Cancel
+                        </a>
                     </div>
                 </div>
             </form>
