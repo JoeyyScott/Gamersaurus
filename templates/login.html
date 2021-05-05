@@ -6,7 +6,7 @@
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
                 <div class="card-panel gsStyle">
                     <!-- Username field -->
-                    <div class="row">
+                    <div class="row container-input">
                         <div class="input-field col s12">
                             <i class="prefix fas fa-user-tag icons"></i>
                             <input id="username" name="username" type="text" minlength="5" maxlength="15"
@@ -15,7 +15,7 @@
                         </div>
                     </div>
                     <!-- Password field -->
-                    <div class="row">
+                    <div class="row container-input">
                         <div class="input-field col s12">
                             <i class="prefix fas fa-user-lock icons"></i>
                             <input id="password" name="password" type="password" minlength="5" maxlength="15"
@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <!-- Login button -->
-                    <div class="row">
+                    <div class="row container-input">
                         <button type="submit" class="s4 gsStyle buttonStyle btnM">
                             Login <i class="fas fa-sign-in-alt icons"></i>
                         </button>
@@ -32,7 +32,7 @@
                 </div>
             </form>
         </div>
-        <div class="row">
+        <div class="row container-input">
             <div class="col s12 container-redirect">
                 <p class="redirect-msg">No account yet?<br><a class="gsStyle buttonStyle btnL redirect-btn" href="{{ url_for('register') }}">Register here!</a></p>
             </div>

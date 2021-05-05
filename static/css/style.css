@@ -8,6 +8,7 @@ body {
     background-position: top;
     color: #f3ca40;
     text-align: center;
+    font-family: 'Rock Salt', cursive;
 }
 
 /* Containers */
@@ -30,8 +31,24 @@ body {
     margin-bottom: 0;
 }
 
+.container-info {
+    padding: 4vw 4vw 0;
+}
+
 .container-redirect {
     margin-bottom: 1vh;
+}
+
+.container-input {
+    margin: -3vh 0 -1vh;
+}
+
+.container-form {
+    margin-top: 4vh;
+}
+
+.container-modify {
+    display: inline;
 }
 
 /* Core Styling */
@@ -45,8 +62,8 @@ a {
 }
 
 h1 {
-    font-size: 1.5rem;
-    margin: 1vw 1vw 2vw;
+    font-size: 1.4rem;
+    margin: 3vw 1vw 2vw;
 }
 
 h2 {
@@ -70,21 +87,37 @@ nav a, .sidenav li a, nav ul a {
     width: 75vw;
 }
 
-.logo {
-    font-size: 2rem;
+.brandLogo {
+    /* font-size: 1.25rem; */
+    display: inline;
+    width: 14vw;
+    right: 4vw;
+    top: 2vw;
+    position: relative;
+}
+
+.brandTitle, .brandTitleMobile {
+    display: inline;
+    font-size: 1.25rem;
+    padding-bottom: 1vh;
+    position: relative;
+    bottom: 2vh;
+}
+
+.brandTitleMobile {
+    right: 8vw;
 }
 
 /* Buttons */
 .btnS {
-
-    /* padding: 1vw 5vw; */
     width: 25vw;
 }
 
 .btnM {
     width: 50vw;
     font-size: 1.5rem;
-    padding: 1vw 0 2vw;
+    padding: 2vw 0 2vw;
+    margin-top: 1vh;
 }
 
 .btnL {
@@ -97,6 +130,11 @@ nav a, .sidenav li a, nav ul a {
     display: inline-block;
     text-align: center;
     margin-bottom: 1vw;
+    font-family: 'Schoolbell', cursive;
+}
+
+.btnEdit {
+    padding: 1vw;
 }
 
 /* Input fields */
@@ -106,7 +144,6 @@ nav a, .sidenav li a, nav ul a {
 
 .input-field .icons {
     font-size: 2rem;
-    /* padding: 0 10vw 0 0; */
     color: #f3ca40;
 }
 
@@ -138,19 +175,24 @@ textarea {
 .termTitle {
     margin: 1vw;
     font-weight: 750;
+    font-size: 1.25rem;
+    float: none;
+    width: 10vw;
+    word-wrap: break-word;
+}
+
+
+.termText {
+    font-family: 'Schoolbell', cursive;
+}
+
+.termText, .termKey {
     font-size: 1rem;
     display: inline;
-    vertical-align: middle;
-    float: none;
 }
 
-/* Icons */
-.iconExCl {
-    padding-left: 15vw;
-}
-
-.row {
-    margin-bottom: 1vh;
+.iconExpand {
+    position: absolute;
 }
 
 /* Login/Register */
@@ -160,4 +202,10 @@ textarea {
 }
 .redirect-btn {
     margin-top: 1vh;
+}
+
+
+.logo {
+    width: 14vw;
+    /* padding-right: 10vw; */
 }

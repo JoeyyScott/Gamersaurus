@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block contentmain %}
     <div class="container-content gsStyle">
-        <h1>Edit a term in the Gamersaurus</h1>
-        <div class="row">
+        <h1>Edit term</h1>
+        <div class="row container-form">
             <form class="col s12" method="POST" action="{{ url_for('edit_term', term_id=term._id) }}">
                 <!-- Term name -->
                 <div class="row">
@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <!-- Term definition -->
-                <div class="row">
+                <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="far fa-question-circle prefix"></i>
                         <textarea id="definition" name="definition" minlength="5" maxlength="200"
@@ -25,7 +25,7 @@
                     </div>
                 </div>
                 <!-- Term example -->
-                <div class="row">
+                <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="fas fa-comments prefix"></i>
                         <textarea id="example" name="example" minlength="5" maxlength="200"
@@ -36,12 +36,12 @@
                     </div>
                 </div>
                 <!-- Edit/Cancel button -->
-                <div class="row">
+                <div class="row container-input">
                     <div class="col s12">
-                        <button class="gsStyle btn-small" type="submit">
+                        <button class="gsStyle buttonStyle btnM" type="submit">
                             <i class="fas fa-edit"></i> Edit Term
                         </button>
-                        <a href="{{ url_for('get_gs') }}" class="gsStyle btn-small">
+                        <a href="{{ url_for('get_gs') }}" class="gsStyle buttonStyle btnEdit btnM">
                             <i class="fas fa-times-circle"></i> Cancel
                         </a>
                     </div>
