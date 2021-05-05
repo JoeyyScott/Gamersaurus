@@ -19,7 +19,7 @@
 </head>
 <body>
     <!-- Header content -->
-    <header class="gsStyle">
+    <header class="gsStyle container-header">
         <nav>
             <!-- Nav -->
             <div class="nav-extended">
@@ -75,6 +75,25 @@
         {% block contentmain %}
         {% endblock %}
     </main>
+
+    <div class="container-space"></div>
+    
+    <footer class="gsStyle container-footer">
+        <div class="row footer-msg">
+            <div class="col s6">
+                <p>Check us out elsewhere!</p>
+            </div>
+            <div class="col s2">
+                <a href="https://www.twitter.com" target="_blank" aria-label="Our Twitter"><i class="fab fa-twitter iconSocial"></i></a>
+            </div>
+            <div class="col s2">
+                <a href="https://www.youtube.com" target="_blank" aria-label="Our Youbtube"><i class="fab fa-youtube iconSocial"></i></a>
+            </div>
+            <div class="col s2">
+                <a href="https://www.instagram.com" target="_blank" aria-label="Our Instagram"><i class="fab fa-instagram iconSocial"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <!-- jQuery credit -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"

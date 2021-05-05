@@ -51,6 +51,16 @@ body {
     display: inline;
 }
 
+.container-footer {
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+}
+
+.container-space {
+    height: 15vh;
+}
+
 /* Core Styling */
 .gsStyle {
     background-color: #000D24;
@@ -106,6 +116,21 @@ nav a, .sidenav li a, nav ul a {
 
 .brandTitleMobile {
     right: 8vw;
+}
+
+/* Footer */
+.footer-msg {
+    margin-bottom: 0;
+}
+
+/* Icons */
+.iconExpand {
+    position: absolute;
+}
+
+.iconSocial {
+    font-size: 2rem;
+    margin-top: 4vh;
 }
 
 /* Buttons */
@@ -191,10 +216,6 @@ textarea {
     display: inline;
 }
 
-.iconExpand {
-    position: absolute;
-}
-
 /* Login/Register */
 .redirect-msg {
     margin-top: -1.5vh;
@@ -204,8 +225,6 @@ textarea {
     margin-top: 1vh;
 }
 
-
 .logo {
     width: 14vw;
-    /* padding-right: 10vw; */
 }
