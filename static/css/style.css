@@ -160,6 +160,10 @@ nav a, .sidenav li a, nav ul a {
     right: 2vw;
 }
 
+.navLinksMobile {
+    margin-top: 7vh;
+}
+
 /* Footer */
 .footer-msg {
     margin-bottom: 0;
@@ -300,6 +304,10 @@ textarea {
         font-size: 2rem;
     }
 
+    h2 {
+        font-size: 1.5rem;
+    }
+
     /* Nav */
     .navIcon {
         font-size: 8vw;
@@ -338,7 +346,7 @@ textarea {
         font-size: 1rem;
     }
 
-    .termKey, .termText {
+    .termKey, .termText, .homeText {
         font-size: 2rem;
     }
 }
@@ -383,6 +391,11 @@ textarea {
 
     h2 {
         font-size: 2rem;
+        
+    }
+
+    .flashes h2 {
+        margin: 2vh 0;
     }
 
     /* Nav */

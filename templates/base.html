@@ -49,16 +49,18 @@
         <!-- Mobile Nav -->
         <ul class="sidenav navMenuMobile gsStyle" id="mobile-demo">
             <a href="{{ url_for('get_gs') }}" class=""><img src="../static/images/logo.png" class="brandLogo" alt=""><div class="brandTitleMobile">GamerSaurus</div></a>
-            <li><a class="navLinkMobile" href="{{ url_for('home') }}">Home</a></li>
-            {% if session.user %}
-                <li><a class="navLinkMobile" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                <li><a class="navLinkMobile" href="{{ url_for('add_term') }}">Add Term</a></li>
-                <li><a class="navLinkMobile" href="{{ url_for('logout') }}">Logout</a></li>
-            {% else %}
-                <li><a class="navLinkMobile" href="{{ url_for('login') }}">Login</a></li>
-                <li><a class="navLinkMobile" href="{{ url_for('register') }}">Register</a></li>
-                <li><a class="navLinkMobile" href="#">Contact</a></li>
-            {% endif %}
+            <div class="navLinksMobile">
+                <li><a class="navLinkMobile" href="{{ url_for('home') }}">Home</a></li>
+                {% if session.user %}
+                    <li><a class="navLinkMobile" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                    <li><a class="navLinkMobile" href="{{ url_for('add_term') }}">Add Term</a></li>
+                    <li><a class="navLinkMobile" href="{{ url_for('logout') }}">Logout</a></li>
+                {% else %}
+                    <li><a class="navLinkMobile" href="{{ url_for('login') }}">Login</a></li>
+                    <li><a class="navLinkMobile" href="{{ url_for('register') }}">Register</a></li>
+                    <li><a class="navLinkMobile" href="#">Contact</a></li>
+                {% endif %}
+            </div>
         </ul>
     </header>
 
