@@ -25,7 +25,7 @@
             <div class="gsStyle nav-extended">
                 <div class="row container-nav">
                     <div class="col s12 m12 l6">
-                    <a href="{{ url_for('get_gs') }}" class=""><img src="../static/images/logo.png" class="brandLogo" alt=""></a><div class="brandTitle">GamerSaurus</div>
+                    <a href="{{ url_for('get_gs') }}" class=""><img src="../static/images/logo.png" class="brandLogo" alt=""><div class="brandTitle">GamerSaurus</div></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars navIcon"></i></a>
                     </div>
                     <div class="col s12 m12 l6">
@@ -47,18 +47,17 @@
             </div>
         </nav>
         <!-- Mobile Nav -->
-        <ul class="sidenav gsStyle" id="mobile-demo">
-            <a href="{{ url_for('get_gs') }}" class=""><img src="../static/images/logo.png" class="brandLogo" alt=""></a><div class="brandTitleMobile">GamerSaurus</div>
-            <li><a href="#">Home</a></li>
-            <li><a href="{{ url_for('get_gs') }}">Gamersaurus</a></li>
+        <ul class="sidenav navMenuMobile gsStyle" id="mobile-demo">
+            <a href="{{ url_for('get_gs') }}" class=""><img src="../static/images/logo.png" class="brandLogo" alt=""><div class="brandTitleMobile">GamerSaurus</div></a>
+            <li><a class="navLinkMobile" href="#">Home</a></li>
             {% if session.user %}
-                <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                <li><a href="{{ url_for('add_term') }}">Add Term</a></li>
-                <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                <li><a class="navLinkMobile" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                <li><a class="navLinkMobile" href="{{ url_for('add_term') }}">Add Term</a></li>
+                <li><a class="navLinkMobile" href="{{ url_for('logout') }}">Logout</a></li>
             {% else %}
-                <li><a href="{{ url_for('login') }}">Login</a></li>
-                <li><a href="{{ url_for('register') }}">Register</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a class="navLinkMobile" href="{{ url_for('login') }}">Login</a></li>
+                <li><a class="navLinkMobile" href="{{ url_for('register') }}">Register</a></li>
+                <li><a class="navLinkMobile" href="#">Contact</a></li>
             {% endif %}
         </ul>
     </header>

@@ -9,14 +9,13 @@ body {
     color: #f3ca40;
     text-align: center;
     font-family: 'Rock Salt', cursive;
+    overflow-x: hidden;
 }
 
 /* Containers */
 .container-header {
     width: 100vw;
-    top: 0;
     height: max-content;
-    z-index: 1;
 }
 
 .container-title {
@@ -112,6 +111,11 @@ nav a, .sidenav li a, nav ul a {
     width: 75vw;
 }
 
+.navMenuMobile li a {
+    font-size: 8vw;
+    margin-bottom: 4vh;
+}
+
 .brandLogo {
     display: inline;
     width: 14vw;
@@ -133,7 +137,7 @@ nav a, .sidenav li a, nav ul a {
 
 .brandTitleMobile {
     font-size: 5.75vw;
-    right: 7vw;
+    right: 2vw;
 }
 
 /* Footer */
@@ -144,23 +148,23 @@ nav a, .sidenav li a, nav ul a {
 /* Icons */
 .iconSocial {
     font-size: 2rem;
-    margin-top: 4vh;
+    margin-top: 3vh;
 }
 
 /* Buttons */
 .btnS {
-    width: 25vw;
+    width: 25%;
 }
 
 .btnM {
-    width: 50vw;
+    width: 50%;
     font-size: 1.5rem;
     padding: 2vw 0 2vw;
     margin-top: 1vh;
 }
 
 .btnL {
-    width: 75vw;
+    width: 75%;
     font-size: 1.75rem;
 }
 
@@ -215,9 +219,6 @@ textarea {
     margin: 1vw;
     font-weight: 750;
     font-size: 1.25rem;
-    float: none;
-    width: 10vw;
-    word-wrap: break-word;
 }
 
 .termText {
@@ -253,49 +254,110 @@ textarea {
 }
 
 @media screen and (min-width: 768px) and (min-height: 1024px) {
+    /* Containers */
     .container-content {
         margin-top: 10vh;
+        width: 70vw;
     }
-    /* .brandLogo {
-        right: 8vw;
-    } */
-    .brandTitle {
-        font-size: 7vw;
+
+    .container-title {
+        width: 50vw;
     }
+
+    .container-redirect {
+        margin-top: 3vh;
+    }
+
+    .container-input {
+        margin: -1vh 0 -1vh;
+    }
+
+    /* Core Styles */
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* Nav */
     .navIcon {
         font-size: 8vw;
         padding-top: 3vh;
     }
+    .navMenuMobile li a {
+        margin-bottom: 7vh;
+    }
+
+    /* Footer */
+    .footer-msg p {
+        font-size: 3vw;
+    }
+
+    /* Icons */
     .iconSocial {
-        margin-top: 1.25vh;
+        margin-top: 2.5vh;
+        font-size: 2.5rem;
     }
-    .container-title {
-        width: 40vw;
+
+    /* Gamersaurus.html */
+    .brandTitle {
+        font-size: 7vw;
     }
-    h1 {
-        font-size: 2rem;
-    }
+
     .termTitle {
         font-size: 1.75rem;
     }
+
     .termGuide {
         font-size: 1rem;
     }
+
     .termKey, .termText {
         font-size: 2rem;
     }
+}
+
+@media screen and (min-width: 992px)  and (orientation: landscape) {
+    /* Containers */
+    .container-header {
+        height: 10vh;
+    }
+
+    .container-title {
+        width: 40vw;
+        margin-bottom: 4vh;
+    }
+
     .container-content {
         width: 70vw;
     }
-}
 
-/* Nav */
-@media screen and (min-width: 992px)  and (orientation: landscape) {
-    nav {
-        background-color: #000D24;
-        /* margin: 3vh 0 0; */
-        color: #f3ca40;
+    .container-terms {
+        padding: 1vh 0 1vh 0;
     }
+
+    .container-icon {
+        padding-top: 0.65vh;
+        margin-bottom: 0;
+    }
+
+    .container-info {
+        padding: 2vh 4vw 0;
+    }
+
+    .container-input {
+        margin-top: -1vh;
+    }
+
+    /* Core Styles */
+    h1 {
+        font-size: 3rem;
+        margin: 1vh 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    /* Nav */
     .nav-extended {
         padding-bottom: 3vh;
         position: relative;
@@ -303,25 +365,14 @@ textarea {
     }
 
     .navMenu {
-        /* padding-top: 8vh; */
         padding-top: calc(15%/2);
         width: 60vw;
     }
 
-    nav a, .sidenav li a, nav ul a {
-        color: #f3ca40;
-    }
-
-    .sidenav {
-        width: 75vw;
-    }
-
     .brandLogo {
-        display: inline;
         height: 6vw;
         width: auto;
         top: 4vh;
-        position: relative;
         right: 5vw;
     }
 
@@ -338,38 +389,32 @@ textarea {
         font-size: 1.75vw;
     }
 
-    .brandTitleMobile {
-        right: 8vw;
+    /* Footer */
+    .footer-msg p {
+        font-size: 2.5vw;
+        margin: 1vh 0;
     }
-
-    .container-header {
-        height: 10vh;
-    }
-
+    
+    /* Icons */
     .iconSocial {
-        margin-top: 1.25vh;
-    }
-
-    .container-title {
-        width: 40vw;
-        margin-bottom: 4vh;
-    }
-
-    h1, .termKey, .termText {
+        margin: 1.5vh 0;
         font-size: 3rem;
     }
-    h2 {
-        font-size: 2rem;
-    }
-
+    
+    /* Gamersaurus.html */
     .termTitle {
         font-size: 1.75rem;
+        margin: 0;
     }
 
     .termGuide {
         font-size: 1.25rem;
     }
-    .container-content {
-        width: 70vw;
+
+    .termKey, .termText {
+        font-size: 1.75rem;
+        margin: 1vh 0;
+        overflow: hidden;
+        text-overflow: break-word;
     }
 }
