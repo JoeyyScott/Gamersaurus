@@ -215,7 +215,8 @@ nav a, .sidenav li a, nav ul a {
 }
 
 .input-field [type=text],
-.input-field [type=password],
+.input-field [type=password]
+.input-field [type=email],
 textarea {
     color: #f3ca40;
 }

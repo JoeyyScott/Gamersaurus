@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block contentmain %}
-    <div class="container-content gsStyle">
+    <div class="gsStyle">
         <h1>Submit a term to the Gamersaurus!</h1>
         <div class="row">
             <form class="col s12" method="POST" action="{{ url_for('add_term') }}">
                 <!-- Term name -->
-                <div class="row">
+                <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="fas fa-scroll prefix"></i>
                         <input id="term" name="term" minlength="2" maxlength="50"
@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <!-- Term definition -->
-                <div class="row">
+                <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="far fa-question-circle prefix"></i>
                         <textarea id="definition" name="definition" minlength="5" maxlength="200"
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <!-- Term example -->
-                <div class="row">
+                <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="fas fa-comments prefix"></i>
                         <textarea id="example" name="example" minlength="5" maxlength="200"
@@ -32,7 +32,7 @@
                     </div>
                 </div>
                 <!-- Submit button -->
-                <div class="row">
+                <div class="row container-input>
                     <div class="col s12">
                         <button class="s4 gsStyle buttonStyle btnM" type="submit">
                             Add Term <i class="fas fa-plus-square"></i>
