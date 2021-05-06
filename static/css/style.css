@@ -18,6 +18,14 @@ body {
     height: max-content;
 }
 
+.container-profile {
+    margin-bottom: 2vh;
+}
+
+.container-profile h1 {
+    margin: 0
+}
+
 .container-title {
     width: 75vw;
     margin: 2vh auto 0;
@@ -25,12 +33,12 @@ body {
 
 .container-content {
     width: 90vw;
-    margin: 8vh auto 0;
+    margin: 6vh auto 0;
 }
 
 .container-flashes {
     width: 60vw;
-    margin: 2vh auto 0;
+    margin: 1vh auto 0;
     padding: 0;
 }
 .container-terms {
@@ -78,6 +86,10 @@ body {
 
 .container-description {
     padding: 0 4vw;
+}
+
+.container-userterms {
+    margin-top: 2vh;
 }
 
 /* Core Styling */
@@ -168,7 +180,7 @@ nav a, .sidenav li a, nav ul a {
     width: 50%;
     font-size: 1.5rem;
     padding: 2vw 0 2vw;
-    margin-top: 1vh;
+    margin-top: 2vh;
 }
 
 .btnL {
@@ -184,13 +196,13 @@ nav a, .sidenav li a, nav ul a {
     font-family: 'Schoolbell', cursive;
 }
 
-.btnEdit {
+.btnCancel, .btnAdd {
     padding: 1vw;
 }
 
 /* Input fields */
 .input-field {
-    margin: 1.5vh 0 0 0;
+    margin-top: 1.5vh;
 }
 
 .input-field .icons {
@@ -234,8 +246,6 @@ textarea {
     display: inline;
 }
 
-.
-
 .termGuide {
     font-size: 0.65rem;
 }
@@ -251,6 +261,13 @@ textarea {
 
 .logo {
     width: 14vw;
+}
+
+/* Profile */
+.titleProfile h2 {
+    text-decoration: underline;
+    text-underline-offset: 0.5vh;
+    line-height: 180%;
 }
 
 @media screen and (orientation: landscape) and (max-height: 500px) {
@@ -301,6 +318,11 @@ textarea {
     .iconSocial {
         margin-top: 2.5vh;
         font-size: 2.5rem;
+    }
+
+    /* Buttons */
+    .btnAdd {
+        font-size: 5vw;
     }
 
     /* Gamersaurus.html */
@@ -407,6 +429,11 @@ textarea {
         font-size: 3rem;
     }
     
+    /* Buttons */
+    .btnAdd {
+        font-size: 3vw;
+    }
+    
     /* Gamersaurus.html */
     .termTitle {
         font-size: 1.75rem;
@@ -417,10 +444,12 @@ textarea {
         font-size: 1.25rem;
     }
 
-    .termKey, .termText {
+    .termKey, .termText, .homeText {
         font-size: 1.75rem;
         margin: 1vh 0;
-        overflow: hidden;
-        text-overflow: break-word;
+    }
+    /* Profile */
+    .titleProfile h2, .container-description h2 {
+        margin: 1vh 0 1vh 0;
     }
 }

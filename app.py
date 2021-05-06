@@ -90,8 +90,13 @@ def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
 
+    # Get terms that have a submitted_by value that matches the username
+    userterms = list(mongo.db.thesaurus.find(
+        {"submitted_by": session["user"]}))
+
     if session["user"]:
-        return render_template("profile.html", username=username)
+        return render_template(
+            "profile.html", username=username, userterms=userterms)
 
     return redirect(url_for("login"))
 

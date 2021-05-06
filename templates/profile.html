@@ -1,13 +1,18 @@
 {% extends "base.html" %}
 {% block contentmain %}
-    <div class="container-content gsStyle">
-        <h1>Your profile</h1>
-        <div class="row">
-            <form class="col s12 m8 offset-m2">
-                <div class="card-panel gsStyle">
-                    <h3>{{ username }}</h3>
-                </div>
-            </form>
+    <div class="container-profile gsStyle">
+        <h1>{{ username }}'s profile</h1>
+        <div class="titleProfile">
+            <h2>Terms you've submitted to the GamerSaurus</h2>
+        </div>
+    </div>
+    <div class="container-profile-buttons">
+        <div class="row container-input">
+            <div class="col s12">
+                <a href="{{ url_for('add_term') }}" class="gsStyle buttonStyle btnAdd btnM">
+                    Add term <i class="fas fa-plus-square"></i>
+                </a>
+            </div>
         </div>
     </div>
 {% endblock %}
