@@ -26,6 +26,11 @@ def get_gs():
     return render_template("gamersaurus.html", terms=terms)
 
 
+@app.route("/home")
+def home():
+    return render_template("index.html")
+
+
 @app.route("/register", methods=["GET", "POST"])
 def register():
     if request.method == "POST":

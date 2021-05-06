@@ -76,6 +76,10 @@ body {
     margin-bottom: 0;
 }
 
+.container-description {
+    padding: 0 4vw;
+}
+
 /* Core Styling */
 .gsStyle {
     background-color: #000D24;
@@ -94,6 +98,10 @@ h1 {
 h2 {
     font-size: 1rem;
     margin: 3vw 0;
+}
+
+.altFont {
+    font-family: 'Schoolbell', cursive;
 }
 
 /* Nav */
@@ -221,14 +229,12 @@ textarea {
     font-size: 1.25rem;
 }
 
-.termText {
-    font-family: 'Schoolbell', cursive;
-}
-
 .termText, .termKey {
     font-size: 1rem;
     display: inline;
 }
+
+.
 
 .termGuide {
     font-size: 0.65rem;
