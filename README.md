@@ -1,6 +1,6 @@
 <h1 align="center">The Gamersaurus</h1>
 
-[View a live version of the site here.]()
+[View a live version of the site here.](https://gamersaurus-joeyy.herokuapp.com/)
 
 I have created this project (Milestone project 3) as part of my Full Stack Web Development course with [Code Institute](https://codeinstitute.net/).
 
@@ -24,6 +24,7 @@ The Gamersaurus is a community built thesaurus on terms you would most likely en
     - Images
     - Typography
   - [Wireframes](<#wireframes>)
+  - [Design Changes](<#design-changes>)
 
 - [**Database Schema**](<#database-schema>)
 
@@ -150,6 +151,10 @@ These SchoolBell font was chosen as it resembles handwriting on a school white b
 | [contact.html](wireframes/mobile/contact-mobile.png) | [contact.html](wireframes/tablet/contact-tablet.png) | [contact.html](wireframes/pc/contact-pc.png) |
 | [404.html](wireframes/mobile/404-mobile.png) | [404.html](wireframes/tablet/404-tablet.png) | [404.html](wireframes/pc/404-pc.png) |
 | [Add/Edit Word](wireframes/mobile/addword-mobile.png) | [Add/Edit Word](wireframes/tablet/addword-tablet.png) | [Add/Edit Word](wireframes/pc/addword-pc.png) |
+
+### Design Changes
+
++ **Duplicate Gamersaurus link** - I originally was going to include a "Gamersaurus" link in the nav bar but opted to remove it to save screen sapce and remove redunancy as the logo redirects to the same link.
 
 ## Database Schema
 

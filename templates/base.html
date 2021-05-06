@@ -19,25 +19,31 @@
 </head>
 <body>
     <!-- Header content -->
-    <header class="gsStyle container-header">
+    <header class="container-header">
         <nav>
             <!-- Nav -->
-            <div class="nav-extended">
-                <a href="{{ url_for('get_gs') }}" class=""><img src="../static/images/logo.png" class="brandLogo" alt=""></a><div class="brandTitle">GamerSaurus</div>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="{{ url_for('get_gs') }}">Gamersaurus</a></li>
-                    {% if session.user %}
-                        <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                        <li><a href="{{ url_for('add_term') }}">Add Term</a></li>
-                        <li><a href="{{ url_for('logout') }}">Logout</a></li>
-                    {% else %}
-                        <li><a href="{{ url_for('login') }}">Login</a></li>
-                        <li><a href="{{ url_for('register') }}">Register</a></li>
-                        <li><a href="#">Contact</a></li>
-                    {% endif %}
-                </ul>
+            <div class="gsStyle nav-extended">
+                <div class="row container-nav">
+                    <div class="col s12 m12 l6">
+                    <a href="{{ url_for('get_gs') }}" class=""><img src="../static/images/logo.png" class="brandLogo" alt=""></a><div class="brandTitle">GamerSaurus</div>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars navIcon"></i></a>
+                    </div>
+                    <div class="col s12 m12 l6">
+                        <ul class="right hide-on-med-and-down navMenu">
+                            <li><a class="navLink" href="#">Home</a></li>
+                            {% if session.user %}
+                                <li><a class="navLink" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
+                                <li><a class="navLink" href="{{ url_for('add_term') }}">Add Term</a></li>
+                                <li><a class="navLink" href="{{ url_for('logout') }}">Logout</a></li>
+                                <li><a class="navLink" href="#">Contact</a></li>
+                            {% else %}
+                                <li><a class="navLink" href="{{ url_for('login') }}">Login</a></li>
+                                <li><a class="navLink" href="{{ url_for('register') }}">Register</a></li>
+                                <li><a class="navLink" href="#">Contact</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
+                </div>
             </div>
         </nav>
         <!-- Mobile Nav -->
@@ -62,7 +68,7 @@
             {% if messages %}
                 {% for msg in messages %}
                     <div class="row container-flashes">
-                        <div class="col s12 m8 flashes gsStyle">
+                        <div class="col s12 flashes gsStyle">
                             <h2>{{ msg }}</h2>
                         </div>
                     </div>

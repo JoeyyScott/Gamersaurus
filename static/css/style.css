@@ -12,6 +12,13 @@ body {
 }
 
 /* Containers */
+.container-header {
+    width: 100vw;
+    top: 0;
+    height: max-content;
+    z-index: 1;
+}
+
 .container-title {
     width: 75vw;
     margin: 2vh auto 0;
@@ -19,7 +26,7 @@ body {
 
 .container-content {
     width: 90vw;
-    margin: 2vh auto 0;
+    margin: 8vh auto 0;
 }
 
 .container-flashes {
@@ -48,11 +55,6 @@ body {
     margin-top: 4vh;
 }
 
-.container-modify {
-    /* display: inline; */
-    margin-bottom: 0;
-}
-
 .container-footer {
     position: fixed;
     width: 100vw;
@@ -69,6 +71,10 @@ body {
     margin-left: 10vw;
     position: relative;
     left: 9vw;
+}
+
+.container-nav {
+    margin-bottom: 0;
 }
 
 /* Core Styling */
@@ -94,8 +100,7 @@ h2 {
 /* Nav */
 nav {
     background-color: #000D24;
-    width: 80vw;
-    margin: 0 10vw;
+    width: 100vw;
     color: #f3ca40;
 }
 
@@ -108,24 +113,27 @@ nav a, .sidenav li a, nav ul a {
 }
 
 .brandLogo {
-    /* font-size: 1.25rem; */
     display: inline;
     width: 14vw;
-    right: 4vw;
+    right: 2vw;
     top: 2vw;
     position: relative;
 }
 
 .brandTitle, .brandTitleMobile {
     display: inline;
-    font-size: 1.25rem;
     padding-bottom: 1vh;
     position: relative;
     bottom: 2vh;
 }
 
+.brandTitle {
+    font-size: 7vw;
+}
+
 .brandTitleMobile {
-    right: 8vw;
+    font-size: 5.75vw;
+    right: 7vw;
 }
 
 /* Footer */
@@ -236,4 +244,132 @@ textarea {
 
 .logo {
     width: 14vw;
+}
+
+@media screen and (orientation: landscape) and (max-height: 500px) {
+    .container-content {
+        margin-top: 25vh;
+    }
+}
+
+@media screen and (min-width: 768px) and (min-height: 1024px) {
+    .container-content {
+        margin-top: 10vh;
+    }
+    /* .brandLogo {
+        right: 8vw;
+    } */
+    .brandTitle {
+        font-size: 7vw;
+    }
+    .navIcon {
+        font-size: 8vw;
+        padding-top: 3vh;
+    }
+    .iconSocial {
+        margin-top: 1.25vh;
+    }
+    .container-title {
+        width: 40vw;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .termTitle {
+        font-size: 1.75rem;
+    }
+    .termGuide {
+        font-size: 1rem;
+    }
+    .termKey, .termText {
+        font-size: 2rem;
+    }
+    .container-content {
+        width: 70vw;
+    }
+}
+
+/* Nav */
+@media screen and (min-width: 992px)  and (orientation: landscape) {
+    nav {
+        background-color: #000D24;
+        /* margin: 3vh 0 0; */
+        color: #f3ca40;
+    }
+    .nav-extended {
+        padding-bottom: 3vh;
+        position: relative;
+        top: -2.5vh;
+    }
+
+    .navMenu {
+        /* padding-top: 8vh; */
+        padding-top: calc(15%/2);
+        width: 60vw;
+    }
+
+    nav a, .sidenav li a, nav ul a {
+        color: #f3ca40;
+    }
+
+    .sidenav {
+        width: 75vw;
+    }
+
+    .brandLogo {
+        display: inline;
+        height: 6vw;
+        width: auto;
+        top: 4vh;
+        position: relative;
+        right: 5vw;
+    }
+
+    .brandTitle {
+        display: inline;
+        font-size: 3vw;
+        position: relative;
+        right: 5vw;
+        top: 1.75vh;
+        padding-top: calc(30%/2);
+    }
+
+    .navLink {
+        font-size: 1.75vw;
+    }
+
+    .brandTitleMobile {
+        right: 8vw;
+    }
+
+    .container-header {
+        height: 10vh;
+    }
+
+    .iconSocial {
+        margin-top: 1.25vh;
+    }
+
+    .container-title {
+        width: 40vw;
+        margin-bottom: 4vh;
+    }
+
+    h1, .termKey, .termText {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+
+    .termTitle {
+        font-size: 1.75rem;
+    }
+
+    .termGuide {
+        font-size: 1.25rem;
+    }
+    .container-content {
+        width: 70vw;
+    }
 }
