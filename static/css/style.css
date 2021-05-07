@@ -248,9 +248,10 @@ textarea {
     margin: 1vw;
     font-weight: 750;
     font-size: 1.25rem;
+    overflow-wrap: break-word;
 }
 
-.termText, .termKey {
+.termText, .termKey, .termDelete {
     font-size: 1rem;
     display: inline;
 }
@@ -351,7 +352,7 @@ textarea {
         font-size: 1rem;
     }
 
-    .termKey, .termText, .homeText {
+    .termKey, .termText, .homeText, .termDelete {
         font-size: 2rem;
     }
 }
@@ -462,7 +463,7 @@ textarea {
         font-size: 1.25rem;
     }
 
-    .termKey, .termText, .homeText {
+    .termKey, .termText, .homeText, .termDelete {
         font-size: 1.75rem;
         margin: 1vh 0;
     }
