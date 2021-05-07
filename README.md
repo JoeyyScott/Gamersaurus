@@ -313,7 +313,52 @@ I created a separate file for the testing process which can be located [here](TE
     + ```git commit -m "[TYPE] Reason"``` (which commits all changes to my project using a category prefix and a specific reason for that commit)
     + ```git push``` (this command pushes all committed changes to the live version of my site)
 
-### Deploying to Heroku
+### Deployment to Heroku
+
+*Before creating a Heroku app make sure your project has these two files:
+    + **requirements.txt** - You can create one by using ```pip3 freeze --local > requirements.txt```
+    + **Procfile** - You can create one by using ```echo web: python run.py > Procfile```
+
+**Create application:**
+1. Navigate to Heroku's site [here](https://www.heroku.com/).
+2. Register and/or Login as applicable.
+3. Click on the new button in the top right and select "Create new app".
+4. Enter the app name and region.
+5. Click the create app button.
+
+**Set up connection to Github Repository:**
+
+1. Click the Deploy tab and select GitHub - Connect to GitHub.
+2. Sign into GitHub if not already.
+1. A prompt to find a Github repository to connect to will then be displayed.
+1. Enter the repository name for the project and click search.
+1. Once the repo has been found, click the connect button.
+
+**Set environment variables:**
+
+1. Click the Settings tab and click the Reveal Config Vars button and add the following:
+
+```
+| Key | Value |
+| :-: | :---: |
+| IP  | 0.0.0.0 |
+| PORT | 5000 |
+| MONGO_DBNAME | Your MONGO_DBNAME |
+| MONGO_URI | Your MONGO_URI |
+| SECRET_KEY| Your SECRET_KEY |
+```
+
++ **MONGO_DBNAME** - This is the name of the database you are trying to connect to within MongoDB.
++ **MONGO_URI** - This can be found on the MongoDB website by following these steps;
+    + In the clusters tab click connect on the associated cluster.
+    + Click connect > Connect your application
+    + Copy the string and substitute the password (from Database access not your MongoDB site password) and "myFirstDatabase" to your DB name.
++ **SECRET_KEY** - This is a custom string set up to secure the application and to keep client-side sessions secure.
+
+**Enable automatic deployment:**
+1. Click the Deploy tab again.
+2. Under Automatic deploys section, choose the branch you want to deploy from and then click the "Enable Automatic Deploys" button.
+3. Click the "Deploy Branch" button underneath to deploy the app the Heroku servers.
 
 ### Creating a local clone
 
