@@ -2,7 +2,7 @@
 $(document).ready(function () {
     $(".sidenav").sidenav({edge: "right"});
     $(".collapsible").collapsible();
-
+    $('.modal').modal();
     validateMaterializeSelect();
     function validateMaterializeSelect() {
         let classValid = { "border-bottom": "1px solid #4caf50", "box-shadow": "0 1px 0 0 #4caf50" };
@@ -31,6 +31,8 @@ $(document).ready(function () {
         });
     }
 });
+
+// Constants
 const form = document.getElementById('contactForm');
 const contactButton = document.getElementById('buttonContact');
 
@@ -38,11 +40,11 @@ const contactButton = document.getElementById('buttonContact');
 $( "#contactForm" ).submit(function( event ) { event.preventDefault(); contactUs(this); });
 
 function contactUs(contactForm) {
-        // Credit for emailJS send function
-        emailjs.send("service_qtd8qrn", "gamersaurusContact", {
-            formName: formName.value,
-            formEmail: formEmail.value,
-            formMessage: formMessage.value,
+    // Credit for emailJS send function
+    emailjs.send("service_qtd8qrn", "gamersaurusContact", {
+        formName: formName.value,
+        formEmail: formEmail.value,
+        formMessage: formMessage.value,
     })
     .then(
         //Changes the submitButton text to convey to the user if their submission was successful or not

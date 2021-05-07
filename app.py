@@ -141,7 +141,7 @@ def edit_term(term_id):
     return render_template("edit_term.html", term=term)
 
 
-@app.route("/delete_task/<term_id>")
+@app.route("/delete_term/<term_id>")
 def delete_term(term_id):
     mongo.db.thesaurus.remove({"_id": ObjectId(term_id)})
     flash("Term Successfully Deleted")
