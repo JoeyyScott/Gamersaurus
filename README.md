@@ -190,6 +190,73 @@ MongoDB Atlas was the cloud database service used to create and store the databa
 
 ### Existing Features
 
+The header can be accessed and viewed throughout all pages in the site.
+
+Included in the **header** is: 
+
++ **Brand Icon and Name**: Provides a link to the Gamersaurus to allow the user to view it at any point.
++ **Nav Links**: Provides a way for the user to view the other pages on the site.
+    + If the user is not logged in they will see Home, Login, Register and Contact.
+    + If the user is logged in they will see see Home, Profile, Add Term, Logout and Contact.
+    + **Mobile**: On the mobile header, all users will see the brand logo and name and the links moved into a side nav.
+
+Included in the **footer** is:
+
++ **Social media links**: Which will take you to the various social media connnections for the site. (These links will point to the homepage for the associated social media site as the brand's socials do not exist at this point in time).
+
+Included in **gamersaurus.html** is:
+
++ **View all terms currently stored** - Contains all the terms currently stored within the thesaurus collection.
+    + Each term is contained within a collapsible which displays the term, and edit/delete buttons if the session user is the user who matches the ```submitted_by``` value within the database.
+    + Each term can be expanded to show data in the following form:
+
+        ```
+        Definition: term.definition
+        Example: term.example
+        Submitted by: term.submitted_by
+        ```
+
+Included in **profile.html** is:
+
++ **View their own terms** - Contains all terms the session user has added to the gamersaurus.
+    + Each term is contained within the same collapsible used on the gamersaurus page.
++ **Add term button** - Redirects the user to "add_term.html".
+
+Included in **add_term.html** is:
+
++ **Form for term data**: Can be filled out with a term, definition, example (with associated validation) and then submitted to the database.
+    + This functionality is handled by python upon form submission.
+    + There are checks to make sure:
+        + The term doesn't already exist in the database.
+        + The data submitted passes all validation.
+
+Included in **edit_term.html** is:
+
++ **Form for term data**: Contains fields for term, definition, example (with associated validation) which is auto-filled from the termID used to generate the page.
+    + There is an "Edit term" button as well as "Cancel" which provide a way for the user to confirm or cancel their action.
+
+Included in **register.html** is:
+
++ **Registration form**: Contains fields for username and password (with associated validation).
+    + This functionality is handled by python upon form submission.
+    + There are checks to make sure:
+        + The username doesn't already exist.
+        + The data submitted passes all validation.
+
+Included in **login.html** is:
+
++ **Login form**: Contains fields for username and password (with associated validation).
+    + This functionality is handled by python upon form submission.
+    + There are checks to make sure:
+        + The username exists in the database.
+        + The username and password matches that record in the database.
+        + The data submitted passes all validation.
+    
+Included in **contact.html** is:
+
++ **Contact Form**: Can be filled out with a name, email and message query (with associated validation) and submitted to contact the website owners.
+    + The form functionality is handled by emailJS in the script.js file. 
+
 ### Features to be added
 
 #### [Back to top](#contents)
