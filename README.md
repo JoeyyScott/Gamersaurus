@@ -79,8 +79,8 @@ E. User can search for terms | 4 | 4
 
     + As a **registered user**, I want to be able to log in and out of my account.
     + As a **registered user**, I want to be able to submit terms of my own to the site.
-    + As a **registered user**, I want to be able to edit any terms I've submitted to the site.
-    + As a **registered user**, I want to able to delete any terms I've submitted to the site.
+    + As a **registered user**, I want to be able to edit any terms I have submitted to the site.
+    + As a **registered user**, I want to able to delete any terms I have submitted to the site.
 
 - #### Site Owner Goals
 
@@ -190,7 +190,7 @@ MongoDB Atlas was the cloud database service used to create and store the databa
 
 ### Existing Features
 
-The header can be accessed and viewed throughout all pages in the site.
+The header and footer can be accessed and viewed throughout all pages in the site as they are within **base.html** which all other pages extend from.
 
 Included in the **header** is: 
 
@@ -203,6 +203,10 @@ Included in the **header** is:
 Included in the **footer** is:
 
 + **Social media links**: Which will take you to the various social media connnections for the site. (These links will point to the homepage for the associated social media site as the brand's socials do not exist at this point in time).
+
+Included in **index.html** is:
+
++ **Gamersaurus Description** - Contains a small paragraph about the Gamersaurus and how to use it.
 
 Included in **gamersaurus.html** is:
 
@@ -227,7 +231,7 @@ Included in **add_term.html** is:
 + **Form for term data**: Can be filled out with a term, definition, example (with associated validation) and then submitted to the database.
     + This functionality is handled by python upon form submission.
     + There are checks to make sure:
-        + The term doesn't already exist in the database.
+        + The term does not already exist in the database.
         + The data submitted passes all validation.
 
 Included in **edit_term.html** is:
@@ -281,9 +285,9 @@ Included in **contact.html** is:
 + [Git](https://git-scm.com) - Git is an open source version control system where you can commit changes to the associated Github repository and push changes to Github pages.
 + [FavIcon](https://favicon.io/) - I used this tool to convert an image I made into icon form and provide the code (stated in HTML comments) to link this icon to index.html.
 + [Am I Responsive?](http://ami.responsivedesign.is/) - I used this tool to easily display the responsiveness of my site for my README.md introduction.
-+ [emailJS](https://www.emailjs.com/) - I used this tool to add functionality in the form of an email service to the Suggest a Question modal.
-+ [jQuery](https://jquery.com/) - I used the jQuery library to provide access to a multitude of functions/methods, most notably the ```$.getJSON('');``` function which I used to load my questions in from a JSON file.
-+ [Regexr](https://regexr.com/) - I used this tool to test different RegEx syntax to help with my form valdiation.
++ [emailJS](https://www.emailjs.com/) - I used this tool to add functionality in the form of an email service from the form in the contact page.
++ [jQuery](https://jquery.com/) - I used the jQuery library to provide access to a multitude of functions/methods. Most notably materialize collapsible, modal, sidenav and validate.
++ [Regexr](https://regexr.com/) - I used this tool to test different RegEx syntax to help with my input field valdiation patterns.
 + [Heroku](https://dashboard.heroku.com/) - A cloud platform that was used to deploy and run the code pushed to the associated GitHub repository.
 + [MongoDB](https://www.mongodb.com/) - A cloud database service that allows for creation, modification, deletion and storage of databases collections used in the application.
 + [Materialize](https://materializecss.com/) - A CSS framework that allows for responsive design to be applied to the entire site.
@@ -315,9 +319,9 @@ I created a separate file for the testing process which can be located [here](TE
 
 ### Deployment to Heroku
 
-*Before creating a Heroku app make sure your project has these two files:
-    + **requirements.txt** - You can create one by using ```pip3 freeze --local > requirements.txt```
-    + **Procfile** - You can create one by using ```echo web: python run.py > Procfile```
+Before creating a Heroku app make sure your project has these two files:
++ **requirements.txt** - You can create one by using ```pip3 freeze --local > requirements.txt```
++ **Procfile** - You can create one by using ```echo web: python run.py > Procfile```
 
 **Create application:**
 1. Navigate to Heroku's site [here](https://www.heroku.com/).
@@ -400,6 +404,10 @@ This section includes areas/sections of code and properties I was unaware of. I 
 ### Media
 
 #### Images
+
++ **Gamersaurus Logo** - I created the logo using two icons from [FlatIcon](https://www.flaticon.com).
+    + [Dictionary](https://www.flaticon.com/free-icon/big-dictionary_85601?term=dictionary&page=1&position=1&page=1&position=1&related_id=85601&origin=search)
+    + [Controller](https://www.flaticon.com/free-icon/console_686589?term=controller&page=1&position=2&page=1&position=2&related_id=686589&origin=search)
 
 ### Acknowledgments
 
