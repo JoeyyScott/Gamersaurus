@@ -362,6 +362,22 @@ I created a separate file for the testing process which can be located [here](TE
 
 ### Creating a local clone
 
+**Disclaimer**: This project will not run locally with database connections unless you create an env.py file to hold the variables for IP, PORT, MONGO_DBNAME, MONGO_URI and SECRET_KEY. The information used to run this project are private and have not been pushed to the GitHub repository for this reason.
+
+Once you have done the above you can follow these steps to create a local copy on your computer:
+1. Navigate to the GitHub Repository for the project [here](https://github.com/JoeyyScott/Gamersaurus/).
+2. Click the Code drop down button.
+3. Either unpackage locally or download as a ZIP file.
+4. Open with your preferred IDE or copy Git URL from the HTTPS field.
+
+If you chose to copy the Git URL then follow these steps too:
+1. Open your a terminal window on your computer (or in your preferred IDE) in a directory of your choice.
+2. In the terminal window type  ```git clone https://github.com/JoeyyScott/Gamersaurus.git``` and press enter to confirm.
+3. This will create a local clone of the project in your chosen directory.
+4. For the project to function fully you must install the required dependencies from "requirements.txt"
+5. To do this, type ```pip3 install requirements.txt```
+6. To run the app in your local IDE type ```python3 app.py```
+
 #### [Back to top](#contents)
 
 ---
@@ -371,6 +387,15 @@ I created a separate file for the testing process which can be located [here](TE
 ### Content
 
 This section includes areas/sections of code and properties I was unaware of. I have also included sources from where I have adapted/changed code used in the projects throughout my course as I figured it was better practice to state as such to avoid any penalizations or copyright violations.
+
++ **submit listener in jQuery** - When I was testing my code in JSHint on a previous project I was trying to find a way to listen for a form submission and override that. My first attempt was ```buttonSubmit.addEventListener('submit', () => { suggestQuestion(); });``` but could not get it to function corrctly. I did some research and found [this post](https://api.jquery.com/submit/#submit-handler) which contained the following code:
+
+    ```$( "#target" ).submit(function( event ) { alert( "Handler for .submit() called." ); event.preventDefault(); });```
+
+    + I adapted this code to check when the submit function on the contactForm was activated and learned the .preventDefault() method makes it so only my code runs and this solved my issue within JSHint.
+
++ **Materialize collapsible accordion** - When completing a mini project in the Back End development module of the course we used Materialize CSS framework and their accordion component.
+    + I decided to use it in this project to display the term information, the documentation for it is [here](https://materializecss.com/collapsible.html).
 
 ### Media
 
