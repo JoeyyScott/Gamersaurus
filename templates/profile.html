@@ -15,6 +15,7 @@
             </div>
         </div>
     </div>
+    <!-- Credit for materialize collapsible accordion -->
     <ul class="collapsible container-userterms gsStyle">
         {% for term in userterms %}
         <li>
@@ -30,7 +31,9 @@
                                 <a href="{{ url_for('edit_term', term_id=term._id) }}"> <i class="fas fa-edit"></i></a>
                             </div>
                             <div class="col s5">
-                                <a href="{{ url_for('delete_term', term_id=term._id) }}"> <i class="fas fa-trash"></i></a>
+                                <a data-target="{{ term._id }}" class="modal-trigger">
+                                    <i class="fas fa-trash"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -41,6 +44,22 @@
                 <p class="termKey">Definition: <div class="termText altFont">{{ term.definition }}</div></p>
                 <p class="termKey">Example: <div class="termText altFont">{{ term.example }}</div></p>
                 <p class="termKey">Submitted by: <div class="termText altFont">{{ term.submitted_by }}</div></p>
+            </div>
+        </li>
+        <li id="{{ term._id }}" class="modal gsStyle">
+            <div class="modal-content">
+                <h2>Are you sure you want to delete the term:</h2>
+                <p class="termDelete">"{{ term.term }}"?</p>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <a href="{{ url_for('delete_term', term_id=term._id) }}" class="gsStyle buttonStyle btnL">
+                        <i class="fas fa-trash"></i> Delete
+                    </a>
+                    <a href="{{ url_for('get_gs') }}" class="gsStyle buttonStyle btnCancel btnL">
+                        <i class="fas fa-times-circle"></i> Cancel
+                    </a>
+                </div>
             </div>
         </li>
         {% endfor %}
