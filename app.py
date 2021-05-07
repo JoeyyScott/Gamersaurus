@@ -148,7 +148,6 @@ def delete_term(term_id):
     return redirect(url_for("get_gs"))
 
 
-
 @app.route("/contact")
 # Render Contact Page
 def contact():

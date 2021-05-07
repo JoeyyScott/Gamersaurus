@@ -4,39 +4,38 @@
         <h1>Contact</h1>
         <h2>Get in touch with us</h2>
         <div class="row container-form">
-            <form class="col s12" method="POST" action="">
+            <form id="contactForm">
                 <!-- Name -->
                 <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="fas fa-tag prefix"></i>
-                        <input id="name" name="name" minlength="2" maxlength="20" 
+                        <input id="formName" name="formName" minlength="2" maxlength="20" 
                             pattern="^[a-zA-Z0-9 ]{2,15}$" type="text" class="validate" required>
-                        <label for="name">Name</label>
+                        <label for="formName">Name</label>
                     </div>
                 </div>
                 <!-- Email -->
                 <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="fas fa-envelope-open-text prefix"></i>
-                        <input id="email" name="email"
-                            pattern="^[a-zA-Z0-9 ]{5,200}$" type="email" class="validate" required> 
-                        <label for="email">Email</label>
+                        <input id="formEmail" name="formEmail" type="email" class="validate" required> 
+                        <label for="formEmail">Email</label>
                     </div>
                 </div>
                 <!-- Query -->
                 <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="fas fa-comment-dots prefix"></i>
-                        <textarea id="message" name="message" minlength="5" maxlength="200"
+                        <textarea id="formMessage" name="formMessage" minlength="5" maxlength="200"
                             pattern="^[a-zA-Z0-9 ]{5,200}$" class="materialize-textarea validate"
                             required></textarea>
-                        <label for="message">Message</label>
+                        <label for="formMessage">Message</label>
                     </div>
                 </div>
                 <!-- Submit query button -->
                 <div class="row container-input">
                     <div class="col s12">
-                        <button class="gsStyle buttonStyle btnM" type="submit">
+                        <button id="buttonContact" class="gsStyle buttonStyle btnL" type="submit">
                             <i class="fas fa-submit"></i> Submit Query
                         </button>
                     </div>

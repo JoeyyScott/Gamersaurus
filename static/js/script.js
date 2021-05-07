@@ -31,3 +31,23 @@ $(document).ready(function () {
         });
     }
 });
+const form = document.getElementById('contactForm');
+const contactButton = document.getElementById('buttonContact');
+
+//Credit for submit event listener to detect form submission
+$( "#contactForm" ).submit(function( event ) { event.preventDefault(); contactUs(this); });
+
+function contactUs(contactForm) {
+        // Credit for emailJS send function
+        emailjs.send("service_qtd8qrn", "gamersaurusContact", {
+            formName: formName.value,
+            formEmail: formEmail.value,
+            formMessage: formMessage.value,
+    })
+    .then(
+        //Changes the submitButton text to convey to the user if their submission was successful or not
+        function (response) { contactButton.innerHTML = `Thank you for your query! <i class="fas fa-smile-beam"></i>`; form.reset(); },
+        function (error) { contactButton.innerHTML = `Oops! Please try again. <i class="fas fa-frown"></i>`; }
+    );
+    //End credit for emailJS send function
+}
