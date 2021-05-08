@@ -25,12 +25,12 @@
             <div class="gsStyle nav-extended">
                 <div class="row container-nav">
                     <div class="col s12 m12 l6">
-                    <a href="{{ url_for('get_gs') }}" class=""><img src="../static/images/logo.png" class="brandLogo" alt=""><div class="brandTitle">GamerSaurus</div></a>
+                    <a href="{{ url_for('home') }}" class=""><img src="../static/images/logo.png" class="brandLogo" alt=""><div class="brandTitle">GamerSaurus</div></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars navIcon"></i></a>
                     </div>
                     <div class="col s12 m12 l6">
                         <ul class="right hide-on-med-and-down navMenu">
-                            <li><a class="navLink" href="{{ url_for('home') }}">Home</a></li>
+                            <li><a class="navLink" href="{{ url_for('get_gs') }}">Terms</a></li>
                             {% if session.user %}
                                 <li><a class="navLink" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                                 <li><a class="navLink" href="{{ url_for('add_term') }}">Add Term</a></li>
@@ -48,9 +48,9 @@
         </nav>
         <!-- Mobile Nav -->
         <ul class="sidenav navMenuMobile gsStyle" id="mobile-demo">
-            <a href="{{ url_for('get_gs') }}" class=""><img src="../static/images/logo.png" class="brandLogo" alt=""><div class="brandTitleMobile">GamerSaurus</div></a>
+            <a href="{{ url_for('home') }}" class=""><img src="../static/images/logo.png" class="brandLogo" alt=""><div class="brandTitleMobile">GamerSaurus</div></a>
             <div class="navLinksMobile">
-                <li><a class="navLinkMobile" href="{{ url_for('home') }}">Home</a></li>
+                <li><a class="navLinkMobile" href="{{ url_for('get_gs') }}">Terms</a></li>
                 {% if session.user %}
                     <li><a class="navLinkMobile" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                     <li><a class="navLinkMobile" href="{{ url_for('add_term') }}">Add Term</a></li>
