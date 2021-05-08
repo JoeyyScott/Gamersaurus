@@ -2,7 +2,7 @@
 {% block contentmain %}
     <div class="gsStyle">
         <h1>Submit a term to the Gamersaurus!</h1>
-        <div class="row">
+        <div class="row container-form">
             <form class="col s12" method="POST" action="{{ url_for('add_term') }}">
                 <!-- Term name -->
                 <div class="row container-input">
@@ -32,9 +32,9 @@
                     </div>
                 </div>
                 <!-- Submit button -->
-                <div class="row container-input>
+                <div class="row container-input">
                     <div class="col s12">
-                        <button class="s4 gsStyle buttonStyle btnM" type="submit">
+                        <button class="gsStyle buttonStyle btnM" type="submit">
                             Add Term <i class="fas fa-plus-square"></i>
                         </button>
                     </div>

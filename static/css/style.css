@@ -335,7 +335,7 @@ textarea {
     }
 
     /* Buttons */
-    .btnAdd {
+    .btnAdd, .btnM {
         font-size: 5vw;
     }
 
@@ -369,7 +369,8 @@ textarea {
     }
 
     .container-content {
-        width: 70vw;
+        width: 55vw;
+        margin-top: 14vh;
     }
 
     .container-terms {
@@ -389,15 +390,19 @@ textarea {
         margin-top: -1vh;
     }
 
+    .container-form {
+        margin: 0;
+    }
+
     /* Core Styles */
     h1 {
-        font-size: 3rem;
+        font-size: 2.75rem;
         margin: 1vh 0;
     }
 
     h2 {
         font-size: 2rem;
-        
+        margin: 0;
     }
 
     .flashes h2 {
@@ -449,7 +454,7 @@ textarea {
     }
     
     /* Buttons */
-    .btnAdd {
+    .btnAdd, .btnM {
         font-size: 3vw;
     }
     
@@ -469,6 +474,6 @@ textarea {
     }
     /* Profile */
     .titleProfile h2, .container-description h2 {
-        margin: 1vh 0 1vh 0;
+        margin: 1.5vh 0;
     }
 }
