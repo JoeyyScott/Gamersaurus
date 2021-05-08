@@ -26,6 +26,13 @@ def get_gs():
     return render_template("gamersaurus.html", terms=terms)
 
 
+@app.route("/search", methods=["GET", "POST"])
+def search():
+    query = request.form.get("query")
+    terms = list(mongo.db.thesaurus.find({"$text": {"$search": query}}))
+    return render_template("gamersaurus.html", terms=terms)
+
+
 @app.route("/home")
 def home():
     return render_template("index.html")

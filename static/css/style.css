@@ -92,6 +92,10 @@ body {
     margin-top: 2vh;
 }
 
+.container-termcontrol {
+    margin: 0;
+}
+
 /* Core Styling */
 .gsStyle {
     background-color: #000D24;
@@ -176,8 +180,13 @@ nav a, .sidenav li a, nav ul a {
 }
 
 /* Buttons */
+button {
+    line-height: 1.5;
+}
 .btnS {
-    width: 25%;
+    width: 100%;
+    line-height: 1.5;
+    height: 5vh;
 }
 
 .btnM {
@@ -258,6 +267,10 @@ textarea {
 
 .termGuide {
     font-size: 0.65rem;
+}
+
+.noResults {
+    padding: 2vw;
 }
 
 /* Login/Register */
@@ -370,7 +383,7 @@ textarea {
 
     .container-content {
         width: 55vw;
-        margin-top: 14vh;
+        margin-top: 10vh;
     }
 
     .container-terms {
