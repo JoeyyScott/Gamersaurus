@@ -1,12 +1,19 @@
 {% extends "base.html" %}
 {% block contentmain %}
-    <div class="container-description gsStyle">
+    <div class="container-description row gsStyle">
+        <div class="col s12">
         <h1>What is the Gamersaurus?</h1>
-        <p class="homeText altFont">
-            Gamersaurus is an online thesaurus created by Joeyy and populated by the users!
-            View it by clicking the logo or "GamerSaurus" at the top. This will contain all current terms!
-        </p>
-        <h2>Can I add my own terms?</h2>
-        <p class="homeText altFont">Yes you can! If you don't have an account already, you can sign up for an account <a href="{{ url_for('register' )}}">here</a>. Once you've done that you can login <a href="{{ url_for('login' )}}">here</a></p>
+            <p class="homeText altFont">
+                Gamersaurus is an online thesaurus created by Joeyy and populated by the users!
+                View it by clicking the logo or "GamerSaurus" at the top. This will contain all current terms!
+            </p>
+        </div>
+        <div class="col s12">
+            <h2>Can I add my own terms?</h2>
+            <p class="homeText altFont">Yes you can! If you don't have an account already, you can sign up for an account <a href="{{ url_for('register' )}}">here</a>. Once you've done that you can login <a href="{{ url_for('login' )}}">here</a></p>
+        </div>
+        <div class="col s12">
+            <a href="{{ url_for('get_gs') }}" class="btnM buttonStyle gsStyle btnIndex">Take me there!</a>
+        </div>
     </div>
 {% endblock %}

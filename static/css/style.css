@@ -213,9 +213,13 @@ button {
     font-family: 'Schoolbell', cursive;
 }
 
-.btnCancel, .btnAdd {
+.btnCancel, .btnAdd, .btnIndex {
     padding: 1vw;
     margin-bottom: 2vh;
+}
+
+.btnIndex {
+    width: 75%;
 }
 
 /* Input fields */

@@ -20,6 +20,11 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
+@app.route("/home")
+def home():
+    return render_template("index.html")
+
+
 @app.route("/get_gs")
 def get_gs():
     terms = list(mongo.db.thesaurus.find())
@@ -31,11 +36,6 @@ def search():
     query = request.form.get("query")
     terms = list(mongo.db.thesaurus.find({"$text": {"$search": query}}))
     return render_template("gamersaurus.html", terms=terms)
-
-
-@app.route("/home")
-def home():
-    return render_template("index.html")
 
 
 @app.route("/register", methods=["GET", "POST"])
