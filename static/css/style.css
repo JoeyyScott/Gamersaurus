@@ -215,6 +215,7 @@ button {
 
 .btnCancel, .btnAdd {
     padding: 1vw;
+    margin-bottom: 2vh;
 }
 
 /* Input fields */
