@@ -13,25 +13,29 @@
             </div>
             <div class="row container-buttons">
                 <!-- Checking if a user is logged in -->
-                {% if session.user %}
+                    {% if session.user %}
                     <div class="col s4">
-                        <button href="{{ url_for('add_term') }}" class="gsStyle buttonStyle btnS">Add term <i class="fas fa-plus-square"></i>
+                    {% else %}
+                    <div class="col hide">
+                        {% endif %}
+                        <a href="{{ url_for('add_term') }}" class="button gsStyle buttonStyle btnS">Add <i class="fas fa-plus-square"></i>
                         </a>
                     </div>
+
+                    {% if session.user %}
                     <div class="col s4">
+                    {% else %}
+                    <div class="col s6">
+                    {% endif %}
                         <button type="submit" class="btnS buttonStyle gsStyle">Search<i class="fas fa-search"></i></button>
                     </div>
+                    {% if session.user %}
                     <div class="col s4">
-                        <button href="/get_gs" class="btnS buttonStyle gsStyle">Reset <i class="fas fa-undo"></i></a>
-                    </div>
-                {% else %}
+                    {% else %}
                     <div class="col s6">
-                        <button type="submit" class="btnS buttonStyle gsStyle">Search<i class="fas fa-search"></i></button>
+                    {% endif %}
+                        <a href="/get_gs" class="button btnS buttonStyle gsStyle">Reset <i class="fas fa-undo"></i></a>
                     </div>
-                    <div class="col s6">
-                        <button href="/get_gs" class="btnS buttonStyle gsStyle">Reset <i class="fas fa-undo"></i></a>
-                    </div>
-                {% endif %}
             </div>
         </form>
     </div>
