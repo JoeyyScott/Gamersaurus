@@ -98,6 +98,11 @@ body {
 
 .container-termcontrol {
     margin-top: 3vh;
+    padding-top: 1.5vh;
+}
+
+.container-404 {
+    padding: 2vw;
 }
 
 /* Core Styling */
@@ -184,7 +189,7 @@ nav a, .sidenav li a, nav ul a {
 }
 
 /* Buttons */
-button {
+button, .button {
     line-height: 1.5;
 }
 .btnS {
@@ -220,6 +225,10 @@ button {
 
 .btnIndex {
     width: 75%;
+}
+
+.termbutton {
+    padding-top: 0.5vh;
 }
 
 /* Input fields */
@@ -302,6 +311,12 @@ textarea {
     line-height: 180%;
 }
 
+/* 404 page */
+.text404 {
+    font-size: 2rem;
+}
+
+
 @media screen and (orientation: landscape) and (max-height: 500px) {
     .container-content {
         margin-top: 25vh;
@@ -359,6 +374,10 @@ textarea {
     /* Buttons */
     .btnAdd, .btnM {
         font-size: 5vw;
+    }
+
+    .termbutton {
+        font-size: 2rem;
     }
 
     /* Gamersaurus.html */
@@ -478,6 +497,11 @@ textarea {
     /* Buttons */
     .btnAdd, .btnM {
         font-size: 3vw;
+    }
+
+    .termbutton {
+        padding-top: 0.25vh;
+        font-size: 1.75rem;
     }
     
     /* Gamersaurus.html */

@@ -175,6 +175,12 @@ def contact():
     return render_template("contact.html")
 
 
+@app.errorhandler(404)
+# 404 Error Handler
+def page_not_found(e):
+    return render_template("404.html"), 404
+
+
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block contentmain %}
+    <div class="row container-404 gsStyle">
+        <div class="col s12">
+            <h1>Oh no!</h1>
+            <p class="altFont text404">You've navigated to a page that doesn't exist. Press the button below to return to the homepage or use the navigation menu.</p>
+        </div>
+        <div class="col s12">
+            <a href="{{ url_for('home') }}" class="btnM buttonStyle gsStyle btnIndex">Take me back! <i class="fas fa-thumbs-up"></i></a>
+        </div>
+    </div>
+{% endblock %}

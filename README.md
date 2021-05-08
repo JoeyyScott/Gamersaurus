@@ -154,7 +154,7 @@ These SchoolBell font was chosen as it resembles handwriting on a school white b
 
 ### Design Changes
 
-+ **Duplicate Gamersaurus link** - I originally was going to include a "Gamersaurus" link in the nav bar but opted to remove it to save screen sapce and remove redunancy as the logo redirects to the same link.
++ **Duplicate Gamersaurus link** - I originally was going to include a "Gamersaurus" link in the nav bar but opted to remove it to save screen space and remove redunancy as the logo redirects to the same link.
 
 ## Database Schema
 

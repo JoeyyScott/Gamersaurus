@@ -18,7 +18,7 @@
                     {% else %}
                     <div class="col hide">
                         {% endif %}
-                        <a href="{{ url_for('add_term') }}" class="button gsStyle buttonStyle btnS">Add <i class="fas fa-plus-square"></i>
+                        <a href="{{ url_for('add_term') }}" class="termbutton gsStyle buttonStyle btnS">Add <i class="fas fa-plus-square"></i>
                         </a>
                     </div>
 
@@ -27,14 +27,14 @@
                     {% else %}
                     <div class="col s6">
                     {% endif %}
-                        <button type="submit" class="btnS buttonStyle gsStyle">Search<i class="fas fa-search"></i></button>
+                        <button type="submit" class="btnS termbutton buttonStyle gsStyle">Search<i class="fas fa-search"></i></button>
                     </div>
                     {% if session.user %}
                     <div class="col s4">
                     {% else %}
                     <div class="col s6">
                     {% endif %}
-                        <a href="/get_gs" class="button btnS buttonStyle gsStyle">Reset <i class="fas fa-undo"></i></a>
+                        <a href="/get_gs" class="termbutton btnS buttonStyle gsStyle">Reset <i class="fas fa-undo"></i></a>
                     </div>
             </div>
         </form>
