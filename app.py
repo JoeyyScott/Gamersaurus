@@ -118,6 +118,11 @@ def logout():
 
 @app.route("/add_term", methods=["GET", "POST"])
 def add_term():
+    if request.method == "GET":
+        if not session.get('user'):
+            flash('Please login or register first')
+            return redirect(url_for("register"))
+
     if request.method == "POST":
         term = {
             "term": request.form.get("term"),
@@ -134,6 +139,11 @@ def add_term():
 
 @app.route("/edit_term/<term_id>", methods=["GET", "POST"])
 def edit_term(term_id):
+    if request.method == "GET":
+        if not session.get('user'):
+            flash('Please login or register first')
+            return redirect(url_for("register"))
+
     if request.method == "POST":
         submit = {
             "term": request.form.get("term"),
@@ -150,6 +160,10 @@ def edit_term(term_id):
 
 @app.route("/delete_term/<term_id>")
 def delete_term(term_id):
+    if not session.get('user'):
+        flash('Please login or register first')
+        return redirect(url_for("register"))
+
     mongo.db.thesaurus.remove({"_id": ObjectId(term_id)})
     flash("Term Successfully Deleted")
     return redirect(url_for("get_gs"))
