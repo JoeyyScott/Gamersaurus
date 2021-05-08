@@ -92,8 +92,12 @@ body {
     margin-top: 2vh;
 }
 
-.container-termcontrol {
+.container-buttons {
     margin: 0;
+}
+
+.container-termcontrol {
+    margin-top: 3vh;
 }
 
 /* Core Styling */

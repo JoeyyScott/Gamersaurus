@@ -219,6 +219,10 @@ Included in **gamersaurus.html** is:
         Example: term.example
         Submitted by: term.submitted_by
         ```
+    + **Term control buttons** - Container with 2 or 3 buttons in it depending whether the user is logged in:
+        + **Search Feature** - Allows user to search via a text index over term, definition and exmaple.
+        + **Reset** - Reloads the page with all current terms.
+        + **Add Term** - There is a check to see if a user is logged in and if they are, an add term button is placed to the right of search and reset.
 
 Included in **profile.html** is:
 

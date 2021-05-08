@@ -3,28 +3,35 @@
     <!-- Title -->
     <div class="container-title gsStyle">
         <h1>Current Terms</h1>
-        <p class="termGuide">Tap term to view more!</p>
-            <!-- Checking if a user is logged in -->
+        <p class="termGuide">Tap term to view more!</p>            
     </div>
-    {% if session.user %}
-    <br>
-    <div class="row container-input">
-    </div>
-    <br>
-    {% endif %}
-    <div class="gsStyle">
+    <div class="gsStyle container-termcontrol">
         <form action="{{ url_for('search') }}" method="POST" class="row">
             <div class="input-field col s8 offset-s2">
                 <input type="text" name="query" id="query" minlength="2" class="validate" required>
                 <label for="query">Search for a term</label>
             </div>
-            <div class="row container-termcontrol">
-                <div class="col s6">
-                    <button type="submit" class="btnS buttonStyle gsStyle">Search<i class="fas fa-search"></i></button>
-                </div>
-                <div class="col s6">
-                    <button href="/get_gs" class="btnS buttonStyle gsStyle">Reset <i class="fas fa-undo"></i></a>
-                </div>
+            <div class="row container-buttons">
+                <!-- Checking if a user is logged in -->
+                {% if session.user %}
+                    <div class="col s4">
+                        <button href="{{ url_for('add_term') }}" class="gsStyle buttonStyle btnS">Add term <i class="fas fa-plus-square"></i>
+                        </a>
+                    </div>
+                    <div class="col s4">
+                        <button type="submit" class="btnS buttonStyle gsStyle">Search<i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="col s4">
+                        <button href="/get_gs" class="btnS buttonStyle gsStyle">Reset <i class="fas fa-undo"></i></a>
+                    </div>
+                {% else %}
+                    <div class="col s6">
+                        <button type="submit" class="btnS buttonStyle gsStyle">Search<i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="col s6">
+                        <button href="/get_gs" class="btnS buttonStyle gsStyle">Reset <i class="fas fa-undo"></i></a>
+                    </div>
+                {% endif %}
             </div>
         </form>
     </div>
