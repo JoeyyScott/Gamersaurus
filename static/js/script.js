@@ -35,7 +35,13 @@ $(document).ready(function () {
                 }
             }
         }
-
+    });
+    // Checking for input in the 2 password fields on register with credit for keyup and .val() - see README.md
+    $('#password, #passwordconfirm').on('keyup', function () {
+        if ($('#password').val() == $('#passwordconfirm').val()) {
+            $('#pwcheck').html('Match')
+        } else
+            $('#pwcheck').html('No Match')
     });
 });
 

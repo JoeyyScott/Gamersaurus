@@ -414,6 +414,13 @@ This section includes areas/sections of code and properties I was unaware of. I 
     + After some more searching I found [this post](https://stackoverflow.com/questions/13643417/how-to-validate-pattern-matching-in-textarea) which contained some JavaScript.
     + This JS code I have credited in my script.js file and makes it so textareas accept patterns as input validation.
 
++ **Password check code** - I included this in my credits as was unaware of ```keyup``` and ```.val()``` within jQuery.
+    + I knew I had to check for a keyboard input on my password fields and felt jQuery would be the easiest way to achieve this. After looking at the documentation for keyboard events in jQuery [here](https://api.jquery.com/category/events/keyboard-events/) I decided using ```keyup``` would be the most suitable fit.
+    + I tested it to make sure it was triggering by changing the colour of the input field itself.
+    + The next step was to check whether the inputs actually matched. I tried using ```if ($('#password') == $('#passwordconfirm')) {``` but it didn't work.
+        + I used the console to log it and found out it was passing objects so I needed to find the value within those objects.
+        + After consulting the jQuery form documentation [here](https://api.jquery.com/category/forms/) I decided usnig the ```.val()``` method would produce the result I needed.
+
 
 ### Media
 
