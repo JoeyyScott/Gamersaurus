@@ -89,7 +89,7 @@ E. User can search for terms | 4 | 4
 	+ As a **site owner**, I want a user to be able to view the dictionary without having an account.
 	+ As a **site owner**, I want the user to be able to seemlessly make an account and submit terms to the site.
 	+ As a **site owner**, I want the user to be able to edit and delete terms they have added.
-	+ As a **site owner**, I want to include links to my GitHub and LinkedIn profiles so the user can view other projects I have contributed to.
+	+ As a **site owner**, I want to include links to the associated socials for the product.
 
 ### Website Structure
 
