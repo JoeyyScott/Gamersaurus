@@ -23,6 +23,16 @@
                             <label for="username">Choose a password</label>
                         </div>
                     </div>
+                    <!-- Password confirm -->
+                    <div class="row container-input">
+                        <div class="input-field col s12">
+                            <i class="prefix fas fa-user-check icons"></i>
+                            <input id="passwordconfirm" name="passwordconfirm" type="password" minlength="5" maxlength="15"
+                                pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                            <label for="passwordconfirm">Confirm password</label>
+                            <span id="pwcheck" class="altFont"></span>
+                        </div>
+                    </div>
                     <!-- Register button -->
                     <div class="row container-input">
                         <button type="submit" class="s4 gsStyle buttonStyle btnL">
