@@ -189,9 +189,14 @@ nav a, .sidenav li a, nav ul a {
 }
 
 /* Buttons */
+button, .button {
+    line-height: 1.5;
+}
+
 button:hover, a:hover {
     color: #c0960c;
 }
+
 .btnS {
     width: 100%;
     line-height: 1.5;
@@ -227,7 +232,7 @@ button:hover, a:hover {
     width: 75%;
 }
 
-.termbutton {
+.btnTerm {
     padding-top: 0.5vh;
 }
 
@@ -268,6 +273,11 @@ textarea {
 
 .input-field .prefix.active {
     color: #f3ca40;
+}
+
+/* index.html */
+.homeText {
+    margin: 0;
 }
 
 /* Gamersaurus.html */
@@ -376,7 +386,7 @@ textarea {
         font-size: 4vw;
     }
 
-    .termbutton {
+    .btnTerm {
         font-size: 2rem;
     }
 
@@ -496,10 +506,11 @@ textarea {
     
     /* Buttons */
     .btnAdd, .btnM {
-        font-size: 3vw;
+        font-size: 2.5vw;
+        padding: 0;
     }
 
-    .termbutton {
+    .btnTerm {
         padding-top: 0.25vh;
         font-size: 1.75rem;
     }

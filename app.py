@@ -22,7 +22,9 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template("index.html")
+    # terms = list(mongo.db.thesaurus.find().sort({"_id", 1}).limit(3))
+    terms = list(mongo.db.thesaurus.find().sort("_id", -1).limit(2))
+    return render_template("index.html", terms=terms)
 
 
 @app.route("/get_gs")

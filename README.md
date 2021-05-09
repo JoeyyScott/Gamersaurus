@@ -207,11 +207,12 @@ Included in the **footer** is:
 
 Included in **index.html** is:
 
-+ **Gamersaurus Description** - Contains a small paragraph about the Gamersaurus and how to use it.
++ **Gamersaurus Description**: Contains a small paragraph about the Gamersaurus and how to use it.
++ **View Gamersaurus button**: Button with a link to the Gamersaurus page.
 
 Included in **gamersaurus.html** is:
 
-+ **View all terms currently stored** - Contains all the terms currently stored within the thesaurus collection.
++ **View all terms currently stored**: Contains all the terms currently stored within the thesaurus collection.
     + Each term is contained within a collapsible which displays the term, and edit/delete buttons if the session user is the user who matches the ```submitted_by``` value within the database.
     + Each term can be expanded to show data in the following form:
 
@@ -220,29 +221,31 @@ Included in **gamersaurus.html** is:
         Example: term.example
         Submitted by: term.submitted_by
         ```
-    + **Term control buttons** - Container with 2 or 3 buttons in it depending whether the user is logged in:
+    + **Term control buttons**: Container with 2 or 3 buttons in it depending whether the user is logged in:
         + **Search Feature** - Allows user to search via a text index over term, definition and exmaple.
         + **Reset** - Reloads the page with all current terms.
-        + **Add Term** - There is a check to see if a user is logged in and if they are, an add term button is placed to the right of search and reset.
+        + **Add Term** - There is a check to see if a user is logged in and if they are, an add term button is placed to the left of search and reset.
 
 Included in **profile.html** is:
 
-+ **View their own terms** - Contains all terms the session user has added to the gamersaurus.
-    + Each term is contained within the same collapsible used on the gamersaurus page.
-+ **Add term button** - Redirects the user to "add_term.html".
++ **View their own terms**: Contains all terms the session user has added to the gamersaurus.
+    + Each term is contained within the same collapsible used on the gamersaurus page with a different check.
++ **Add term button**: Redirects the user to "add_term.html".
 
 Included in **add_term.html** is:
 
-+ **Form for term data**: Can be filled out with a term, definition, example (with associated validation) and then submitted to the database.
++ **Form for term data**: Can be filled out with a term, definition and example (with associated validation).
     + This functionality is handled by python upon form submission.
     + There are checks to make sure:
         + The term does not already exist in the database.
         + The data submitted passes all validation.
+            + Validation for no spaces except between words was achieved through regex (see credits)
++ **Add Term button**: Once the field input passes all validation this button can pressed to add the term.
 
 Included in **edit_term.html** is:
 
 + **Form for term data**: Contains fields for term, definition, example (with associated validation) which is auto-filled from the termID used to generate the page.
-    + There is an "Edit term" button as well as "Cancel" which provide a way for the user to confirm or cancel their action.
++ **Edit/Cancel buttons**:  There is an "Edit term" button as well as "Cancel" which provide a way for the user to confirm or cancel their action.
 
 Included in **register.html** is:
 
@@ -250,7 +253,10 @@ Included in **register.html** is:
     + This functionality is handled by python upon form submission.
     + There are checks to make sure:
         + The username doesn't already exist.
+        + The two password fields match.
         + The data submitted passes all validation.
++ **Register Button**: Submits the form once validation has passed, creates the user and redirects them to their profile.
++ **Login redirect**: Contains the message "Already have an account?" and the button redirects the user to the login page.
 
 Included in **login.html** is:
 
@@ -260,13 +266,21 @@ Included in **login.html** is:
         + The username exists in the database.
         + The username and password matches that record in the database.
         + The data submitted passes all validation.
++ **Login Button**: Submits the form once validation has passed, logs the user in and redirects them to their profile.
++ **Register redirect**: Contains the message "No account yet?" and the button redirects the user to the register page.
     
 Included in **contact.html** is:
 
-+ **Contact Form**: Can be filled out with a name, email and message query (with associated validation) and submitted to contact the website owners.
-    + The form functionality is handled by emailJS in the script.js file. 
++ **Contact Form**: Can be filled out with a name, email and message query (with associated validation).
+    + The form functionality is handled by emailJS in the script.js file.
+    + This validation is handled by the same regex used in add/edit term.
++ **Submit button**: Submits the form after all validation has passed and sends an email to the website owners.
 
 ### Features to be added
+
+**Pagination** - This would take control if the amount of terms went over a threshold required too much work for the time available for the project.
+**Allowing extra examples** - Allow users to add examples to other peoples terms but must be confirmed by the term submitter.
+    + This requires a lot more database/python knowledge and time so I'm including this under features to be added.
 
 #### [Back to top](#contents)
 
