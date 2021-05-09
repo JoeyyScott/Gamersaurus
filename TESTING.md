@@ -141,6 +141,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
     + Successfully added a word to the Gamersaurus
     + Successfully edited a word in the Gamersaurus
     + Successfully deleted a word in the Gamersaurus
+    + Attempted to add a term already in the Gamersaurus
 
 ### Bugs
 

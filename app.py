@@ -124,6 +124,16 @@ def add_term():
             return redirect(url_for("register"))
 
     if request.method == "POST":
+        wordexistsL = mongo.db.thesaurus.find_one(
+            {"term": request.form.get("term").lower()})
+
+        wordexistsU = mongo.db.thesaurus.find_one(
+            {"term": request.form.get("term").upper()})
+
+        if wordexistsL or wordexistsU:
+            flash('Sorry term already exists')
+            return redirect(url_for("add_term"))
+
         term = {
             "term": request.form.get("term"),
             "definition": request.form.get("definition"),
