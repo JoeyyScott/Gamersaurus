@@ -155,6 +155,7 @@ These SchoolBell font was chosen as it resembles handwriting on a school white b
 ### Design Changes
 
 + **Duplicate Gamersaurus link** - I originally was going to include a "Gamersaurus" link in the nav bar but opted to remove it to save screen space and remove redunancy as the logo redirects to the same link.
+    + Further into the development of this project I decided to make the brand logo and title redirect to ```index.html``` and added "Terms" link to the nav links for a redirect to ```gamersaurus.html```.
 
 ## Database Schema
 
