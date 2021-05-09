@@ -22,9 +22,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/home")
 def home():
-    # terms = list(mongo.db.thesaurus.find().sort({"_id", 1}).limit(3))
-    terms = list(mongo.db.thesaurus.find().sort("_id", -1).limit(2))
-    return render_template("index.html", terms=terms)
+    return render_template("index.html")
 
 
 @app.route("/get_gs")
@@ -51,16 +49,22 @@ def register():
             flash("Username already exists")
             return redirect(url_for("register"))
 
-        register = {
-            "username": request.form.get("username").lower(),
-            "password": generate_password_hash(request.form.get("password"))
-        }
-        mongo.db.users.insert_one(register)
+        if request.form.get("password") == request.form.get("passwordconfirm"):
+            register = {
+                "username": request.form.get(
+                    "username").lower(),
+                "password": generate_password_hash(request.form.get(
+                    "password"))
+            }
+            mongo.db.users.insert_one(register)
 
-        # store user instance in session cookie
-        session["user"] = request.form.get("username").lower()
-        flash("Registration Successful!")
-        return redirect(url_for("profile", username=session["user"]))
+            # store user instance in session cookie
+            session["user"] = request.form.get("username").lower()
+            flash("Registration Successful!")
+            return redirect(url_for("profile", username=session["user"]))
+
+        flash("Please check your passwords match")
+
     return render_template("register.html")
 
 
