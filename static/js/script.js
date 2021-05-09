@@ -39,9 +39,9 @@ $(document).ready(function () {
     // Checking for input in the 2 password fields on register with credit for keyup and .val() - see README.md
     $('#password, #passwordconfirm').on('keyup', function () {
         if ($('#password').val() == $('#passwordconfirm').val()) {
-            $('#pwcheck').html('Match')
+            $('#pwcheck').html('Match').css("color", '#f3ca40');
         } else
-            $('#pwcheck').html('No Match')
+            $('#pwcheck').html('No Match').css("color", '#c0960c');
     });
 });
 

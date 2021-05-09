@@ -189,8 +189,8 @@ nav a, .sidenav li a, nav ul a {
 }
 
 /* Buttons */
-button, .button {
-    line-height: 1.5;
+button:hover, a:hover {
+    color: #c0960c;
 }
 .btnS {
     width: 100%;
