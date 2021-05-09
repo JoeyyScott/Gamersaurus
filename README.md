@@ -435,6 +435,9 @@ This section includes areas/sections of code and properties I was unaware of. I 
         + I used the console to log it and found out it was passing objects so I needed to find the value within those objects.
         + After consulting the jQuery form documentation [here](https://api.jquery.com/category/forms/) I decided usnig the ```.val()``` method would produce the result I needed.
 
++ **Password check Regex** - After an hour of trying myself I looked around for a password regex to be at between 5 and 20 characters contain one uppercase character, one number and allow for symbols.
+    + I was able to find [this post](https://regexr.com/3bfsi) which is a Regex site I've used before. It contained the code:
+        ```^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$``` which was able to provide the majority of what I wanted as I only had to change the 8 to a 5 and add 20 for the max.
 
 ### Media
 

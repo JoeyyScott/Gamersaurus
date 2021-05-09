@@ -9,7 +9,7 @@
                     <div class="row container-input">
                         <div class="input-field col s12">
                             <i class="prefix fas fa-user-tag icons"></i>
-                            <input id="username" name="username" type="text" minlength="5" maxlength="15"
+                            <input id="username" name="username" type="text"
                                 pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
                             <label for="username">Enter username</label>
                         </div>
@@ -18,8 +18,9 @@
                     <div class="row container-input">
                         <div class="input-field col s12">
                             <i class="prefix fas fa-user-lock icons"></i>
-                            <input id="password" name="password" type="password" minlength="5" maxlength="15"
-                                pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required>
+                            <!-- Credit for password regex - see README.md for details  -->
+                            <input id="password" name="password" type="password"
+                                pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{5,20}$" class="validate" required>
                             <label for="username">Enter a password</label>
                         </div>
                     </div>
