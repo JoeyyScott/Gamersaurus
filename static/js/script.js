@@ -48,6 +48,9 @@ $(document).ready(function () {
 // Constants
 const form = document.getElementById('contactForm');
 const contactButton = document.getElementById('buttonContact');
+const formName = document.getElementById('formName');
+const formEmail = document.getElementById('formEmail');
+const formMessage = document.getElementById('formMessage');
 
 //Credit for submit event listener to detect form submission
 $( "#contactForm" ).submit(function( event ) { event.preventDefault(); contactUs(this); });
