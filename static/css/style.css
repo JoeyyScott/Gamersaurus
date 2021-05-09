@@ -146,7 +146,7 @@ nav a, .sidenav li a, nav ul a {
 
 .navMenuMobile li a {
     font-size: 6vw;
-    margin-bottom: 4vh;
+    margin-top: 4vh;
 }
 
 .brandLogo {
@@ -157,24 +157,12 @@ nav a, .sidenav li a, nav ul a {
     position: relative;
 }
 
-.brandTitle, .brandTitleMobile {
+.brandTitle {
     display: inline;
     padding-bottom: 1vh;
     position: relative;
-    bottom: 2vh;
-}
-
-.brandTitle {
     font-size: 7vw;
-}
-
-.brandTitleMobile {
-    font-size: 5.75vw;
-    right: 2vw;
-}
-
-.navLinksMobile {
-    margin-top: 7vh;
+    bottom: 2vh;
 }
 
 /* Footer */
@@ -283,7 +271,7 @@ textarea {
 /* Gamersaurus.html */
 .termTitle {
     margin: 1vw;
-    font-weight: 750;
+    font-weight: bold;
     font-size: 1.25rem;
     overflow-wrap: break-word;
 }
@@ -316,8 +304,6 @@ textarea {
 
 /* Profile */
 .titleProfile h2 {
-    text-decoration: underline;
-    text-underline-offset: 0.5vh;
     line-height: 180%;
 }
 
