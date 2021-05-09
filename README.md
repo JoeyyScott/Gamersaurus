@@ -405,6 +405,15 @@ This section includes areas/sections of code and properties I was unaware of. I 
 + **Materialize collapsible accordion** - When completing a mini project in the Back End development module of the course we used Materialize CSS framework and their accordion component.
     + I decided to use it in this project to display the term information, the documentation for it is [here](https://materializecss.com/collapsible.html).
 
++ **Regex to allow spaces between words but not multiple** - I attempted to create this regex myself and came close but could not crack it.
+    + After searching around I found [this post](https://stackoverflow.com/questions/15472764/regular-expression-to-allow-spaces-between-words) where there was an answer.
+        + The completed regex is ```^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$``` and functions as intended.
+
++ **Textareas accepting pattern validation** - I managed to find a regex pattern that would allow spaces between words but not multiple or only spaces. This was not triggering on the text area input fields.
+    + After some more searching I found [this post](https://stackoverflow.com/questions/13643417/how-to-validate-pattern-matching-in-textarea) which contained some JavaScript.
+    + This JS code I have credited in my script.js file and makes it so textareas accept patterns as input validation.
+
+
 ### Media
 
 #### Images

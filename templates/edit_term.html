@@ -9,7 +9,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-scroll prefix"></i>
                         <input id="term" name="term" minlength="2" maxlength="50" value="{{ term.term }}"
-                            pattern="^[a-zA-Z0-9 ]{2,15}$" type="text" class="validate" required>
+                            pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" type="text" class="validate" required>
                         <label for="term">Term</label>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                     <div class="input-field col s12">
                         <i class="far fa-question-circle prefix"></i>
                         <textarea id="definition" name="definition" minlength="5" maxlength="200"
-                            pattern="^[a-zA-Z0-9 ]{5,200}$" class="materialize-textarea validate" required>
+                            pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" class="materialize-textarea validate" required>
                                 {{- term.definition -}} 
                             </textarea>
                         <label for="definition">Definition</label>
@@ -29,7 +29,7 @@
                     <div class="input-field col s12">
                         <i class="fas fa-comments prefix"></i>
                         <textarea id="example" name="example" minlength="5" maxlength="200"
-                            pattern="^[a-zA-Z0-9 ]{5,200}$" class="materialize-textarea validate" required>
+                            pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" class="materialize-textarea validate" required>
                                 {{- term.example -}}
                             </textarea>
                         <label for="example">Example</label>
