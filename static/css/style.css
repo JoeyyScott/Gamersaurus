@@ -102,7 +102,9 @@ body {
 }
 
 .container-404 {
+    width: 90vw;
     padding: 2vw;
+    margin: 40vw auto 0;
 }
 
 /* Core Styling */
@@ -315,7 +317,7 @@ textarea {
 
 /* 404 page */
 .text404 {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 
@@ -395,7 +397,7 @@ textarea {
         font-size: 1rem;
     }
 
-    .termKey, .termText, .homeText, .termDelete {
+    .termKey, .termText, .homeText, .termDelete, .text404 {
         font-size: 2rem;
     }
 }
@@ -435,6 +437,11 @@ textarea {
 
     .container-form {
         margin: 0;
+    }
+    .container-404 {
+        width: 50vw;
+        padding: 2vw;
+        margin-top: 10vw;
     }
 
     /* Core Styles */

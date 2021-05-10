@@ -1,5 +1,14 @@
-{% extends "base.html" %}
-{% block contentmain %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>404 - Gamersaurus not found</title>
+</head>
+<body>
+    
     <div class="row container-404 gsStyle">
         <div class="col s12">
             <h1>Oh no!</h1>
@@ -9,4 +18,5 @@
             <a href="{{ url_for('home') }}" class="btnM buttonStyle gsStyle btnIndex">Take me back! <i class="fas fa-thumbs-up"></i></a>
         </div>
     </div>
-{% endblock %}
+</body>
+</html>
