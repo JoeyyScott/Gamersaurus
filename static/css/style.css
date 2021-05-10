@@ -136,8 +136,14 @@ nav {
     color: #f3ca40;
 }
 
-nav a, .sidenav li a, nav ul a {
+nav a, .sidenav li a, nav ul a, .helper-text {
     color: #f3ca40;
+}
+
+.input-field .helper-text {
+    color: #f3ca40;
+    font-size: 0.65rem;
+    text-align: left;
 }
 
 .sidenav {
