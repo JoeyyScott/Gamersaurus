@@ -58,8 +58,12 @@ body {
     margin: -3vh 0 -1vh;
 }
 
+.container-input .input-field {
+    margin-bottom: 0;
+}
+
 .container-form {
-    margin-top: 4vh;
+    margin-top: 5vh;
 }
 
 .container-footer {
@@ -144,8 +148,13 @@ nav a, .sidenav li a, nav ul a, .helper-text {
 
 .input-field .helper-text {
     color: #f3ca40;
-    font-size: 0.65rem;
+    font-size: 0.85rem;
     text-align: left;
+    font-family: 'Schoolbell', curvsive;
+}
+
+.helper-text {
+    margin-bottom: 1vh;
 }
 
 .sidenav {
@@ -393,7 +402,7 @@ textarea {
         font-size: 1.75rem;
     }
 
-    .termGuide {
+    .termGuide, .input-field .helper-text {
         font-size: 1rem;
     }
 
@@ -520,7 +529,7 @@ textarea {
         margin: 0;
     }
 
-    .termGuide {
+    .termGuide, .input-field .helper-text {
         font-size: 1.25rem;
     }
 

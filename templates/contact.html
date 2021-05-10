@@ -10,8 +10,10 @@
                     <div class="input-field col s12">
                         <i class="fas fa-tag prefix"></i>
                         <input id="formName" name="formName" minlength="2" maxlength="20" 
-                            pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" type="text" class="validate" required>
+                            pattern="^[a-zA-Z_]+( [a-zA-Z_]+)*$" type="text" class="validate" 
+                            required>
                         <label for="formName">Name</label>
+                        <span class="helper-text">Name can't contain number or spaces.</span>
                     </div>
                 </div>
                 <!-- Email -->
@@ -26,10 +28,10 @@
                 <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="fas fa-comment-dots prefix"></i>
-                        <textarea id="formMessage" name="formMessage" minlength="5" maxlength="200"
-                            pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" class="materialize-textarea validate"
-                            required></textarea>
+                        <textarea id="formMessage" name="formMessage"  minlength="5" maxlength="200"
+                            class="materialize-textarea"></textarea>
                         <label for="formMessage">Message</label>
+                        <span id="msgError" class="helper-text">Minimum 5 characters</span>
                     </div>
                 </div>
                 <!-- Submit query button -->
