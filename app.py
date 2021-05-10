@@ -99,6 +99,11 @@ def login():
 
 @app.route("/profile/<username>", methods=["GET", "POST"])
 def profile(username):
+    if request.method == "GET":
+        if not session.get('user'):
+            flash('Please login or register first')
+            return redirect(url_for("register"))
+
     # Grab the username from the current sessions 'user'
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
