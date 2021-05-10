@@ -40,9 +40,9 @@
                     </div>
                 </div>
                 <div class="collapsible-body container-info gsStyle">
-                    <p class="termKey">Definition: <span class="termText altFont">{{ term.definition }}</span></p>
-                    <p class="termKey">Example: <span class="termText altFont">{{ term.example }}</span></p>
-                    <p class="termKey">Submitted by: <span class="termText altFont">{{ term.submitted_by }}</span></p>
+                    <p class="termKey">Definition: <span class="termText altFont">{{ term.definition }}</span></p><br>
+                    <p class="termKey">Example: <span class="termText altFont">{{ term.example }}</span></p><br>
+                    <p class="termKey">Submitted by: <span class="termText altFont">{{ term.submitted_by|capitalize }}</span></p>
                 </div>
             </li>
             <li id="{{ term._id }}" class="modal gsStyle">
