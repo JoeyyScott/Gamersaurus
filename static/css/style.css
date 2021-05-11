@@ -155,7 +155,7 @@ nav a, .sidenav li a, nav ul a, .helper-text {
 }
 
 #msgError.error-text {
-    font-size: 1rem;
+    font-size: 1.15rem;
     font-family: 'Schoolbell', cursive;
     padding-bottom: 1vh;
     display: inline-block;
