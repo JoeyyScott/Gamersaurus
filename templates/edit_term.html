@@ -11,7 +11,6 @@
                         <input id="term" name="term" minlength="2" maxlength="50" value="{{ term.term }}"
                             type="text" class="validate">
                         <label for="term">Term</label>
-                        <span class="helper-text">Minimum 2 alphanumeric characters</span>
                     </div>
                 </div>
                 <!-- Term definition -->
@@ -23,7 +22,6 @@
                                 {{- term.definition -}} 
                             </textarea>
                         <label for="definition">Definition</label>
-                        <span class="helper-text">Minimum 5 alphanumeric characters</span>
                     </div>
                 </div>
                 <!-- Term example -->
@@ -35,7 +33,6 @@
                                 {{- term.example -}}
                             </textarea>
                         <label for="example">Example</label>
-                        <span class="helper-text">Minimum 5 alphanumeric characters</span>
                     </div>
                 </div>
                 <span id="msgError" class="error-text"></span>

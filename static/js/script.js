@@ -39,11 +39,11 @@ function submitTerm() {
 
     // If no input detected display an error then check input on same field against stringCheck; to display an error and/or update valid class on the field
     if (noaddTerm) { termErrors.push("Term field required."); } else if (stringCheck(addTerm.value) === 'nomatch')
-        { termErrors.push('Term must be alphanumeric with no double spaces.'); addTerm.classList.add('invalid'); } else { addTerm.classList.add('valid'); }
+        { termErrors.push('Term must be min 2 alphanumeric characters with no double spaces.'); addTerm.classList.add('invalid'); } else { addTerm.classList.add('valid'); }
     if (noaddDefinition) { termErrors.push("Definition field required."); } else if (stringCheck(addDefinition.value) === 'nomatch')
-        { termErrors.push('Definition must be alphanumeric with no double spaces.'); addDefinition.classList.add('invalid'); } else { addDefinition.classList.add('valid'); }
+        { termErrors.push('Definition must be min 5 alphanumeric characters with no double spaces.'); addDefinition.classList.add('invalid'); } else { addDefinition.classList.add('valid'); }
     if (noaddExample) { termErrors.push("Example field required."); } else if (stringCheck(addExample.value) === 'nomatch')
-        { termErrors.push('Example must be alphanumeric with no double spaces.'); addTerm.classList.add('invalid'); } else { addTerm.classList.add('valid'); }
+        { termErrors.push('Example must be min 5 alphanumeric characters with no double spaces.'); addTerm.classList.add('invalid'); } else { addTerm.classList.add('valid'); }
 
     // Clears previous error messages
     $("#msgError").empty();
@@ -56,7 +56,7 @@ function sendMail() {
 
     // If no input detected display an error
     if (nocontactMessage) { errors.push("Message field required."); } else if (stringCheck(contactMessage.value) === 'nomatch')
-        { errors.push('Message must contain letters, numbers and no double spaces/symbols.'); contactMessage.classList.add('invalid'); } else { contactMessage.classList.add('valid'); }
+        { errors.push('Message must be min 5 alphanumeric characters and no double spaces/symbols.'); contactMessage.classList.add('invalid'); } else { contactMessage.classList.add('valid'); }
 
     // Clears previous error messages
     $("#msgError").empty();
