@@ -205,7 +205,7 @@ Included in the **header** is:
 
 Included in the **footer** is:
 
-+ **Social media links**: These will take you to the various social media connnections for the site. (currently the links will point to the homepage for the associated social media site as the brand's socials do not exist at this point in time).
++ **Social media links**: These will take you to the various social media connnections for the site. (Currently the links will point to the homepage for the associated social media site as the brand's socials do not exist at this point in time).
 
 Included in **index.html** is:
 
@@ -217,7 +217,6 @@ Included in **gamersaurus.html** is:
 + **View all terms currently stored**: Contains all the terms currently stored within the thesaurus collection.
     + Each term is contained within a collapsible which displays the term, and edit/delete buttons if the session user is the user who matches the ```submitted_by``` value within the database.
     + Each term can be expanded to show data in the following form:
-
         ```
         Definition: term.definition
         Example: term.example
@@ -241,7 +240,7 @@ Included in **add_term.html** is:
     + There are checks to make sure:
         + The term does not already exist in the database.
         + The data submitted passes all validation.
-            + Validation for no spaces except between words was achieved through regex (see credits)
+            + Validation for no spaces except between words was achieved through regex (see credits).
 + **Add Term button**: Once the field input passes all validation this button can pressed to add the term.
 
 Included in **edit_term.html** is:
@@ -254,7 +253,7 @@ Included in **register.html** is:
 + **Registration form**: Contains fields for username and password (with associated validation).
     + This functionality is handled by python upon form submission.
     + There are checks to make sure:
-        + The username doesn't already exist.
+        + The username does not already exist.
         + The two password fields match.
         + The data submitted passes all validation.
 + **Register Button**: Submits the form once validation has passed, creates the user and redirects them to their profile.
@@ -280,9 +279,9 @@ Included in **contact.html** is:
 
 ### Features to be added
 
-**Pagination** - This would take control if the amount of terms went over a threshold required too much work for the time available for the project.
-**Allowing extra examples** - Allow users to add examples to other peoples terms but must be confirmed by the term submitter.
-    + This requires a lot more database/python knowledge and time so I'm including this under features to be added.
++ **Pagination** - This would take control if the amount of terms went over a threshold required too much work for the time available for the project.
++ **Allowing extra examples** - Allow users to add examples to other people's terms but must be confirmed by the term submitter.
+    + This requires a lot more database/python knowledge and time so I am including this under features to be added.
 
 #### [Back to top](#contents)
 
@@ -307,8 +306,8 @@ Included in **contact.html** is:
 + [FavIcon](https://favicon.io/) - I used this tool to convert an image I made into icon form and provide the code (stated in HTML comments) to link this icon to index.html.
 + [Am I Responsive?](http://ami.responsivedesign.is/) - I used this tool to easily display the responsiveness of my site for my README.md introduction.
 + [emailJS](https://www.emailjs.com/) - I used this tool to add functionality in the form of an email service from the form in the contact page.
-+ [jQuery](https://jquery.com/) - I used the jQuery library to provide access to a multitude of functions/methods. Most notably materialize collapsible, modal, sidenav and validate.
-+ [Regexr](https://regexr.com/) - I used this tool to test different RegEx syntax to help with my input field validation patterns.
++ [jQuery](https://jquery.com/) - I used the jQuery library to provide access to a multitude of functions/methods. Most notably modal, materialize collapsible, sidenav and validate.
++ [Regexr](https://regexr.com/) - I used this tool to test different regex syntax to help with my input field validation patterns.
 + [Heroku](https://dashboard.heroku.com/) - A cloud platform that was used to deploy and run the code pushed to the associated GitHub repository.
 + [MongoDB](https://www.mongodb.com/) - A cloud database service that allows for creation, modification, deletion and storage of database collections used in the application.
 + [Materialize](https://materializecss.com/) - A CSS framework that allows for responsive design to be applied to the entire site.
@@ -417,12 +416,12 @@ This section includes areas/sections of code and properties I was unaware of. I 
 
     ```$( "#target" ).submit(function( event ) { alert( "Handler for .submit() called." ); event.preventDefault(); });```
 
-    + I adapted this code to check when the submit function on the contactForm was activated and learned the .preventDefault() method makes it so only my code runs and this solved my issue within JSHint.
+    + I adapted this code to check when the submit function on my contact form was activated and learned the ```.preventDefault()``` method makes it so only my code runs and this solved my issue within JSHint.
 
 + **Materialize collapsible accordion** - When following the mini project in the Back End development module of the course I used Materialize CSS framework and their accordion component as used in the video.
     + I decided to use it in this project to display the term information, the documentation for it is [here](https://materializecss.com/collapsible.html).
 
-+ **Regex to allow spaces between words but not multiple** - I attempted to create this regex myself and came close but could not crack it.
++ **regex to allow spaces between words but not multiple** - I attempted to create this regex myself and came close but could not crack it.
     + After searching around I found [this post](https://stackoverflow.com/questions/15472764/regular-expression-to-allow-spaces-between-words) where there was an answer.
         + The completed regex is ```^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$``` and functions as intended.
 
@@ -433,12 +432,12 @@ This section includes areas/sections of code and properties I was unaware of. I 
 + **Password check code** - I included this in my credits as was unaware of ```keyup``` and ```.val()``` within jQuery.
     + I knew I had to check for a keyboard input on my password fields and felt jQuery would be the easiest way to achieve this. After looking at the documentation for keyboard events in jQuery [here](https://api.jquery.com/category/events/keyboard-events/) I decided using ```keyup``` would be the most suitable fit.
     + I tested it to make sure it was triggering by changing the colour of the input field itself.
-    + The next step was to check whether the inputs actually matched. I tried using ```if ($('#password') == $('#passwordconfirm')) {``` but it didn't work.
+    + The next step was to check whether the inputs actually matched. I tried using ```if ($('#password') == $('#passwordconfirm')) {``` but it did not work.
         + I used the console to log it and found out it was passing objects so I needed to find the value within those objects.
-        + After consulting the jQuery form documentation [here](https://api.jquery.com/category/forms/) I decided usnig the ```.val()``` method would produce the result I needed.
+        + After consulting the jQuery form documentation [here](https://api.jquery.com/category/forms/) I decided using the ```.val()``` method would produce the result I needed.
 
-+ **Password check Regex** - After an hour of trying myself I looked around for a password regex to be at between 5 and 20 characters contain one uppercase character, one number and allow for symbols.
-    + I was able to find [this post](https://regexr.com/3bfsi) which is a Regex site I've used before. It contained the code:
++ **Password check regex** - After an hour of trying myself I looked around for a password regex to be between 5 and 20 characters containing one uppercase character, one number and allowing for symbols.
+    + I was able to find [this post](https://regexr.com/3bfsi) which is a regex site I have used before. It contained the code:
         ```^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$``` which was able to provide the majority of what I wanted as I only had to change the 8 to a 5 and add 20 for the max.
 
 ### Media

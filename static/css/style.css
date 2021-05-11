@@ -143,6 +143,10 @@ nav {
     color: #f3ca40;
 }
 
+.navIcon {
+    font-size: 8vw;
+}
+
 nav a, .sidenav li a, nav ul a, .helper-text {
     color: #f3ca40;
 }
@@ -382,7 +386,6 @@ textarea {
 
     /* Nav */
     .navIcon {
-        font-size: 8vw;
         padding-top: 3vh;
     }
     .navMenuMobile li a {
@@ -477,7 +480,7 @@ textarea {
 
     h2 {
         font-size: 2rem;
-        margin: 0;
+        margin: 1vh 0;
     }
 
     .flashes h2 {

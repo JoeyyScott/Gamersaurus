@@ -24,7 +24,7 @@ I used [JSHint](https://jshint.com) to check the javascript file in my project t
 
         ![JS Validation](static/images/testing/js-test.png)
 
-    + I consulted with a few members of the [Code Institute](https://codeinstitute.net/) Slack community about this and I have found out it is not an error, it is that jsHint does not recognize it as it is defined in the base.html file. As such my code passed with no errors.
+    + I consulted with a few members of the [Code Institute](https://codeinstitute.net/) Slack community about this and I have found out it is not an error; it is that jsHint does not recognize it as it is defined in the base.html file. As such my code passed with no errors.
 
 
 I used [PEP8 online](http://pep8online.com/) to test my Python code against PEP8 standards.
@@ -126,7 +126,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
             ![Header](static/images/testing/userstories/user3header.png)
 
         + All the buttons contain text pertaining to their action (Add term, Edit Term, Delete, Submit) and perform the correct action.
-        + The footer contains external links and open in a new tab for user retention.
+        + The footer contains external links for the brands socials and opens in a new tab for user retention.
             
             _Footer_
             ![Footer](static/images/testing/userstories/user3footer.png)
@@ -185,11 +185,50 @@ I tested the appearance and responsiveness of the website across 6 different bro
 + #### Site Owner Goals
 
 	+ As a **site owner**, I want to provide the user with the essential information required to understand the site's purpose.
+        + The description on the landing page of the site achieves this.
+
+            _Landing page_
+            ![Landing page](static/images/testing/userstories/user2.png)
+
 	+ As a **site owner**, I want the user to be able to navigate to other areas of the site.
+        + The header in "base.html" provides all links and has templating to ensure users only have access to pages/features they should.
+            
+            _Header_
+            ![Header](static/images/testing/userstories/user3header.png)
+        
+        + The header collapses into a mobile side nav on small devices to ensure users can always access it.
+
+            _Mobile Nav_ 
+            ![Mobile Nav](static/images/testing/userstories/siteowner2mobile.png)
+            
+        + All the buttons contain text pertaining to their action (Add term, Edit Term, Delete, Submit) and perform the correct action which allow for intuitive navigation.
 	+ As a **site owner**, I want the user to be able to view the thesaurus without having an account.
+        + On the Terms page (gamersaurus.html) which is **accessible to all users** there is a collapsible accordion that contains all terms currently added to the site.
+
+            _Terms List_
+            ![Terms List](static/images/testing/userstories/user1.png)
+        + When a user taps/clicks on a term it expands to show the information stored in the database.
+
+            _Example of Term info_
+            ![Term Example](static/images/testing/userstories/user1term.png)
+
 	+ As a **site owner**, I want the user to be able to seemlessly make an account and submit terms to the site.
+        + Upon loading the website the user is presented with Home (index.html) which contains a paragraph with register and login links highlighted.
+
+            _Home Paragraph_
+            ![Home Paragraph](static/images/testing/userstories/siteowner3.png)
+
+        + Once creating an account and logging in the user is redirected to their profile which contains an "Add Term" button allowing for mininal steps for the users to submit their own terms.
+
+            _Profile Add Term_
+            ![Profile Add Term](static/images/testing/userstories/siteowner3profile.png)
+
 	+ As a **site owner**, I want the user to be able to edit and delete terms they have added.
 	+ As a **site owner**, I want to include links to the associated socials for the product.
+        + In the footer I have included three links to the associated socials (Twitter/YouTube/Instagram)
+
+            _Social Media Links_
+            ![Footer](static/images/testing/userstories/user3footer.png)
 
 ### Additional Testing
 
@@ -212,7 +251,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
 + **Users who are logged in**:
     + Are able to:
         + Logout of their account.
-        + View the Terms, Profile, Add, Edit Logout and Contact pages.
+        + View the Terms, Profile, Add, Edit, Logout and Contact pages.
         + View all the terms they have added in their profile page.
         + Add, Edit and Delete terms they have created on both Terms and their Profile.
     + Are not able to:
@@ -220,7 +259,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
         + Access Login page.
 
 **User called "Admin"**:
-+ Are able to Edit/Delete any terms on the site.
++ Is able to Edit/Delete any terms on the site.
 
 **Validation**:
 + Form validation works throughout the site.
