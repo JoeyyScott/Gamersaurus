@@ -30,7 +30,7 @@
                     </div>
                     <div class="col s12 m12 l6">
                         <ul class="right hide-on-med-and-down navMenu">
-                            <li><a class="navLink" href="{{ url_for('get_gs') }}">Terms</a></li>
+                            <li><a class="navLink" href="{{ url_for('terms') }}">Terms</a></li>
                             {% if session.user %}
                                 <li><a class="navLink" href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                                 <li><a class="navLink" href="{{ url_for('add_term') }}">Add Term</a></li>
@@ -49,7 +49,7 @@
         <!-- Mobile Nav -->
         <ul class="sidenav navMenuMobile gsStyle" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a class="navLinkMobile" href="{{ url_for('get_gs') }}">Terms</a></li>
+            <li><a class="navLinkMobile" href="{{ url_for('terms') }}">Terms</a></li>
             {% if session.user %}
                 <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                 <li><a href="{{ url_for('add_term') }}">Add Term</a></li>

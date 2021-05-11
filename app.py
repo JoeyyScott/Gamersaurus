@@ -25,8 +25,8 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/get_gs")
-def get_gs():
+@app.route("/terms")
+def terms():
     terms = list(mongo.db.thesaurus.find())
     return render_template("gamersaurus.html", terms=terms)
 
@@ -152,7 +152,7 @@ def add_term():
         }
         mongo.db.thesaurus.insert_one(term)
         flash("Term Successfully Added")
-        return redirect(url_for("get_gs"))
+        return redirect(url_for("terms"))
 
     return render_template("add_term.html")
 
@@ -186,7 +186,7 @@ def delete_term(term_id):
 
     mongo.db.thesaurus.remove({"_id": ObjectId(term_id)})
     flash("Term Successfully Deleted")
-    return redirect(url_for("get_gs"))
+    return redirect(url_for("terms"))
 
 
 @app.route("/contact")
