@@ -210,6 +210,10 @@ button:hover, a:hover {
     color: #c0960c;
 }
 
+button:focus {
+    background-color: #000d24;
+}
+
 .btnS {
     width: 100%;
     line-height: 1.5;
@@ -304,6 +308,10 @@ textarea {
 .termText, .termKey, .termDelete {
     font-size: 1rem;
     display: inline;
+}
+
+.termText {
+    overflow-wrap: break-word;
 }
 
 .termGuide {

@@ -105,10 +105,53 @@ I tested the appearance and responsiveness of the website across 6 different bro
 + #### User goals
 
     + As a **user**, I want to be able to view all the terms currently added.
+        + I have created the Terms page (gamersaurus.html) which includes a collapsible accordion that contains all terms currently added to the site.
+
+            _Terms List_
+            ![Terms List](static/images/testing/userstories/user1.png)
+        + When a user taps/clicks on a term it expands to show the information stored in the database.
+
+            _Example of Term info_
+            ![Term Example](static/images/testing/userstories/user1term.png)
+
     + As a **user**, I want to understand the main purpose of the site.
+        + I have added an introductory description on the landing page of the site.
+
+            _Landing page_
+            ![Landing page](static/images/testing/userstories/user2.png)
     + As a **user**, I want to be able to intuitively navigate through the site.
+        + I have included a list of navigation links in the header of "base.html"
+            
+            _Header_
+            ![Header](static/images/testing/userstories/user3header.png)
+
+        + All the buttons contain text pertaining to their action (Add term, Edit Term, Delete, Submit) and perform the correct action.
+        + The footer contains external links and open in a new tab for user retention.
+            
+            _Footer_
+            ![Footer](static/images/testing/userstories/user3footer.png)
+
     + As a **user**, I want to be able to make my own account and submit terms to the site.
+        + I have included a register page (register.html) which allows the user to register for an account.
+
+            _Register_
+            ![Register](static/images/testing/userstories/user4register.png)
+
+        + Upon filling out valid information in the form the user will be redirected to their newly created profile and flashed a message to confirm their registration success.
+
+            _Success_
+            ![Success](static/images/testing/userstories/user4success.png)
+
     + As a **user**, I want to be able to contact the site owner with any queries I have regarding the site.
+        + I have included a contact page (contact.html) which allows the user to contact the site owner.
+
+            _Contact_
+            ![Contact](static/images/testing/userstories/user5contact.png)
+
+        + Upon filling out valid information in the form the user will have their form inputs cleared and the submit button text changed to confirm a successful query.
+
+            _Success_
+            ![Success](static/images/testing/userstories/user5success.png)
 
 + #### Registered User Goals
 
@@ -190,5 +233,11 @@ I tested the appearance and responsiveness of the website across 6 different bro
         + To solve this I used jinja templating to change the top level divs for s4 and s6 based on ```{% if session.user %}```.
     + In an attempt to make the buttons the same size I converted my a tags to buttons but ran into issues with the form submission.
         + To solve this I changed my buttons back to a links and added the class of "button" to them which produced the same effect and a functioning site.
+
++ **Contact Bug** - This minor bug occurs when submitting a message in the contact form that is over 1 line in length.
+    + Upon selecting the input field again it returns to it's intended size.
+
+        _Contact Message_
+        ![Contact Textarea Bug](static/images/testing/contact-bug.png)
 
 [Return to README.md](README.md).
