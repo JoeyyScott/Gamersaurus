@@ -148,6 +148,10 @@ I tested the appearance and responsiveness of the website across 6 different bro
 
             _Success_
             ![Success](static/images/testing/userstories/user5success.png)
+        + Upon filling out valid information in the form the user will have their form inputs cleared and the submit button text changed to confirm a successful query.
+
+            _Email_
+            ![Email](static/images/testing/userstories/user5email.png)
 
 + #### Registered User Goals
 
