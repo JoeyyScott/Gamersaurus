@@ -75,22 +75,22 @@ I tested the appearance and responsiveness of the website across 6 different bro
 
     + As a **user**, I want to be able to view all the terms currently added.
     + As a **user**, I want to understand the main purpose of the site.
-    + As a **user**, I want be able to intuitively navigate through the site.
-    + As a **user**, be able to make my own account and submit terms to the site.
-    + As a **user**, be able to contact the site owner with any queries I have regarding the site.
+    + As a **user**, I want to be able to intuitively navigate through the site.
+    + As a **user**, I want to be able to make my own account and submit terms to the site.
+    + As a **user**, I want to be able to contact the site owner with any queries I have regarding the site.
 
 + #### Registered User Goals
 
     + As a **registered user**, I want to be able to log in and out of my account.
     + As a **registered user**, I want to be able to submit terms of my own to the site.
     + As a **registered user**, I want to be able to edit any terms I have submitted to the site.
-    + As a **registered user**, I want to able to delete any terms I have submitted to the site.
+    + As a **registered user**, I want to be able to delete any terms I have submitted to the site.
 
 + #### Site Owner Goals
 
 	+ As a **site owner**, I want to provide the user with the essential information required to understand the site's purpose.
 	+ As a **site owner**, I want the user to be able to navigate to other areas of the site.
-	+ As a **site owner**, I want a user to be able to view the dictionary without having an account.
+	+ As a **site owner**, I want the user to be able to view the thesaurus without having an account.
 	+ As a **site owner**, I want the user to be able to seemlessly make an account and submit terms to the site.
 	+ As a **site owner**, I want the user to be able to edit and delete terms they have added.
 	+ As a **site owner**, I want to include links to the associated socials for the product.
@@ -98,11 +98,11 @@ I tested the appearance and responsiveness of the website across 6 different bro
 ### Additional Testing
 
 **General Testing**:
-+ All navigation buttons (including navbar, mobile links) redirect the user to the correct page in the site
++ All navigation buttons (including navbar and mobile links) redirect the user to the correct page in the site
 + All buttons produce the desired effect
 + External links open in a new tab/window and link to the correct site
 + Images load properly
-+ Contact form correctly submits information and informs the user of the response.
++ Contact form correctly submits information and informs the user of the response
 
 **Site content Testing**:
 + **Users who are not logged in**:
@@ -118,8 +118,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
         + Logout of their account.
         + View the Terms, Profile, Add, Edit Logout and Contact pages.
         + View all the terms they have added in their profile page.
-        + Add, Edit and Delete terms they have created.
-            + From both Terms and Profile.
+        + Add, Edit and Delete terms they have created on both Terms and their Profile.
     + Are not able to:
         + Edit/Delete terms other users have added.
         + Access Login page.
@@ -155,7 +154,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
     
     + This created the index in the appropriate location and my search function worked as intended.
 
-+ **Buttons in Term Control** - I added a container for the search feature and decided to include an "Add Term" button with my own if/else loop to manage the responsive styling.
++ **Buttons in Term Control** - I added a container for the search feature and decided to include an "Add Term" button with an if/else loop to manage the responsive styling.
     + My first attempt had the if/else loop containing the two different divs but this affected the form submission. 
         + To solve this I used jinja templating to change the top level divs for s4 and s6 based on ```{% if session.user %}```.
     + In an attempt to make the buttons the same size I converted my a tags to buttons but ran into issues with the form submission.

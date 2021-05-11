@@ -44,7 +44,7 @@ The Gamersaurus is a community built thesaurus on terms you would most likely en
 
 ### Project Goals
 
-The goal of this project is to create an online thesaurus of the different slang and abbreviations you would come across in the gaming world. Each term in the thesaurus will have a description, example and who added the term.
+The goal of this project is to create an online thesaurus of the different slang and abbreviations you would come across in the gaming world. Each term in the thesaurus will have a description, example and who submitted the term.
 
 ### Content Requirements
 
@@ -53,45 +53,47 @@ The main points I want to achieve with this project are:
 + To provide users with an online thesaurus about Gamer terms.
 + To showcase my skills as a web developer using HTML, CSS, JavaScript and Python.
 + To showcase my skills using MongoDB, Heroku and Flask.
-+ To help gamers understand and collate all the words and phrases used by gamers.
++ To help users understand and collate all the words and phrases used by gamers.
 
 ### Importance and Feasibility chart
 
 Opportunity/Problem | Importance | Viability/Feasibility
 :-------- |:--------:|:--------:
 A. Users able to login  | 5 | 5
-B. User can submit terms | 5 | 5
-C. User are notified of their actions | 5 | 4
+B. Users can submit terms | 5 | 5
+C. Users are notified of their actions | 5 | 4
 D. Users can view 3 most recents | 3 | 3
 E. User can search for terms | 4 | 4
 
 ### User stories
 
-- #### User goals
++ #### User goals
 
     + As a **user**, I want to be able to view all the terms currently added.
     + As a **user**, I want to understand the main purpose of the site.
-    + As a **user**, I want be able to intuitively navigate through the site.
-    + As a **user**, be able to make my own account and submit terms to the site.
-    + As a **user**, be able to contact the site owner with any queries I have regarding the site.
+    + As a **user**, I want to be able to intuitively navigate through the site.
+    + As a **user**, I want to be able to make my own account and submit terms to the site.
+    + As a **user**, I want to be able to contact the site owner with any queries I have regarding the site.
 
-- #### Registered User Goals
++ #### Registered User Goals
 
     + As a **registered user**, I want to be able to log in and out of my account.
     + As a **registered user**, I want to be able to submit terms of my own to the site.
     + As a **registered user**, I want to be able to edit any terms I have submitted to the site.
-    + As a **registered user**, I want to able to delete any terms I have submitted to the site.
+    + As a **registered user**, I want to be able to delete any terms I have submitted to the site.
 
-- #### Site Owner Goals
++ #### Site Owner Goals
 
 	+ As a **site owner**, I want to provide the user with the essential information required to understand the site's purpose.
 	+ As a **site owner**, I want the user to be able to navigate to other areas of the site.
-	+ As a **site owner**, I want a user to be able to view the dictionary without having an account.
+	+ As a **site owner**, I want the user to be able to view the thesaurus without having an account.
 	+ As a **site owner**, I want the user to be able to seemlessly make an account and submit terms to the site.
 	+ As a **site owner**, I want the user to be able to edit and delete terms they have added.
 	+ As a **site owner**, I want to include links to the associated socials for the product.
 
 ### Website Structure
+
+Due to a design change the "Thesaurus" link is now called Terms.
 
 Structure of the website whilst not being logged in:
 
@@ -107,7 +109,7 @@ Structure of the website whilst being logged in:
 
 ![Colour Scheme](static/images/readme/colourscheme.png)
 
-Using a combination of [coolors.co](https://coolors.co/) and [Accessible Color Generator Tool](https://learnui.design/tools/accessible-color-generator.html) I was able to create a colour scheme that uses contrasting blues and yellows to convey the majority of the content as it matches the colours used in the Gamersaurus logo. The colour scheme will remain consistent throughout buttons, the overall design of the site and where information is presented back to the user based on their actions.
+Using a combination of [coolors.co](https://coolors.co/) and [Accessible Color Generator Tool](https://learnui.design/tools/accessible-color-generator.html) I was able to create a colour scheme that uses contrasting blues and yellows to convey the majority of the content as it matches the colours used in the Gamersaurus logo. The colour scheme will remain consistent throughout the buttons, the overall design of the site and where information is presented back to the user based on their actions.
 
 + #000D24 - Dark blue from logo that makes up the background colours.
 + #F3CA40 - Yellow colour from logo which will be used for titles and outlines.
@@ -137,7 +139,7 @@ I tested my colour contrasts against the AAA guidelines using [this tool](https:
 
 Throughout the site two main fonts will be used. Headers and titles will use [SchoolBell](https://fonts.google.com/specimen/Schoolbell?query=c&category=Handwriting&preview.text=Gamersaurus&preview.text_type=custom) and associated text will use [Rock Salt](https://fonts.google.com/specimen/Rock+Salt?category=Handwriting&preview.text=Gamersaurus&preview.text_type=custom&query=rock+salt).
 
-These SchoolBell font was chosen as it resembles handwriting on a school white board which is assoicated with learning and I felt it an appropriate fit for the purpose of the site. Rock Salt was chosen as a complimentary font as Google suggested it as a popular pairing with SchoolBell and it provides a non obtrusive font to display information in the thesaurus.
+The SchoolBell font was chosen as it resembles handwriting on a school white board which is associated with learning and I felt it an appropriate fit for the purpose of the site. Rock Salt was chosen as a complimentary font as Google suggested it as a popular pairing with SchoolBell and it provides a non obtrusive font to display information in the thesaurus.
 
 ### Wireframes
 
@@ -154,7 +156,7 @@ These SchoolBell font was chosen as it resembles handwriting on a school white b
 
 ### Design Changes
 
-+ **Duplicate Gamersaurus link** - I originally was going to include a "Gamersaurus" link in the nav bar but opted to remove it to save screen space and remove redunancy as the logo redirects to the same link.
++ **Duplicate Gamersaurus link** - I was originally going to include a "Gamersaurus" (thesaurus in website structure pictures) link in the nav bar but opted to remove it to save screen space and remove redunancy as the logo redirects to the same link.
     + Further into the development of this project I decided to make the brand logo and title redirect to ```index.html``` and added "Terms" link to the nav links for a redirect to ```gamersaurus.html```.
 
 ## Database Schema
@@ -203,7 +205,7 @@ Included in the **header** is:
 
 Included in the **footer** is:
 
-+ **Social media links**: Which will take you to the various social media connnections for the site. (These links will point to the homepage for the associated social media site as the brand's socials do not exist at this point in time).
++ **Social media links**: These will take you to the various social media connnections for the site. (currently the links will point to the homepage for the associated social media site as the brand's socials do not exist at this point in time).
 
 Included in **index.html** is:
 
@@ -222,14 +224,14 @@ Included in **gamersaurus.html** is:
         Submitted by: term.submitted_by
         ```
     + **Term control buttons**: Container with 2 or 3 buttons in it depending whether the user is logged in:
-        + **Search Feature** - Allows user to search via a text index over term, definition and exmaple.
+        + **Search Feature** - Allows the user to search via a text index over term, definition and example.
         + **Reset** - Reloads the page with all current terms.
         + **Add Term** - There is a check to see if a user is logged in and if they are, an add term button is placed to the left of search and reset.
 
 Included in **profile.html** is:
 
-+ **View their own terms**: Contains all terms the session user has added to the gamersaurus.
-    + Each term is contained within the same collapsible used on the gamersaurus page with a different check.
++ **View their own terms**: Contains all terms the session user has added to the Gamersaurus.
+    + Each term is contained within the same collapsible used on the Gamersaurus page with a different check.
 + **Add term button**: Redirects the user to "add_term.html".
 
 Included in **add_term.html** is:
@@ -297,7 +299,7 @@ Included in **contact.html** is:
 
 ### Frameworks, libraries and programs
 + [GIMP](https://www.gimp.org) - I used this programme to design the background image, wireframes and favicon image.
-+ [coolors.co](https://coolors.co) - I used this tool to generate a colour scheme based on the RuneScape theme.
++ [coolors.co](https://coolors.co) - I used this tool to generate a colour scheme based on the Gamersaurus logo.
 + [Accessible Color Generator](https://learnui.design/tools/accessible-color-generator.html) - I used this tool in conjunction with coolors.co to provide a better colour contrast for accessibility. 
 + [Font Awesome](https://fontawesome.com/) - I used the Font Awesome icon library to provide icons for some of my hints, my home button and my footer links. 
 + [GitPod](https://gitpod.io) - GitPod was the online IDE (Integrated Development Engine) I used to develop this site.
@@ -306,9 +308,9 @@ Included in **contact.html** is:
 + [Am I Responsive?](http://ami.responsivedesign.is/) - I used this tool to easily display the responsiveness of my site for my README.md introduction.
 + [emailJS](https://www.emailjs.com/) - I used this tool to add functionality in the form of an email service from the form in the contact page.
 + [jQuery](https://jquery.com/) - I used the jQuery library to provide access to a multitude of functions/methods. Most notably materialize collapsible, modal, sidenav and validate.
-+ [Regexr](https://regexr.com/) - I used this tool to test different RegEx syntax to help with my input field valdiation patterns.
++ [Regexr](https://regexr.com/) - I used this tool to test different RegEx syntax to help with my input field validation patterns.
 + [Heroku](https://dashboard.heroku.com/) - A cloud platform that was used to deploy and run the code pushed to the associated GitHub repository.
-+ [MongoDB](https://www.mongodb.com/) - A cloud database service that allows for creation, modification, deletion and storage of databases collections used in the application.
++ [MongoDB](https://www.mongodb.com/) - A cloud database service that allows for creation, modification, deletion and storage of database collections used in the application.
 + [Materialize](https://materializecss.com/) - A CSS framework that allows for responsive design to be applied to the entire site.
 
 #### [Back to top](#contents)
@@ -328,7 +330,7 @@ I created a separate file for the testing process which can be located [here](TE
 ### Project Inception
 
 1. This project was created using [GitHub](https://github.com) and Code Institute's project template [here](https://github.com/Code-Institute-Org/gitpod-full-template) by clicking "Use this template".
-2. I named this project "gamersaurus" as it is the name of the website.
+2. I named this project "Gamersaurus" as it is the name of the website.
 3. Once the repository had been created I clicked the "Gitpod" button which is a Firefox extension ([here](https://addons.mozilla.org/en-GB/firefox/addon/gitpod/)) that creates a workspace within GitPod which is where I coded the project.
 4. Following [Code Institute's](https://codeinstitute.net/) lessons the 4 main commands I used were:
     + ```git status``` (which allows me to check which files have been modified and if any are ready to be committed)
@@ -355,7 +357,7 @@ Before creating a Heroku app make sure your project has these two files:
 2. Sign into GitHub if not already.
 1. A prompt to find a Github repository to connect to will then be displayed.
 1. Enter the repository name for the project and click search.
-1. Once the repo has been found, click the connect button.
+1. Once the repository has been found, click the connect button.
 
 **Set environment variables:**
 
@@ -393,7 +395,7 @@ Once you have done the above you can follow these steps to create a local copy o
 3. Either unpackage locally or download as a ZIP file.
 4. Open with your preferred IDE or copy Git URL from the HTTPS field.
 
-If you chose to copy the Git URL then follow these steps too:
+If you chose to copy the Git URL then follow these additional steps:
 1. Open your a terminal window on your computer (or in your preferred IDE) in a directory of your choice.
 2. In the terminal window type  ```git clone https://github.com/JoeyyScott/Gamersaurus.git``` and press enter to confirm.
 3. This will create a local clone of the project in your chosen directory.
@@ -411,13 +413,13 @@ If you chose to copy the Git URL then follow these steps too:
 
 This section includes areas/sections of code and properties I was unaware of. I have also included sources from where I have adapted/changed code used in the projects throughout my course as I figured it was better practice to state as such to avoid any penalizations or copyright violations.
 
-+ **submit listener in jQuery** - When I was testing my code in JSHint on a previous project I was trying to find a way to listen for a form submission and override that. My first attempt was ```buttonSubmit.addEventListener('submit', () => { suggestQuestion(); });``` but could not get it to function corrctly. I did some research and found [this post](https://api.jquery.com/submit/#submit-handler) which contained the following code:
++ **submit listener in jQuery** - When I was testing my code in JSHint on a previous project I was trying to find a way to listen for a form submission and override that. My first attempt was ```buttonSubmit.addEventListener('submit', () => { suggestQuestion(); });``` but I could not get it to function correctly. I did some research and found [this post](https://api.jquery.com/submit/#submit-handler) which contained the following code:
 
     ```$( "#target" ).submit(function( event ) { alert( "Handler for .submit() called." ); event.preventDefault(); });```
 
     + I adapted this code to check when the submit function on the contactForm was activated and learned the .preventDefault() method makes it so only my code runs and this solved my issue within JSHint.
 
-+ **Materialize collapsible accordion** - When completing a mini project in the Back End development module of the course we used Materialize CSS framework and their accordion component.
++ **Materialize collapsible accordion** - When following the mini project in the Back End development module of the course I used Materialize CSS framework and their accordion component as used in the video.
     + I decided to use it in this project to display the term information, the documentation for it is [here](https://materializecss.com/collapsible.html).
 
 + **Regex to allow spaces between words but not multiple** - I attempted to create this regex myself and came close but could not crack it.
