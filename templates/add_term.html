@@ -3,14 +3,15 @@
     <div class="gsStyle">
         <h1>Submit a term to the Gamersaurus!</h1>
         <div class="row container-form">
-            <form class="col s12" method="POST" action="{{ url_for('add_term') }}">
+            <form id="formAdd" class="col s12" method="POST" action="{{ url_for('add_term') }}">
                 <!-- Term name -->
                 <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="fas fa-scroll prefix"></i>
                         <input id="term" name="term" minlength="2" maxlength="20"
-                            pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" type="text" class="validate" required>
+                            type="text" class="validate">
                         <label for="term">Term</label>
+                        <span class="helper-text">Minimum 2 alphanumeric characters</span>
                     </div>
                 </div>
                 <!-- Term definition -->
@@ -18,8 +19,9 @@
                     <div class="input-field col s12">
                         <i class="far fa-question-circle prefix"></i>
                         <textarea id="definition" name="definition" minlength="5" maxlength="200"
-                            pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" class="materialize-textarea validate" required></textarea>
+                            class="materialize-textarea"></textarea>
                         <label for="definition">Definition</label>
+                        <span class="helper-text">Minimum 5 alphanumeric characters</span>
                     </div>
                 </div>
                 <!-- Term example -->
@@ -27,10 +29,12 @@
                     <div class="input-field col s12">
                         <i class="fas fa-comments prefix"></i>
                         <textarea id="example" name="example" minlength="5" maxlength="200"
-                            pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" class="materialize-textarea validate" required></textarea>
+                            class="materialize-textarea"></textarea>
                         <label for="example">Example</label>
+                        <span class="helper-text">Minimum 5 alphanumeric characters</span>
                     </div>
                 </div>
+                <span id="msgError" class="error-text"></span>
                 <!-- Submit button -->
                 <div class="row container-input">
                     <div class="col s12">

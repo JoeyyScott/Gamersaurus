@@ -4,34 +4,34 @@
         <h1>Contact</h1>
         <h2>Get in touch with us</h2>
         <div class="row container-form">
-            <form id="contactForm">
+            <form id="formContact">
                 <!-- Name -->
                 <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="fas fa-tag prefix"></i>
-                        <input id="formName" name="formName" minlength="2" maxlength="20" 
+                        <input id="contactName" name="contactName" minlength="2" maxlength="20" 
                             pattern="^[a-zA-Z_]+( [a-zA-Z_]+)*$" type="text" class="validate" 
                             required>
-                        <label for="formName">Name</label>
-                        <span class="helper-text">Name can't contain number or spaces.</span>
+                        <label for="contactName">Name</label>
+                        <span class="helper-text">Can't contain numbers, symbols or multiple spaces.</span>
                     </div>
                 </div>
                 <!-- Email -->
                 <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="fas fa-envelope-open-text prefix"></i>
-                        <input id="formEmail" name="formEmail" type="email" class="validate" required> 
-                        <label for="formEmail">Email</label>
+                        <input id="contactEmail" name="contactEmail" type="email" class="validate" required> 
+                        <label for="contactEmail">Email</label>
                     </div>
                 </div>
                 <!-- Query -->
                 <div class="row container-input">
                     <div class="input-field col s12">
                         <i class="fas fa-comment-dots prefix"></i>
-                        <textarea id="formMessage" name="formMessage"  minlength="5" maxlength="200"
+                        <textarea id="contactMessage" name="contactMessage"  minlength="5" maxlength="200"
                             class="materialize-textarea"></textarea>
-                        <label for="formMessage">Message</label>
-                        <span id="msgError" class="helper-text">Minimum 5 characters</span>
+                        <label for="contactMessage">Message</label>
+                        <span id="msgError" class="helper-text">Minimum 5 alphanumeric characters</span>
                     </div>
                 </div>
                 <!-- Submit query button -->
@@ -42,7 +42,7 @@
                         </button>
                     </div>
                 </div>
-            </form>
+            </contact>
         </div>
     </div>
 {% endblock %}

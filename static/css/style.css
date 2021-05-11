@@ -146,11 +146,18 @@ nav a, .sidenav li a, nav ul a, .helper-text {
     color: #f3ca40;
 }
 
-.input-field .helper-text {
+.input-field .helper-text, #formAdd .helper-text {
     color: #f3ca40;
-    font-size: 0.85rem;
     text-align: left;
+    font-size: 0.85rem;
     font-family: 'Schoolbell', curvsive;
+}
+
+#msgError.error-text {
+    font-size: 1rem;
+    font-family: 'Schoolbell', cursive;
+    padding-bottom: 1vh;
+    display: inline-block;
 }
 
 .helper-text {

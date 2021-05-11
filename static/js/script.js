@@ -13,48 +13,45 @@ $(document).ready(function () {
 });
 
 // Constants
-const form = document.getElementById('contactForm');
+const formContact = document.getElementById('formContact');
 const contactButton = document.getElementById('buttonContact');
-const formMessage = document.getElementById('formMessage');
+const contactName = document.getElementById('contactName');
+const contactEmail = document.getElementById('contactEmail');
+const contactMessage = document.getElementById('contactMessage');
 const msgError = document.getElementById('msgError');
 
 //Credit for submit event listener to detect form submission
-$( "#contactForm" ).submit(function( event ) { event.preventDefault(); sendMail(this); });
+$( "#formContact" ).submit(function( event ) { event.preventDefault(); sendMail(this); });
 
-function stringCheck(x) {
-    if (RegExp(/^([a-zA-Z0-9_]+\s?){1,}\\*$/).test(x) === false) { return 'nomatch' }
-    else { return 'match' }
-}
+//Function to validate text area fields against double spaces, symbols and empty fields.
+function stringCheck(x) { if (RegExp(/^([a-zA-Z0-9_]+\s?){1,}\\*$/).test(x) === false) { return 'nomatch'; } else { return 'match'; } }
 
+//Function to valid contactMessage value as it is a text area field before sending the email
 function sendMail() {
-    let errors = [];
-    let noFormMessage = (formMessage.value === null || formMessage.value === "");
+    let errorsContact = [];
+    let nocontactMessage = (contactMessage.value === null || contactMessage.value === "");
 
     // If no input detected display an error
-    if (noFormMessage) { errors.push("Message field required."); }
-
-    // If double spaces or symbols are detected display an error
-    if (!noFormMessage) {
-        if (stringCheck(formMessage.value) === 'nomatch') { errors.push('Message must contain letters, numbers and no double spaces/symbols.') }
-    }
+    if (nocontactMessage) { errorsContact.push("Message field required."); } else if (stringCheck(contactMessage.value) === 'nomatch')
+        { errorsContact.push('Message must contain letters, numbers and no double spaces/symbols.'); contactMessage.classList.add('invalid'); } else { contactMessage.classList.add('valid'); }
 
     // Clears previous error messages
     $("#msgError").empty();
-    if (errors.length === 0) {
+    if (errorsContact.length === 0) {
         emailjs.send("service_qtd8qrn", "gamersaurusContact", {
-            formName: formName.value,
-            formEmail: formEmail.value,
-            formMessage: formMessage.value,
+            contactName: contactName.value,
+            contactEmail: contactEmail.value,
+            contactMessage: contactMessage.value,
         })
         .then(
             //Changes the submitButton text to convey to the user if their submission was successful or not
-            function (response) { contactButton.innerHTML = `Thank you for your query! <i class="fas fa-smile-beam"></i>`; form.reset(); },
+            function (response) { contactButton.innerHTML = `Thank you for your query! <i class="fas fa-smile-beam"></i>`; formContact.reset(); },
             function (error) { contactButton.innerHTML = `Oops! Please try again. <i class="fas fa-frown"></i>`; }
         );
 
     return false;  
-
-    } else { for (i = 0; i < errors.length; i++) { msgError.innerHTML = msgError.innerHTML + errors [i] + '<br>'; }
+    // Loop for showing all current errorsContact
+    } else { for (let i = 0; i < errorsContact.length; i++) { msgError.innerHTML = msgError.innerHTML + errorsContact [i] + '<br>'; }
     return false;
     }
 }
