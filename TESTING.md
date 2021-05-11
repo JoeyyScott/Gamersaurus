@@ -2,6 +2,37 @@
 
 ### Code Validators
 
+I used [w3.org's validator](https://validator.w3.org) for my HTML validation checks.
+
++ All pages:
+
+    ![HTML5 Validation](static/images/testing/html-test.png)
+
+I used [w3.org's validator](https://jigsaw.w3.org/css-validator/) for my CSS validation checks.
+
++ CSS (style.css)
+
+    ![CSS Validation](static/images/testing/css-test.png)
+
++ No errors were found within the document.
+
+I used [JSHint](https://jshint.com) to check the javascript file in my project to make certain it complies with coding standards and that were no syntax errors detected.
+
++ Javascript file (script.js) - When testing my code with JSHint I was getting numerous errors about const, let and using template literal syntax. I researched it and found [this post](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) which taught me I needed to tell JSHint what es version I was using with the following code ```/*jshint esversion: 6 */``` which fixed those errors.
+    + The only other error I was receiving was from ```$``` as it was flagged as an undefined variable. Upon researching I found [this post](https://stackoverflow.com/questions/8852765/jshint-and-jquery-is-not-defined) which taught me I needed to tell JSHint that I was using jQuery with the following code ```/*globals $:false */``` which fixed those errors.
+    + After putting those two lines of code at the top of my JSHint tests, I only received an error about emailjs being an undefined variable.
+
+        ![JS Validation](static/images/testing/js-test.png)
+
+    + I consulted with a few members of the [Code Institute](https://codeinstitute.net/) Slack community about this and I have found out it is not an error, it is that jsHint does not recognize it as it is defined in the base.html file. As such my code passed with no errors.
+
+
+I used [PEP8 online](http://pep8online.com/) to test my Python code against PEP8 standards.
+
+![PEP8 Validation](static/images/testing/pep8-test.png)
+
++ No errors were found within the document.
+
 ### Responsiveness
 
 Responsiveness (website layout)
