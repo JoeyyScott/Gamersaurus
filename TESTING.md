@@ -8,6 +8,8 @@ I used [w3.org's validator](https://validator.w3.org) for my HTML validation che
 
     ![HTML5 Validation](static/images/testing/html-test.png)
 
++ No errors were found within the any page.
+
 I used [w3.org's validator](https://jigsaw.w3.org/css-validator/) for my CSS validation checks.
 
 + CSS (style.css)
@@ -113,7 +115,6 @@ I tested the appearance and responsiveness of the website across 6 different bro
 
             _Example of Term info_
             ![Term Example](static/images/testing/userstories/user1term.png)
-
     + As a **user**, I want to understand the main purpose of the site.
         + I have added an introductory description on the landing page of the site.
 
@@ -124,30 +125,25 @@ I tested the appearance and responsiveness of the website across 6 different bro
             
             _Header_
             ![Header](static/images/testing/userstories/user3header.png)
-
         + All the buttons contain text pertaining to their action (Add term, Edit Term, Delete, Submit) and perform the correct action.
         + The footer contains external links for the brands socials and opens in a new tab for user retention.
-            
+
             _Footer_
             ![Footer](static/images/testing/userstories/user3footer.png)
-
     + As a **user**, I want to be able to make my own account and submit terms to the site.
         + I have included a register page (register.html) which allows the user to register for an account.
 
             _Register_
             ![Register](static/images/testing/userstories/user4register.png)
-
         + Upon filling out valid information in the form the user will be redirected to their newly created profile and flashed a message to confirm their registration success.
 
             _Success_
             ![Success](static/images/testing/userstories/user4success.png)
-
     + As a **user**, I want to be able to contact the site owner with any queries I have regarding the site.
         + I have included a contact page (contact.html) which allows the user to contact the site owner.
 
-        _Contact_
-            ![Contact](static/images/testing/userstories/user5contact.png)
-
+            _Contact_
+            ![Success](static/images/testing/userstories/user5contact.png)
         + Upon filling out valid information in the form the user will have their form inputs cleared and the submit button text changed to confirm a successful query.
 
             _Success_
@@ -157,30 +153,56 @@ I tested the appearance and responsiveness of the website across 6 different bro
 
     + As a **registered user**, I want to be able to log in and out of my account.
         + I have included a login page (login.html) which contains a form allowing the user to enter their login details.
-            + Image placeholder
-        + Once the user is logged in the "Login" link in the navbar is swapped for the "Logout" link.
-            + Image placeholder
+            
+            _Login_
+            ![Login](static/images/testing/userstories/registered1login.png)
+        + Once the user is logged in, the navigation menu includes "Profile", "Add Term" and "Login" is swapped for "Logout".
+            
+            _Logout_
+            ![Logout](static/images/testing/userstories/registered1logout.png)
     + As a **registered user**, I want to be able to submit terms of my own to the site.
         + When the user is logged into their account an "Add Term" link is added to the navigation menu and on the "Terms" page before Search/Reset.
-            + Image placeholder navbar
-            + Image placeholder termcontrol
+            
+            _Navbar with Terms_
+            ![Navbar with Terms](static/images/testing/userstories/registered2navbar.png)
+            
+            _Login_
+            ![Login](static/images/testing/userstories/registered2termcontrol.png)
         + This feature can also be accessed on the user's profile page.
-            + Image placeholder profile
+            
+            _Profile_
+            ![Login](static/images/testing/userstories/siteowner3profile.png)
     + As a **registered user**, I want to be able to edit any terms I have submitted to the site.
         + When the user is logged into their account, two icons appear on **only** terms they have submitted to the Gamersaurus on the "Terms" page.
-            + Image placeholder icons term
+        + I used the account and I created earlier as an example.
+
+            _Term submitted for test_
+            ![Term Icons](static/images/testing/userstories/registered3term.png)         
+            _Term Icons only showing on that term_
+            ![Term Icons](static/images/testing/userstories/registered3termicons.png)
         + If the user wishes to only see their terms in the list they can use the "Profile" page.
-            + Image placeholder icons profle
+
+            _Profile only showing that term_
+            ![Profile](static/images/testing/userstories/registered3profile.png)
         + The first is an "Edit" icon.
-            + Image placeholder edit icon
+
+            _Edit Icon_
+            ![Edit Icon](static/images/testing/userstories/registered3editicon.png)
         + Upon clicking the icon the user is brought to the "Edit Term" page which allows them to edit any terms provided they pass the form validation.
-            + Image placeholder edit screen
+
+            _Edit Screen_
+            ![Edit Screen](static/images/testing/userstories/registered3edit.png)
     + As a **registered user**, I want to be able to delete any terms I have submitted to the site.
         + When the user is logged into their account, two icons appear on **only** terms they have submitted to the Gamersaurus on the "Terms" page.
+            + Refer to screenshots in previous User Story for proof of this.
         + The second is a "Delete" icon.
-            + Image placeholder delete icon
+
+            _Delete Icon_
+            ![Delete Icon](static/images/testing/userstories/registered4deleteicon.png)
         + Upon clicking the icon the user initiates a delete confirmation modal for term selected which allows them to confirm or cancel the deletion of the selected term.
-            + Image placeholder delete screen
+
+            _Delete Modal_
+            ![Delete Modal](static/images/testing/userstories/registered4deletemodal.png)
 
 + #### Site Owner Goals
 
@@ -189,18 +211,15 @@ I tested the appearance and responsiveness of the website across 6 different bro
 
             _Landing page_
             ![Landing page](static/images/testing/userstories/user2.png)
-
 	+ As a **site owner**, I want the user to be able to navigate to other areas of the site.
         + The header in "base.html" provides all links and has templating to ensure users only have access to pages/features they should.
             
             _Header_
             ![Header](static/images/testing/userstories/user3header.png)
-        
         + The header collapses into a mobile side nav on small devices to ensure users can always access it.
 
             _Mobile Nav_ 
             ![Mobile Nav](static/images/testing/userstories/siteowner2mobile.png)
-            
         + All the buttons contain text pertaining to their action (Add term, Edit Term, Delete, Submit) and perform the correct action which allow for intuitive navigation.
 	+ As a **site owner**, I want the user to be able to view the thesaurus without having an account.
         + On the Terms page (gamersaurus.html) which is **accessible to all users** there is a collapsible accordion that contains all terms currently added to the site.
@@ -211,19 +230,30 @@ I tested the appearance and responsiveness of the website across 6 different bro
 
             _Example of Term info_
             ![Term Example](static/images/testing/userstories/user1term.png)
-
 	+ As a **site owner**, I want the user to be able to seemlessly make an account and submit terms to the site.
         + Upon loading the website the user is presented with Home (index.html) which contains a paragraph with register and login links highlighted.
 
             _Home Paragraph_
             ![Home Paragraph](static/images/testing/userstories/siteowner3.png)
-
         + Once creating an account and logging in the user is redirected to their profile which contains an "Add Term" button allowing for mininal steps for the users to submit their own terms.
 
             _Profile Add Term_
             ![Profile Add Term](static/images/testing/userstories/siteowner3profile.png)
-
 	+ As a **site owner**, I want the user to be able to edit and delete terms they have added.
+        + Using the account and term created in the earlier test you can see the icons displaying on the "Terms" page here.
+
+            _Term Icons only showing on that term_
+            ![Term Icons](static/images/testing/userstories/registered3termicons.png)
+        + When clicking the edit or delete icon it will bring up the associated page.
+
+            _After a successful edit: fields reloaded with updated info_
+            ![Edit Screen](static/images/testing/userstories/siteowner4edited.png)
+
+            _Delete Modal_
+            ![Delete Modal](static/images/testing/userstories/siteowner4deletemodal.png)
+
+            _Term no longer in list_
+            ![Delete Modal](static/images/testing/userstories/siteowner4deleted.png)
 	+ As a **site owner**, I want to include links to the associated socials for the product.
         + In the footer I have included three links to the associated socials (Twitter/YouTube/Instagram)
 
