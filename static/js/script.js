@@ -52,12 +52,18 @@ function submitTerm() {
 
 function sendMail() {
     let errors = [];
+    let nocontactName = (contactName.value === null || contactName.value === "");
+    let nocontactEmail = (contactEmail.value === null || contactEmail.value === "");
     let nocontactMessage = (contactMessage.value === null || contactMessage.value === "");
 
     // If no input detected display an error
+    if (nocontactName) { errors.push("Name field required."); } else if (!RegExp(/^([a-zA-Z_]+\s?){2,}\\*$/).test(contactName.value))
+        { errors.push('Name must be min 2 alpha characters and no double spaces/symbols.'); contactName.classList.add('invalid'); } else { contactName.classList.add('valid'); }
+    if (nocontactEmail) { errors.push("Email field required."); }
     if (nocontactMessage) { errors.push("Message field required."); } else if (stringCheck(contactMessage.value) === 'nomatch')
         { errors.push('Message must be min 5 alphanumeric characters and no double spaces/symbols.'); contactMessage.classList.add('invalid'); } else { contactMessage.classList.add('valid'); }
 
+    
     // Clears previous error messages
     $("#msgError").empty();
     if (errors.length === 0) { emailjs.send("service_qtd8qrn", "gamersaurusContact", {
