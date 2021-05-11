@@ -150,7 +150,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
             ![Success](static/images/testing/userstories/user5success.png)
         + Upon filling out valid information in the form the user will have their form inputs cleared and the submit button text changed to confirm a successful query.
 
-            _Email_
+            _Email for Gamersaurus Query_
             ![Email](static/images/testing/userstories/user5email.png)
 
 + #### Registered User Goals
@@ -190,7 +190,6 @@ I tested the appearance and responsiveness of the website across 6 different bro
             ![Profile](static/images/testing/userstories/registered3profile.png)
         + The first is an "Edit" icon.
 
-            _Edit Icon_
             ![Edit Icon](static/images/testing/userstories/registered3editicon.png)
         + Upon clicking the icon the user is brought to the "Edit Term" page which allows them to edit any terms provided they pass the form validation.
 
@@ -200,8 +199,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
         + When the user is logged into their account, two icons appear on **only** terms they have submitted to the Gamersaurus on the "Terms" page.
             + Refer to screenshots in previous User Story for proof of this.
         + The second is a "Delete" icon.
-
-            _Delete Icon_
+            
             ![Delete Icon](static/images/testing/userstories/registered4deleteicon.png)
         + Upon clicking the icon the user initiates a delete confirmation modal for term selected which allows them to confirm or cancel the deletion of the selected term.
 
@@ -222,8 +220,8 @@ I tested the appearance and responsiveness of the website across 6 different bro
             ![Header](static/images/testing/userstories/user3header.png)
         + The header collapses into a mobile side nav on small devices to ensure users can always access it.
 
-            _Mobile Nav_ 
-            ![Mobile Nav](static/images/testing/userstories/siteowner2mobile.png)
+            _Mobile Navigation Menu - Small Screens_ 
+            ![Mobile Navigation Menu](static/images/testing/userstories/siteowner2mobile.png)
         + All the buttons contain text pertaining to their action (Add term, Edit Term, Delete, Submit) and perform the correct action which allow for intuitive navigation.
 	+ As a **site owner**, I want the user to be able to view the thesaurus without having an account.
         + On the Terms page (gamersaurus.html) which is **accessible to all users** there is a collapsible accordion that contains all terms currently added to the site.
