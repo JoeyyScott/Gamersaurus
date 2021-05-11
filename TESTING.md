@@ -145,7 +145,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
     + As a **user**, I want to be able to contact the site owner with any queries I have regarding the site.
         + I have included a contact page (contact.html) which allows the user to contact the site owner.
 
-            _Contact_
+        _Contact_
             ![Contact](static/images/testing/userstories/user5contact.png)
 
         + Upon filling out valid information in the form the user will have their form inputs cleared and the submit button text changed to confirm a successful query.
@@ -156,9 +156,31 @@ I tested the appearance and responsiveness of the website across 6 different bro
 + #### Registered User Goals
 
     + As a **registered user**, I want to be able to log in and out of my account.
+        + I have included a login page (login.html) which contains a form allowing the user to enter their login details.
+            + Image placeholder
+        + Once the user is logged in the "Login" link in the navbar is swapped for the "Logout" link.
+            + Image placeholder
     + As a **registered user**, I want to be able to submit terms of my own to the site.
+        + When the user is logged into their account an "Add Term" link is added to the navigation menu and on the "Terms" page before Search/Reset.
+            + Image placeholder navbar
+            + Image placeholder termcontrol
+        + This feature can also be accessed on the user's profile page.
+            + Image placeholder profile
     + As a **registered user**, I want to be able to edit any terms I have submitted to the site.
+        + When the user is logged into their account, two icons appear on **only** terms they have submitted to the Gamersaurus on the "Terms" page.
+            + Image placeholder icons term
+        + If the user wishes to only see their terms in the list they can use the "Profile" page.
+            + Image placeholder icons profle
+        + The first is an "Edit" icon.
+            + Image placeholder edit icon
+        + Upon clicking the icon the user is brought to the "Edit Term" page which allows them to edit any terms provided they pass the form validation.
+            + Image placeholder edit screen
     + As a **registered user**, I want to be able to delete any terms I have submitted to the site.
+        + When the user is logged into their account, two icons appear on **only** terms they have submitted to the Gamersaurus on the "Terms" page.
+        + The second is a "Delete" icon.
+            + Image placeholder delete icon
+        + Upon clicking the icon the user initiates a delete confirmation modal for term selected which allows them to confirm or cancel the deletion of the selected term.
+            + Image placeholder delete screen
 
 + #### Site Owner Goals
 
