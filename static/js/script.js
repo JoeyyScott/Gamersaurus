@@ -20,6 +20,8 @@ const contactName = document.getElementById('contactName');
 const contactEmail = document.getElementById('contactEmail');
 const contactMessage = document.getElementById('contactMessage');
 const addTerm = document.getElementById('term');
+const addDefinition = document.getElementById('definition');
+const addExample = document.getElementById('example');
 const msgError = document.getElementById('msgError');
 
 //Credit for submit event listener to detect form submission
@@ -32,10 +34,16 @@ function stringCheck(x) { if (RegExp(/^([a-zA-Z0-9_]+\s?){1,}\\*$/).test(x) === 
 function submitTerm() {
     let termErrors = [];
     let noaddTerm = (addTerm.value === null || addTerm.value === "");
+    let noaddDefinition = (addDefinition.value === null || addDefinition.value === "");
+    let noaddExample = (addExample.value === null || addExample.value === "");
 
     // If no input detected display an error then check input on same field against stringCheck; to display an error and/or update valid class on the field
     if (noaddTerm) { termErrors.push("Term field required."); } else if (stringCheck(addTerm.value) === 'nomatch')
         { termErrors.push('Term must be alphanumeric with no double spaces.'); addTerm.classList.add('invalid'); } else { addTerm.classList.add('valid'); }
+    if (noaddDefinition) { termErrors.push("Definition field required."); } else if (stringCheck(addDefinition.value) === 'nomatch')
+        { termErrors.push('Definition must be alphanumeric with no double spaces.'); addDefinition.classList.add('invalid'); } else { addDefinition.classList.add('valid'); }
+    if (noaddExample) { termErrors.push("Example field required."); } else if (stringCheck(addExample.value) === 'nomatch')
+        { termErrors.push('Example must be alphanumeric with no double spaces.'); addTerm.classList.add('invalid'); } else { addTerm.classList.add('valid'); }
 
     // Clears previous error messages
     $("#msgError").empty();
@@ -50,11 +58,9 @@ function sendMail() {
     if (nocontactMessage) { errors.push("Message field required."); } else if (stringCheck(contactMessage.value) === 'nomatch')
         { errors.push('Message must contain letters, numbers and no double spaces/symbols.'); contactMessage.classList.add('invalid'); } else { contactMessage.classList.add('valid'); }
 
-
     // Clears previous error messages
     $("#msgError").empty();
-    if (errors.length === 0) {
-        emailjs.send("service_qtd8qrn", "gamersaurusContact", {
+    if (errors.length === 0) { emailjs.send("service_qtd8qrn", "gamersaurusContact", {
             contactName: contactName.value,
             contactEmail: contactEmail.value,
             contactMessage: contactMessage.value,
