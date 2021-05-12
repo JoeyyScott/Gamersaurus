@@ -381,7 +381,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
 **Security**:
 + The only warning I received from completing every function on the site was about the session cookie.
     + The warning is as follows: ```Cookie “session” will be soon rejected because it has the “SameSite” attribute set to “None” or an invalid value, without the “secure” attribute. To know more about the “SameSite“ attribute, read https://developer.mozilla.org/docs/Web/HTTP/Headers/Set-Cookie/SameSite```
-    + With my current knowledge of security features I was not sure on the effect of this but thought it best to state in my testing.
+    + With my current knowledge of security features I was unsure on the effect of this but thought it best to state it in my testing.
 
 ### Bugs
 

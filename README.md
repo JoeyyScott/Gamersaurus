@@ -287,7 +287,7 @@ Included in **500.html** is:
 + **Error Description**: Contains a message telling the user that an internal server error has happened.
 + **Take me back!**: Button with a link to return to the homepage.
 
-Included in the **Security Features** is:
+Included in the **Security Features** are:
 + Check in Add, Edit, Delete Term and Profile views in ```app.py``` to make sure non logged in users cannot access pages they should not be able to.
 + The Add/Edit/Login/Register/Contact all have validation to prevent junk input being submitted.
 
@@ -469,7 +469,7 @@ This section includes areas/sections of code and properties I was unaware of. I 
         ```^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$``` which was able to provide the majority of what I wanted as I only had to change the 8 to a 5 and add 20 for the max.
 
 + **Custom 404/500 Error Pages** - I knew I had to create a route for these pages.
-    + I researched it and used the official Flask documentation [here](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/) create these custom pages within Flask.
+    + I researched it and used the official Flask documentation [here](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/) to create these custom pages within Flask.
 
 + **Recoloring Materialize Input Fields** - When setting up my forms I used the text input documentation [here](https://materializecss.com/text-inputs.html) and adapted the values to suit my needs.
 
