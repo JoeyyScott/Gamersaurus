@@ -6,7 +6,9 @@ I have created this project (Milestone project 3) as part of my Full Stack Web D
 
 The Gamersaurus is a community built thesaurus on terms you would most likely encounter in the gaming world.
 
-![Am I responsive screenshot]()
+| _Am I Responsive screenshot_ |
+|:----------------------------:|
+| ![Am I responsive screenshot](static/images/amiresponsive.png) |
 
 ---
 
@@ -119,8 +121,6 @@ Using a combination of [coolors.co](https://coolors.co/) and [Accessible Color G
 I tested my colour contrasts against the AAA guidelines using [this tool](https://learnui.design/tools/accessible-color-generator.html) as mentioned in my technologies section. I have included a picture below as proof:
 
 ![Accessible Colours](static/images/readme/aaa-guidelines.png)
-
----
 
 #### Images
 

@@ -29,7 +29,7 @@ body {
 .container-space { height: 15vh; }
 
 /* Core Styling */
-.gsStyle { background-color: #000D24; border: 1px solid #F3CA40; }
+.gsStyle { background-color: #000D24; border: 2px solid #F3CA40; }
 a { color: #f3ca40; }
 h1 { font-size: 1.4rem; margin: 3vw 1vw 2vw; }
 h2 { font-size: 1rem; margin: 3vw 0; }
@@ -55,6 +55,7 @@ button:focus { background-color: #000d24; }
 .buttonStyle { color: #f3ca40; display: inline-block; text-align: center; margin-bottom: 1vw; font-family: 'Schoolbell', cursive; }
 .btnIndex { width: 75%; }
 .btnTerm { padding-top: 0.5vh; }
+.btnSearch { padding-left: 0; }
 .btnCancel, .btnAdd, .btnIndex { padding: 1vw; margin: 2vh 0; }
 
 /* Input fields */
