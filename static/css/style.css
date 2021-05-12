@@ -13,342 +13,82 @@ body {
 }
 
 /* Containers */
-.container-header {
-    width: 100vw;
-    height: max-content;
-}
-
-.container-profile {
-    margin-bottom: 2vh;
-}
-
-.container-profile h1 {
-    margin: 0
-}
-
-.container-title {
-    width: 75vw;
-    margin: 2vh auto 0;
-}
-
-.container-content {
-    width: 90vw;
-    margin: 6vh auto 0;
-}
-
-.container-flashes {
-    width: 60vw;
-    margin: 1vh auto 0;
-    padding: 0;
-}
-.container-terms {
-    margin-bottom: 0;
-    padding: 2vw;
-}
-
-.container-info {
-    padding: 4vw;
-}
-
-.container-redirect {
-    margin-bottom: 1vh;
-}
-
-.container-input {
-    margin: -3vh 0 -1vh;
-}
-
-.container-input .input-field {
-    margin-bottom: 0;
-}
-
-.container-form {
-    margin-top: 5vh;
-}
-
-.container-footer {
-    position: fixed;
-    width: 100vw;
-    bottom: 0;
-}
-
-.container-space {
-    height: 15vh;
-}
-
-.container-icon {
-    margin-bottom: 2vh;
-    padding-left: 2vw;
-    margin-left: 10vw;
-    position: relative;
-    left: 9vw;
-}
-
-.container-nav {
-    margin-bottom: 0;
-}
-
-.container-description {
-    padding: 0 4vw;
-}
-
-.container-userterms {
-    margin-top: 2vh;
-}
-
-.container-buttons {
-    margin: 0;
-}
-
-.container-termcontrol {
-    margin-top: 3vh;
-    padding-top: 1.5vh;
-}
-
-.container-404 {
-    width: 90vw;
-    padding: 2vw;
-    margin: 40vw auto 0;
-}
+.container-header { width: 100vw; height: max-content; }
+.container-footer { position: fixed; width: 100vw; bottom: 0; }
+.container-title { width: 75vw; margin: 2vh auto 0; }
+.container-content { width: 90vw; margin: 6vh auto 0; }
+.container-flashes { width: 60vw; margin: 1vh auto 0; padding: 0; }
+.container-404 { width: 90vw; padding: 2vw; margin: 40vw auto 0; }
+.container-terms { margin-bottom: 0; padding: 2vw; }
+.container-termcontrol { margin-top: 3vh; padding-top: 1.5vh; }
+.container-icon { margin-bottom: 2vh; margin-left: 10vw; padding-left: 2vw; position: relative; left: 9vw; }
+.container-info { padding: 4vw; }
+.container-description { padding: 0 4vw; }
+.container-buttons, .homeText { margin: 0  }
+.container-userterms { margin-top: 2vh; }
+.container-form { margin-top: 5vh; }
+.container-nav, .container-input .input-field, .footer-msg { margin-bottom: 0; }
+.container-redirect { margin-bottom: 1vh; }
+.container-profile { margin-bottom: 2vh; }
+.container-input { margin: -3vh 0 -1vh; }
+.container-space { height: 15vh; }
 
 /* Core Styling */
-.gsStyle {
-    background-color: #000D24;
-    border: 1px solid #F3CA40;
-}
-
-a {
-    color: #f3ca40;
-}
-
-h1 {
-    font-size: 1.4rem;
-    margin: 3vw 1vw 2vw;
-}
-
-h2 {
-    font-size: 1rem;
-    margin: 3vw 0;
-}
-
-.altFont {
-    font-family: 'Schoolbell', cursive;
-    color: #fcf7f8;
-}
-
+.gsStyle { background-color: #000D24; border: 1px solid #F3CA40;  }
+a { color: #f3ca40;  }
+h1 { font-size: 1.4rem; margin: 3vw 1vw 2vw;  }
+h2 { font-size: 1rem; margin: 3vw 0;  }
+.altFont { font-family: 'Schoolbell', cursive; color: #fcf7f8;  }
 /* Nav */
-nav {
-    background-color: #000D24;
-    width: 100vw;
-    color: #f3ca40;
-}
-
-.navIcon {
-    font-size: 8vw;
-}
-
-nav a, .sidenav li a, nav ul a, .helper-text {
-    color: #f3ca40;
-}
-
-.input-field .helper-text, #formAdd .helper-text {
-    color: #f3ca40;
-    text-align: left;
-    font-size: 0.85rem;
-    font-family: 'Schoolbell', curvsive;
-}
-
-#msgError.error-text {
-    font-size: 1.15rem;
-    font-family: 'Schoolbell', cursive;
-    padding-bottom: 1vh;
-    display: inline-block;
-}
-
-.helper-text {
-    margin-bottom: 1vh;
-}
-
-.sidenav {
-    width: 75vw;
-}
-
-.navMenuMobile li a {
-    font-size: 6vw;
-    margin-top: 4vh;
-}
-
-.brandLogo {
-    display: inline;
-    width: 14vw;
-    right: 2vw;
-    top: 2vw;
-    position: relative;
-}
-
-.brandTitle {
-    display: inline;
-    padding-bottom: 1vh;
-    position: relative;
-    font-size: 7vw;
-    bottom: 2vh;
-}
-
-/* Footer */
-.footer-msg {
-    margin-bottom: 0;
-}
+nav a, .sidenav li a, nav ul a { color: #f3ca40;  }
+.navMenuMobile li a { font-size: 6vw; margin-top: 4vh;  }
+.sidenav { width: 75vw;  }
+.navIcon { font-size: 8vw;  }
+.brandLogo { display: inline; position: relative; width: 14vw; right: 2vw; top: 2vw;  }
+.brandTitle { display: inline; position: relative; padding-bottom: 1vh; font-size: 7vw; bottom: 2vh;  }
 
 /* Icons */
-.iconSocial {
-    font-size: 2rem;
-    margin: 3vh 0 0 3vw;
-}
+.iconSocial { font-size: 2rem; margin: 3vh 0 0 3vw;  }
 
 /* Buttons */
-button, .button {
-    line-height: 1.5;
-}
-
-button:hover, a:hover {
-    color: #c0960c;
-}
-
-button:focus {
-    background-color: #000d24;
-}
-
-.btnS {
-    width: 100%;
-    line-height: 1.5;
-    height: 5vh;
-}
-
-.btnM {
-    width: 50%;
-    font-size: 1.5rem;
-    padding: 2vw 0 2vw;
-    margin-top: 2vh;
-}
-
-.btnL {
-    width: 75%;
-    font-size: 1.75rem;
-}
-
-.buttonStyle {
-    color: #f3ca40;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 1vw;
-    font-family: 'Schoolbell', cursive;
-}
-
-.btnCancel, .btnAdd, .btnIndex {
-    padding: 1vw;
-    margin: 2vh 0;
-}
-
-.btnIndex {
-    width: 75%;
-}
-
-.btnTerm {
-    padding-top: 0.5vh;
-}
+button, .button { line-height: 1.5;  }
+button:hover, a:hover { color: #c0960c;  }
+button:focus { background-color: #000d24;  }
+.btnS { width: 100%; line-height: 1.5; height: 5vh;  }
+.btnM { width: 50%; font-size: 1.5rem; padding: 2vw 0 2vw; margin-top: 2vh;  }
+.btnL { width: 75%; font-size: 1.75rem;  }
+.buttonStyle { color: #f3ca40; display: inline-block; text-align: center; margin-bottom: 1vw; font-family: 'Schoolbell', cursive;  }
+.btnIndex { width: 75%;  }
+.btnTerm { padding-top: 0.5vh;  }
+.btnCancel, .btnAdd, .btnIndex { padding: 1vw; margin: 2vh 0;  }
 
 /* Input fields */
-input, input:focus {
-    color: #f3ca40;
-}
+input, input:focus { color: #f3ca40;  }
+.input-field { margin-top: 1.5vh;  }
+.input-field .icons { font-size: 2rem; color: #f3ca40;  }
+.input-field [type=text],.input-field [type=password].input-field [type=email],textarea { color: #f3ca40;  }
+.input-field label { color: #f3ca40;  }
+.input-field input[type=text]:focus + label { color: #f3ca40;  }
+.input-field input[type=text]:focus { border-bottom: 1px solid #c0960c; box-shadow: 0 1px 0 0 #f3ca40; color: #f3ca40;  }
+.input-field .prefix.active { color: #f3ca40;  }
 
-.input-field {
-    margin-top: 1.5vh;
-}
-
-.input-field .icons {
-    font-size: 2rem;
-    color: #f3ca40;
-}
-
-.input-field [type=text],
-.input-field [type=password]
-.input-field [type=email],
-textarea {
-    color: #f3ca40;
-}
-
-.input-field label {
-    color: #f3ca40;
-  }
-
-.input-field input[type=text]:focus + label {
-    color:#f3ca40;
-}
-
-.input-field input[type=text]:focus {
-    border-bottom: 1px solid #c0960c;
-    box-shadow: 0 1px 0 0 #f3ca40;
-    color: #f3ca40;
-}
-
-.input-field .prefix.active {
-    color: #f3ca40;
-}
-
-/* index.html */
-.homeText {
-    margin: 0;
-}
+/* Errors */
+.error-text { font-size: 1.15rem; font-family: 'Schoolbell', cursive; padding-bottom: 1vh; display: inline-block;  }
 
 /* Gamersaurus.html */
-.termTitle {
-    margin: 1vw;
-    font-weight: bold;
-    font-size: 1.25rem;
-    overflow-wrap: break-word;
-}
-
-.termText, .termKey, .termDelete {
-    font-size: 1rem;
-    display: inline;
-}
-
-.termText {
-    overflow-wrap: break-word;
-}
-
-.termGuide {
-    font-size: 0.65rem;
-}
-
-.noResults {
-    padding: 2vw;
-}
+.termTitle { margin: 1vw; font-weight: bold; font-size: 1.25rem;  }
+.termText, .termKey, .termDelete { font-size: 1rem; display: inline;  }
+.termText, .termTitle, .termDelete { overflow-wrap: break-word;  }
+.termGuide { font-size: 0.65rem;  }
+.noResults { padding: 2vw;  }
 
 /* Login/Register */
-.redirect-msg {
-    margin-top: -1.5vh;
-    padding-bottom: 1vh;
-}
-.redirect-btn {
-    margin-top: 1vh;
-}
-
-.logo {
-    width: 14vw;
-}
-
-/* Profile */
-.titleProfile h2 {
-    line-height: 180%;
-}
+.redirect-msg { margin-top: -1.5vh; padding-bottom: 1vh;  }
+.redirect-btn { margin-top: 1vh;  }
+.logo { width: 14vw;  }
 
 /* 404 page */
-.text404 {
-    font-size: 1rem;
-}
-
+.text404 { font-size: 1rem;  }
 
 @media screen and (orientation: landscape) and (max-height: 500px) {
     .container-content {
