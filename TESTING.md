@@ -4,19 +4,18 @@
 
 I used [w3.org's validator](https://validator.w3.org) for my HTML validation checks.
 
-+ All pages:
++ No errors were found within the any page:
 
-    ![HTML5 Validation](static/images/testing/html-test.png)
-
-+ No errors were found within the any page.
+    | _HTML5 Validation_ |
+    |:------------------:|
+    | ![HTML5 Validation](static/images/testing/html-test.png) |
 
 I used [w3.org's validator](https://jigsaw.w3.org/css-validator/) for my CSS validation checks.
 
-+ CSS (style.css)
-
-    ![CSS Validation](static/images/testing/css-test.png)
-
-+ No errors were found within the document.
++ No errors were found within "style.css" the only css file.
+    | _CSS Validation_ |
+    |:----------------:|
+    | ![CSS Validation](static/images/testing/css-test.png) |
 
 I used [JSHint](https://jshint.com) to check the javascript file in my project to make certain it complies with coding standards and that were no syntax errors detected.
 
@@ -24,16 +23,19 @@ I used [JSHint](https://jshint.com) to check the javascript file in my project t
     + The only other error I was receiving was from ```$``` as it was flagged as an undefined variable. Upon researching I found [this post](https://stackoverflow.com/questions/8852765/jshint-and-jquery-is-not-defined) which taught me I needed to tell JSHint that I was using jQuery with the following code ```/*globals $:false */``` which fixed those errors.
     + After putting those two lines of code at the top of my JSHint tests, I only received an error about emailjs being an undefined variable.
 
-        ![JS Validation](static/images/testing/js-test.png)
+        | _JS Validation_ |
+        |:---------------:|
+        | ![JS Validation](static/images/testing/js-test.png) |
 
     + I consulted with a few members of the [Code Institute](https://codeinstitute.net/) Slack community about this and I have found out it is not an error; it is that jsHint does not recognize it as it is defined in the base.html file. As such my code passed with no errors.
 
 
 I used [PEP8 online](http://pep8online.com/) to test my Python code against PEP8 standards.
 
-![PEP8 Validation](static/images/testing/pep8-test.png)
-
 + No errors were found within the document.
+    | _PEP8 Validation_ |
+    |:-----------------:|
+    |![PEP8 Validation](static/images/testing/pep8-test.png)|
 
 ### Responsiveness
 
