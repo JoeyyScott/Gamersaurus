@@ -237,7 +237,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
             | _Delete Icon_ |
             |:-------------:|
             | ![Delete Icon](static/images/testing/userstories/registered4deleteicon.png) |
-        + Upon clicking the icon the user initiates a delete confirmation modal for term selected which allows them to confirm or cancel the deletion of the selected term.
+        + Upon clicking the icon the user initiates a delete confirmation modal for the term selected which allows them to confirm or cancel the deletion of the selected term.
 
             | _Delete Modal_ |
             |:--------------:|

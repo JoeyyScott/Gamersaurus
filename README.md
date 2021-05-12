@@ -152,7 +152,7 @@ The SchoolBell font was chosen as it resembles handwriting on a school white boa
 | [profile.html](wireframes/mobile/profile-mobile.png) | [profile.html](wireframes/tablet/profile-tablet.png) | [profile.html](wireframes/pc/profile-pc.png) |
 | [contact.html](wireframes/mobile/contact-mobile.png) | [contact.html](wireframes/tablet/contact-tablet.png) | [contact.html](wireframes/pc/contact-pc.png) |
 | [404.html](wireframes/mobile/404-mobile.png) | [404.html](wireframes/tablet/404-tablet.png) | [404.html](wireframes/pc/404-pc.png) |
-| [Add/Edit Word](wireframes/mobile/addword-mobile.png) | [Add/Edit Word](wireframes/tablet/addword-tablet.png) | [Add/Edit Word](wireframes/pc/addword-pc.png) |
+| [Add/Edit Term](wireframes/mobile/addword-mobile.png) | [Add/Edit Term](wireframes/tablet/addword-tablet.png) | [Add/Edit Term](wireframes/pc/addword-pc.png) |
 
 ### Design Changes
 
@@ -225,13 +225,13 @@ Included in **gamersaurus.html** is:
     + **Term control buttons**: Container with 2 or 3 buttons in it depending whether the user is logged in:
         + **Search Feature** - Allows the user to search via a text index over term, definition and example.
         + **Reset** - Reloads the page with all current terms.
-        + **Add Term** - There is a check to see if a user is logged in and if they are, an add term button is placed to the left of search and reset.
+        + **Add Term** - There is a check to see if a user is logged in and if they are, an Add Term button is placed to the left of search and reset.
 
 Included in **profile.html** is:
 
 + **View their own terms**: Contains all terms the session user has added to the Gamersaurus.
     + Each term is contained within the same collapsible used on the Gamersaurus page with a different check.
-+ **Add term button**: Redirects the user to "add_term.html".
++ **Add Term button**: Redirects the user to "add_term.html".
 
 Included in **add_term.html** is:
 
@@ -246,7 +246,7 @@ Included in **add_term.html** is:
 Included in **edit_term.html** is:
 
 + **Form for term data**: Contains fields for term, definition, example (with associated validation) which is auto-filled from the termID used to generate the page.
-+ **Edit/Cancel buttons**:  There is an "Edit term" button as well as "Cancel" which provide a way for the user to confirm or cancel their action.
++ **Edit/Cancel buttons**:  There is an "Edit Term" button as well as "Cancel" which provide a way for the user to confirm or cancel their action.
 
 Included in **register.html** is:
 
@@ -256,7 +256,7 @@ Included in **register.html** is:
         + The username does not already exist.
         + The two password fields match.
         + The data submitted passes all validation.
-+ **Register Button**: Submits the form once validation has passed, creates the user and redirects them to their profile.
++ **Register Button**: Submits the form once validation has passed, creates the user and redirects them to their Profile.
 + **Login redirect**: Contains the message "Already have an account?" and the button redirects the user to the login page.
 
 Included in **login.html** is:
@@ -267,14 +267,14 @@ Included in **login.html** is:
         + The username exists in the database.
         + The username and password matches that record in the database.
         + The data submitted passes all validation.
-+ **Login Button**: Submits the form once validation has passed, logs the user in and redirects them to their profile.
++ **Login Button**: Submits the form once validation has passed, logs the user in and redirects them to their Profile.
 + **Register redirect**: Contains the message "No account yet?" and the button redirects the user to the register page.
     
 Included in **contact.html** is:
 
 + **Contact Form**: Can be filled out with a name, email and message query (with associated validation).
     + The form functionality is handled by emailJS in the script.js file.
-    + This validation is handled by the same regex used in add/edit term.
+    + This validation is handled by the same regex used in Add/Edit Term.
 + **Submit button**: Submits the form after all validation has passed and sends an email to the website owners.
 
 Included in **404.html** is:
@@ -451,8 +451,9 @@ This section includes areas/sections of code and properties I was unaware of. I 
 + **Textareas accepting pattern validation** - I managed to find a regex pattern that would allow spaces between words but not multiple or only spaces. This was not triggering on the text area input fields.
     + After some more searching I found [this post](https://stackoverflow.com/questions/13643417/how-to-validate-pattern-matching-in-textarea) which contained some JavaScript.
     + This JS code I have credited in my script.js file and makes it so textareas accept patterns as input validation.
+    + In a later design change I opted to do the form validation myself and thus removing this code snippet.
 
-+ **Password check code** - I included this in my credits as was unaware of ```keyup``` and ```.val()``` within jQuery.
++ **Password check code** - I included this in my credits as I was unaware of ```keyup``` and ```.val()``` within jQuery.
     + I knew I had to check for a keyboard input on my password fields and felt jQuery would be the easiest way to achieve this. After looking at the documentation for keyboard events in jQuery [here](https://api.jquery.com/category/events/keyboard-events/) I decided using ```keyup``` would be the most suitable fit.
     + I tested it to make sure it was triggering by changing the colour of the input field itself.
     + The next step was to check whether the inputs actually matched. I tried using ```if ($('#password') == $('#passwordconfirm')) {``` but it did not work.
