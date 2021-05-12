@@ -287,6 +287,10 @@ Included in **500.html** is:
 + **Error Description**: Contains a message telling the user that an internal server error has happened.
 + **Take me back!**: Button with a link to return to the homepage.
 
+Included in the **Security Features** is:
++ Check in Add, Edit, Delete Term and Profile views in ```app.py``` to make sure non logged in users cannot access pages they should not be able to.
++ The Add/Edit/Login/Register/Contact all have validation to prevent junk input being submitted.
+
 ### Features to be added
 
 + **Pagination** - This would take control if the amount of terms went over a threshold; which required too much work for the time available for the project.

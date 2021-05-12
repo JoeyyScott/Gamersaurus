@@ -2,7 +2,7 @@
 body {
     margin: 0; padding: 0; height: 100vh;
     background-image: url("../images/background.png");
-    background-color: #000D24; background-position: top; background-repeat: repeat;
+    background-color: #000D24; background-position: center; background-repeat: repeat-x; background-size: cover; 
     color: #f3ca40; text-align: center; font-family: 'Rock Salt', cursive;
     overflow-x: hidden;
 }
