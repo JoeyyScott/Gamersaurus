@@ -1,14 +1,9 @@
 /* General rules and background image */
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+    margin: 0; padding: 0; height: 100vh;
     background-image: url("../images/background.png");
-    background-color: #fcf7f8;
-    background-position: top;
-    color: #f3ca40;
-    text-align: center;
-    font-family: 'Rock Salt', cursive;
+    background-color: #000D24; background-position: top; background-repeat: repeat;
+    color: #f3ca40; text-align: center; font-family: 'Rock Salt', cursive;
     overflow-x: hidden;
 }
 
@@ -24,7 +19,7 @@ body {
 .container-icon { margin-bottom: 2vh; margin-left: 10vw; padding-left: 2vw; position: relative; left: 9vw; }
 .container-info { padding: 4vw; }
 .container-description { padding: 0 4vw; }
-.container-buttons, .homeText { margin: 0  }
+.container-buttons, .homeText { margin: 0 }
 .container-userterms { margin-top: 2vh; }
 .container-form { margin-top: 5vh; }
 .container-nav, .container-input .input-field, .footer-msg { margin-bottom: 0; }
@@ -34,274 +29,139 @@ body {
 .container-space { height: 15vh; }
 
 /* Core Styling */
-.gsStyle { background-color: #000D24; border: 1px solid #F3CA40;  }
-a { color: #f3ca40;  }
-h1 { font-size: 1.4rem; margin: 3vw 1vw 2vw;  }
-h2 { font-size: 1rem; margin: 3vw 0;  }
-.altFont { font-family: 'Schoolbell', cursive; color: #fcf7f8;  }
+.gsStyle { background-color: #000D24; border: 1px solid #F3CA40; }
+a { color: #f3ca40; }
+h1 { font-size: 1.4rem; margin: 3vw 1vw 2vw; }
+h2 { font-size: 1rem; margin: 3vw 0; }
+.altFont { font-family: 'Schoolbell', cursive; color: #fcf7f8; }
 /* Nav */
-nav a, .sidenav li a, nav ul a { color: #f3ca40;  }
-.navMenuMobile li a { font-size: 6vw; margin-top: 4vh;  }
-.sidenav { width: 75vw;  }
-.navIcon { font-size: 8vw;  }
-.brandLogo { display: inline; position: relative; width: 14vw; right: 2vw; top: 2vw;  }
-.brandTitle { display: inline; position: relative; padding-bottom: 1vh; font-size: 7vw; bottom: 2vh;  }
+nav a, .sidenav li a, nav ul a, .input-field .helper-text { color: #f3ca40; }
+.navMenuMobile li a { font-size: 6vw; margin-top: 4vh; }
+.sidenav { width: 75vw; }
+.navIcon { font-size: 8vw; }
+.brandLogo { display: inline; position: relative; width: 14vw; right: 2vw; top: 2vw; }
+.brandTitle { display: inline; position: relative; padding-bottom: 1vh; font-size: 7vw; bottom: 2vh; }
 
 /* Icons */
-.iconSocial { font-size: 2rem; margin: 3vh 0 0 3vw;  }
+.iconSocial { font-size: 2rem; margin: 3vh 0 0 3vw; }
 
 /* Buttons */
-button, .button { line-height: 1.5;  }
-button:hover, a:hover { color: #c0960c;  }
-button:focus { background-color: #000d24;  }
-.btnS { width: 100%; line-height: 1.5; height: 5vh;  }
-.btnM { width: 50%; font-size: 1.5rem; padding: 2vw 0 2vw; margin-top: 2vh;  }
-.btnL { width: 75%; font-size: 1.75rem;  }
-.buttonStyle { color: #f3ca40; display: inline-block; text-align: center; margin-bottom: 1vw; font-family: 'Schoolbell', cursive;  }
-.btnIndex { width: 75%;  }
-.btnTerm { padding-top: 0.5vh;  }
-.btnCancel, .btnAdd, .btnIndex { padding: 1vw; margin: 2vh 0;  }
+button, .button { line-height: 1.5; }
+button:hover, a:hover { color: #c0960c; }
+button:focus { background-color: #000d24; }
+.btnS { width: 100%; line-height: 1.5; height: 5vh; }
+.btnM { width: 50%; font-size: 1.5rem; padding: 2vw 0 2vw; margin-top: 2vh; }
+.btnL { width: 75%; font-size: 1.75rem; }
+.buttonStyle { color: #f3ca40; display: inline-block; text-align: center; margin-bottom: 1vw; font-family: 'Schoolbell', cursive; }
+.btnIndex { width: 75%; }
+.btnTerm { padding-top: 0.5vh; }
+.btnCancel, .btnAdd, .btnIndex { padding: 1vw; margin: 2vh 0; }
 
 /* Input fields */
-input, input:focus { color: #f3ca40;  }
-.input-field { margin-top: 1.5vh;  }
-.input-field .icons { font-size: 2rem; color: #f3ca40;  }
-.input-field [type=text],.input-field [type=password].input-field [type=email],textarea { color: #f3ca40;  }
-.input-field label { color: #f3ca40;  }
-.input-field input[type=text]:focus + label { color: #f3ca40;  }
-.input-field input[type=text]:focus { border-bottom: 1px solid #c0960c; box-shadow: 0 1px 0 0 #f3ca40; color: #f3ca40;  }
-.input-field .prefix.active { color: #f3ca40;  }
+input, input:focus { color: #f3ca40; }
+.input-field { margin-top: 1.5vh; }
+.input-field .icons { font-size: 2rem; color: #f3ca40; }
+.input-field [type=text],.input-field [type=password].input-field [type=email],textarea { color: #f3ca40; }
+.input-field label { color: #f3ca40; }
+.input-field input[type=text]:focus + label { color: #f3ca40; }
+.input-field input[type=text]:focus { border-bottom: 1px solid #c0960c; box-shadow: 0 1px 0 0 #f3ca40; color: #f3ca40; }
+.input-field .prefix.active { color: #f3ca40; }
 
-/* Errors */
-.error-text { font-size: 1.15rem; font-family: 'Schoolbell', cursive; padding-bottom: 1vh; display: inline-block;  }
+/* Errors/Helper text */
+.error-text { font-size: 1.15rem; font-family: 'Schoolbell', cursive; padding-bottom: 1vh; display: inline-block; }
+.input-field .helper-text { text-align: left; font-size: 0.85rem; font-family: 'Schoolbell', curvsive; }
 
 /* Gamersaurus.html */
-.termTitle { margin: 1vw; font-weight: bold; font-size: 1.25rem;  }
-.termText, .termKey, .termDelete { font-size: 1rem; display: inline;  }
-.termText, .termTitle, .termDelete { overflow-wrap: break-word;  }
-.termGuide { font-size: 0.65rem;  }
-.noResults { padding: 2vw;  }
+.termTitle { margin: 1vw; font-weight: bold; font-size: 1.25rem; letter-spacing: 3px; }
+.termText, .termKey, .termDelete { font-size: 1rem; display: inline; }
+.termText, .termTitle, .termDelete { overflow-wrap: break-word; }
+.termGuide { font-size: 0.65rem; }
+.noResults { padding: 2vw; }
 
 /* Login/Register */
-.redirect-msg { margin-top: -1.5vh; padding-bottom: 1vh;  }
-.redirect-btn { margin-top: 1vh;  }
-.logo { width: 14vw;  }
+.redirect-msg { margin-top: -1.5vh; padding-bottom: 1vh; }
+.redirect-btn { margin-top: 1vh; }
+.logo { width: 14vw; }
 
 /* 404 page */
-.text404 { font-size: 1rem;  }
+.text404 { font-size: 1rem; }
 
-@media screen and (orientation: landscape) and (max-height: 500px) {
-    .container-content {
-        margin-top: 25vh;
-    }
-}
+@media screen and (orientation: landscape) and (max-height: 500px) { .container-content { margin-top: 25vh; } }
 
 @media screen and (min-width: 768px) and (min-height: 1024px) {
     /* Containers */
-    .container-content {
-        margin-top: 10vh;
-        width: 70vw;
-    }
-
-    .container-title {
-        width: 50vw;
-    }
-
-    .container-redirect {
-        margin-top: 3vh;
-    }
-
-    .container-input {
-        margin: -1vh 0 -1vh;
-    }
+    .container-content { width: 70vw; margin-top: 10vh; }
+    .container-title { width: 50vw; }
+    .container-redirect { margin-top: 3vh; }
+    .container-input { margin: -1vh 0 -1vh; }
 
     /* Core Styles */
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
+    h1 { font-size: 2rem; }
+    h2 { font-size: 1.5rem; }
 
     /* Nav */
-    .navIcon {
-        padding-top: 3vh;
-    }
-    .navMenuMobile li a {
-        margin-bottom: 7vh;
-    }
+    .navIcon { padding-top: 3vh; }
+    .navMenuMobile li a { margin-bottom: 7vh; }
 
     /* Footer */
-    .footer-msg p {
-        font-size: 3vw;
-    }
+    .footer-msg p { font-size: 3vw; }
 
     /* Icons */
-    .iconSocial {
-        margin-top: 2.5vh;
-        font-size: 2.5rem;
-    }
+    .iconSocial { margin-top: 2.5vh; font-size: 2.5rem; }
 
     /* Buttons */
-    .btnAdd, .btnM {
-        font-size: 4vw;
-    }
-
-    .btnTerm {
-        font-size: 2rem;
-    }
+    .btnAdd, .btnM { font-size: 4vw; }
+    .btnTerm { font-size: 2rem; }
 
     /* Gamersaurus.html */
-    .brandTitle {
-        font-size: 7vw;
-    }
-
-    .termTitle {
-        font-size: 1.75rem;
-    }
-
-    .termGuide, .input-field .helper-text {
-        font-size: 1rem;
-    }
-
-    .termKey, .termText, .homeText, .termDelete, .text404 {
-        font-size: 2rem;
-    }
+    .brandTitle { font-size: 7vw; }
+    .termTitle { font-size: 1.75rem; }
+    .termGuide, .input-field .helper-text { font-size: 1rem; }
+    .termKey, .termText, .homeText, .termDelete, .text404 { font-size: 2rem; }
 }
 
-@media screen and (min-width: 992px)  and (orientation: landscape) {
+@media screen and (min-width: 992px) and (orientation: landscape) {
     /* Containers */
-    .container-header {
-        height: 10vh;
-    }
-
-    .container-title {
-        width: 40vw;
-        margin-bottom: 4vh;
-    }
-
-    .container-content {
-        width: 55vw;
-        margin-top: 10vh;
-    }
-
-    .container-terms {
-        padding: 1vh 0 1vh 0;
-    }
-
-    .container-icon {
-        padding-top: 0.65vh;
-        margin-bottom: 0;
-    }
-
-    .container-info {
-        padding: 2vh 4vw 0;
-    }
-
-    .container-input {
-        margin-top: -1vh;
-    }
-
-    .container-form {
-        margin: 0;
-    }
-    .container-404 {
-        width: 50vw;
-        padding: 2vw;
-        margin-top: 10vw;
-    }
+    .container-404 { width: 50vw; padding: 2vw; margin-top: 10vw; }
+    .container-title { width: 40vw; margin-bottom: 4vh; }
+    .container-content { width: 55vw; margin-top: 10vh; }
+    .container-icon { padding-top: 0.65vh; margin-bottom: 0; }
+    .container-terms { padding: 1vh 0 1vh 0; }
+    .container-info { padding: 2vh 4vw 0; }
+    .container-header { height: 10vh; }
+    .container-form { margin: 0; }
+    .container-input { margin-top: -1vh; }
 
     /* Core Styles */
-    h1 {
-        font-size: 2.75rem;
-        margin: 1vh 0;
-    }
-
-    h2 {
-        font-size: 2rem;
-        margin: 1vh 0;
-    }
-
-    .flashes h2 {
-        margin: 2vh 0;
-    }
+    h1 { font-size: 2.75rem; margin: 1vh 0; }
+    h2 { font-size: 2rem; margin: 1vh 0; }
+    .flashes h2 { margin: 2vh 0; }
 
     /* Nav */
-    .nav-extended {
-        padding-bottom: 3vh;
-        position: relative;
-        top: -2.5vh;
-    }
-
-    .navMenu {
-        padding-top: calc(15%/2);
-        width: 60vw;
-    }
-
-    .brandLogo {
-        height: 6vw;
-        width: auto;
-        top: 4vh;
-        right: 5vw;
-    }
-
-    .brandTitle {
-        display: inline;
-        font-size: 3vw;
-        position: relative;
-        right: 5vw;
-        top: 1.75vh;
-        padding-top: calc(30%/2);
-    }
-
-    .navLink {
-        font-size: 1.75vw;
-    }
+    .navLink { font-size: 1.75vw; }
+    .navMenu { padding-top: calc(15%/2); width: 60vw; }
+    .nav-extended { padding-bottom: 3vh; position: relative; top: -2.5vh; }
+    .brandLogo { height: 6vw; width: auto; top: 4vh; right: 5vw; }
+    .brandTitle { display: inline; font-size: 3vw; position: relative; right: 5vw; top: 1.75vh; padding-top: calc(30%/2); }
 
     /* Footer */
-    .footer-msg p {
-        font-size: 2.5vw;
-        margin: 1vh 0;
-    }
-    
-    /* Icons */
-    .iconSocial {
-        margin: 1.5vh 0;
-        font-size: 3rem;
-    }
-    
-    /* Buttons */
-    .btnAdd, .btnM {
-        font-size: 2.5vw;
-        padding: 0;
-    }
+    .footer-msg p { font-size: 2.5vw; margin: 1vh 0; }
 
-    .btnTerm {
-        padding-top: 0.25vh;
-        font-size: 1.75rem;
-    }
+    /* Icons */
+    .iconSocial { margin: 1.5vh 0; font-size: 3.5rem; }
+
+    /* Buttons */
+    .btnAdd, .btnM { font-size: 2.5vw; padding: 0; }
+    .btnTerm { padding-top: 0.25vh; font-size: 1.75rem; }
     
     /* Gamersaurus.html */
-    .termTitle {
-        font-size: 1.75rem;
-        margin: 0;
-    }
+    .termTitle { font-size: 1.75rem; margin: 0; }
+    .termGuide, .input-field .helper-text { font-size: 1.25rem; }
+    .termKey, .termText, .homeText, .termDelete { font-size: 1.75rem; margin: 1vh 0; }
 
-    .termGuide, .input-field .helper-text {
-        font-size: 1.25rem;
-    }
-
-    .termKey, .termText, .homeText, .termDelete {
-        font-size: 1.75rem;
-        margin: 1vh 0;
-    }
     /* Profile */
-    .titleProfile h2, .container-description h2 {
-        margin: 1.5vh 0;
-    }
+    .titleProfile h2, .container-description h2 { margin: 1.5vh 0; }
+
     /* 404 page */
-    .text404 {
-        font-size: 2rem;
-    }
+    .text404 { font-size: 2rem; }
 }
