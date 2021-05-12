@@ -481,7 +481,15 @@ This section includes areas/sections of code and properties I was unaware of. I 
     + [Dictionary](https://www.flaticon.com/free-icon/big-dictionary_85601?term=dictionary&page=1&position=1&page=1&position=1&related_id=85601&origin=search)
     + [Controller](https://www.flaticon.com/free-icon/console_686589?term=controller&page=1&position=2&page=1&position=2&related_id=686589&origin=search)
 
-### Acknowledgments
+### Acknowledgements
+
+The [Code Institute](https://codeinstitute.net/) Slack community for their ongoing support, help and patience with any issues I had pertaining to all aspects of the project.
+
+My mentor [Precious Ijege](https://www.linkedin.com/in/precious-ijege-908a00168/) for all of his help throughout our project calls and feedback on my work.
+
+My family and friends who have helped me test various different versions of the Gamersaurus throughout the development process, proof reading my site and my README.md/TESTING.md files.
+
+On a final note, I have enjoyed working on this project as it has taught me several new functionalities that I can apply to future projects. I enjoyed this assignment immensely as it pushed me to learn many new areas that I was previously unaware of how to do in order to compile a Full Stack Data Centric web application. I am thoroughly excited for the next stage ahead of me in this [Full Stack Web Development course](https://codeinstitute.net/full-stack-software-development-diploma/). 
 
 #### [Back to top](#contents)
 
