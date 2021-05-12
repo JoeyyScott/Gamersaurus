@@ -2,6 +2,7 @@
 {% block contentmain %}
     <div class="gsStyle">
         <h1>Edit term</h1>
+        <!-- Edit Term Form -->
         <div class="row container-form">
             <form id="formAdd" class="col s12" method="POST" action="{{ url_for('edit_term', term_id=term._id) }}">
                 <!-- Term name -->
@@ -36,15 +37,12 @@
                     </div>
                 </div>
                 <span id="msgError" class="error-text"></span>
-                <!-- Edit/Cancel button -->
                 <div class="row container-input">
                     <div class="col s12">
-                        <button class="gsStyle buttonStyle btnM" type="submit">
-                            <i class="fas fa-edit"></i> Edit Term
-                        </button>
-                        <a href="{{ url_for('terms') }}" class="gsStyle buttonStyle btnCancel btnM">
-                            <i class="fas fa-times-circle"></i> Cancel
-                        </a>
+                        <!-- Edit button -->
+                        <button class="gsStyle buttonStyle btnM" type="submit">Edit Term <i class="fas fa-edit"></i></button>
+                        <!-- Cancel button -->
+                        <a href="{{ url_for('terms') }}" class="gsStyle buttonStyle btnCancel btnM">Cancel <i class="fas fa-times-circle"></i></a>
                     </div>
                 </div>
             </form>

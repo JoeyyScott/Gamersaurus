@@ -3,6 +3,7 @@
     <div class="gsStyle">
         <h1>Register an account with Gamersaurus</h1>
         <div class="row">
+            <!-- Register form -->
             <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('register') }}">
                 <div class="card-panel gsStyle">
                     <!-- Username field -->
@@ -47,6 +48,7 @@
                 </div>
             </form>
         </div>
+        <!-- Login redirect -->
         <div class="row container-input">
             <div class="col s12 container-redirect">
                 <p class="redirect-msg">Already have an account?<br><a class="gsStyle buttonStyle btnL redirect-btn" href="{{ url_for('login') }}">Log in here!</a></p>

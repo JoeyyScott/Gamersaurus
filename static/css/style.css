@@ -110,7 +110,7 @@ input, input:focus { color: #f3ca40; }
     .iconSocial { margin-top: 2.5vh; font-size: 2.5rem; }
 
     /* Buttons */
-    .btnAdd, .btnM { font-size: 4vw; }
+    .btnAdd, .btnM { font-size: 4vw; padding: 0; }
     .btnTerm { font-size: 2rem; }
 
     /* Gamersaurus.html */

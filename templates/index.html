@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block contentmain %}
+    <!-- Intro paragraph -->
     <div class="container-description row gsStyle">
         <div class="col s12">
         <h1>What is the Gamersaurus?</h1>
@@ -8,12 +9,12 @@
                 View it by clicking the logo or "Gamersaurus" at the top. This will contain all current terms!
             </p>
         </div>
+        <!-- Intro sub paragraph -->
         <div class="col s12">
             <h2>Can I add my own terms?</h2>
             <p class="homeText altFont">Yes you can! If you don't have an account already, you can sign up for an account <a href="{{ url_for('register' )}}">here</a>. Once you've done that you can login <a href="{{ url_for('login' )}}">here</a></p>
         </div>
-        <div class="col s12">
-            <a href="{{ url_for('terms') }}" class="btnM buttonStyle gsStyle btnIndex">Take me there! <i class="fas fa-book-reader"></i></a>
-        </div>
+        <!-- Terms button -->
+        <div class="col s12"><a href="{{ url_for('terms') }}" class="btnM buttonStyle gsStyle btnIndex">Take me there! <i class="fas fa-book-reader"></i></a></div>
     </div>
 {% endblock %}

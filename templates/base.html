@@ -15,12 +15,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Schoolbell&display=swap" rel="stylesheet"> 
     <!-- Materialize CSS credit -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
-        <!-- My CSS -->
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-        {% block styles %}
-        {% endblock %}
-        <title>Gamersaurus</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    {% block styles %}
+    {% endblock %}
+    <title>Gamersaurus</title>
 </head>
 <body>
     <!-- Header content -->
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </nav>
-        <!-- Mobile Nav -->
+        <!-- Mobile Nav Menu -->
         <ul class="sidenav navMenuMobile gsStyle" id="mobile-demo">
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a class="navLinkMobile" href="{{ url_for('terms') }}">Terms</a></li>
@@ -93,6 +93,7 @@
     <footer class="gsStyle container-footer">
         <div class="row footer-msg">
             <div class="col s6"><p>Check us out elsewhere!</p></div>
+            <!-- Brand Socials -->
             <div class="col s2"><a href="https://www.twitter.com" target="_blank" aria-label="Our Twitter"><i class="fab fa-twitter iconSocial"></i></a></div>
             <div class="col s2"><a href="https://www.youtube.com" target="_blank" aria-label="Our Youbtube"><i class="fab fa-youtube iconSocial"></i></a></div>
             <div class="col s2"><a href="https://www.instagram.com" target="_blank" aria-label="Our Instagram"><i class="fab fa-instagram iconSocial"></i></a></div>
