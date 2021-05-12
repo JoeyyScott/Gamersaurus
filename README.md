@@ -146,7 +146,7 @@ The SchoolBell font was chosen as it resembles handwriting on a school white boa
 | Mobile | Tablet |  PC  |
 | :----: |:-----: | :--: |
 | [index.html](wireframes/mobile/index-mobile.png) | [index.html](wireframes/tablet/index-tablet.png) | [index.html](wireframes/pc/index-pc.png) |
-| [thesaurus.html](wireframes/mobile/thesaurus-mobile.png) | [thesaurus.html](wireframes/tablet/thesaurus-tablet.png) | [thesaurus.html](wireframes/pc/thesaurus-pc.png) |
+| [terms.html](wireframes/mobile/thesaurus-mobile.png) | [terms.html](wireframes/tablet/thesaurus-tablet.png) | [terms.html](wireframes/pc/thesaurus-pc.png) |
 | [register.html](wireframes/mobile/register-mobile.png) | [register.html](wireframes/tablet/register-tablet.png) | [register.html](wireframes/pc/register-pc.png) |
 | [login.html](wireframes/mobile/login-mobile.png) | [login.html](wireframes/tablet/login-tablet.png) | [login.html](wireframes/pc/login-pc.png) |
 | [profile.html](wireframes/mobile/profile-mobile.png) | [profile.html](wireframes/tablet/profile-tablet.png) | [profile.html](wireframes/pc/profile-pc.png) |
@@ -156,8 +156,8 @@ The SchoolBell font was chosen as it resembles handwriting on a school white boa
 
 ### Design Changes
 
-+ **Duplicate Gamersaurus link** - I was originally going to include a "Gamersaurus" (thesaurus in website structure pictures) link in the nav bar but opted to remove it to save screen space and remove redundancy as the logo redirects to the same link.
-    + Further into the development of this project I decided to make the brand logo and title redirect to ```index.html``` and added "Terms" link to the nav links for a redirect to ```gamersaurus.html```.
++ **Duplicate Gamersaurus link** - I was originally going to include a "Gamersaurus" link in the nav bar but opted to remove it to save screen space and remove redundancy as the logo redirects to the same link.
+    + Further into the development of this project I decided to make the brand logo and title redirect to ```index.html``` and added "Terms" link to the nav links for a redirect to ```terms.html```.
 
 ## Database Schema
 
@@ -212,7 +212,7 @@ Included in **index.html** is:
 + **Gamersaurus Description**: Contains a small paragraph about the Gamersaurus and how to use it.
 + **View Gamersaurus button**: Button with a link to the Gamersaurus page.
 
-Included in **gamersaurus.html** is:
+Included in **terms.html** is:
 
 + **View all terms currently stored**: Contains all the terms currently stored within the thesaurus collection.
     + Each term is contained within a collapsible which displays the term, and edit/delete buttons if the session user is the user who matches the ```submitted_by``` value within the database.

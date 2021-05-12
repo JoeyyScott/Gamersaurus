@@ -53,7 +53,7 @@ Responsiveness (website layout)
 | Images                        |    Good    |    Good    |     Good     |   Good   | Good |   Good   |      Good      |      Good       |
 | Renders as expected           |    Good    |    Good    |     Good     |   Good   | Good |   Good   |      Good      |      Good       |
 |                               |            |            |              |          |      |          |                |                 |
-| **gamersaurus.html**          |            |            |              |          |      |          |                |                 |
+| **terms.html**          |            |            |              |          |      |          |                |                 |
 | Links/URLs                    |    Good    |    Good    |     Good     |   Good   | Good |   Good   |      Good      |      Good       |
 | Images                        |    Good    |    Good    |     Good     |   Good   | Good |   Good   |      Good      |      Good       |
 | Renders as expected           |    Good    |    Good    |     Good     |   Good   | Good |   Good   |      Good      |      Good       |
@@ -111,7 +111,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
 + #### User goals
 
     + As a **user**, I want to be able to view all the terms currently added.
-        + I have created the Terms page (gamersaurus.html) which includes a collapsible accordion that contains all terms currently added to the site.
+        + I have created the Terms page (terms.html) which includes a collapsible accordion that contains all terms currently added to the site.
 
             | _Terms List_ |
             |:------------:|
@@ -264,7 +264,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
             | ![Mobile Navigation Menu](static/images/testing/userstories/siteowner2mobile.png) |
         + All the buttons contain text pertaining to their action (Add Term, Edit Term, Delete, Submit) and perform the correct action which allows for intuitive navigation.
 	+ As a **site owner**, I want the user to be able to view the thesaurus without having an account.
-        + On the Terms page (gamersaurus.html) which is **accessible to all users** there is a collapsible accordion that contains all terms currently added to the site.
+        + On the Terms page (terms.html) which is **accessible to all users** there is a collapsible accordion that contains all terms currently added to the site.
 
             | _Terms List_ |
             |:------------:|

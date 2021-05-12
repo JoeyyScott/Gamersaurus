@@ -30,7 +30,7 @@ def home():
 # Render Terms page
 def terms():
     terms = list(mongo.db.thesaurus.find())
-    return render_template("gamersaurus.html", terms=terms)
+    return render_template("terms.html", terms=terms)
 
 
 @app.route("/search", methods=["GET", "POST"])
@@ -38,7 +38,7 @@ def terms():
 def search():
     query = request.form.get("query")
     terms = list(mongo.db.thesaurus.find({"$text": {"$search": query}}))
-    return render_template("gamersaurus.html", terms=terms)
+    return render_template("terms.html", terms=terms)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -207,7 +207,7 @@ def contact():
 
 # Error Handlers
 """
-Code is from Flask documentation for Error Handlers:
+Credit for code from Flask documentation for Error Handlers:
 https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
 """
 
