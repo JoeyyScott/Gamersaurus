@@ -88,6 +88,9 @@ input, input:focus { color: #f3ca40; }
 /* 404 page */
 .text404 { font-size: 1rem; }
 
+/* Query for social icons on some wide devices */
+@media screen and (min-width: 450px) { .iconSocial { margin-top: 1.5vh; } }
+
 /* Extra small screens */
 @media screen and (orientation: landscape) and (max-height: 500px) { .container-content { margin-top: 25vh; } }
 
