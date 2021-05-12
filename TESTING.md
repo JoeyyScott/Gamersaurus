@@ -173,7 +173,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
                 | _Success_ |
                 |:---------:|
                 | ![Success](static/images/testing/userstories/user5successfulbutton.png) |            
-            + Once this happens EmailJS will have me sent me an email using the data provided in the form submission in the template layout I have set up on EmailJS. The contents of the email is displayed below.
+            + Once this happens EmailJS will have me sent me an email using the data provided in the form submission using the template layout I have set up on EmailJS. The contents of the email is displayed below.
 
             | _Email for Gamersaurus Query_ |
             |:-----------------------------:|

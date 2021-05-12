@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
     <!-- My CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-    <title>404 Error</title>
+    <title>500 Error</title>
 </head>
 <body>
     <div class="row container-404 gsStyle">
         <div class="col s12">
-            <h1>Ahh you noob!</h1>
-            <p class="altFont text404">You've navigated to a page that doesn't exist. Press the button below to return to the homepage.</p>
+            <h1>Oh no!</h1>
+            <p class="altFont text404">Something has gone wrong. Press the button below to return to the homepage.</p>
         </div>
         <div class="col s12">
             <a href="{{ url_for('home') }}" class="btnM buttonStyle gsStyle btnIndex">Take me back! <i class="fas fa-thumbs-up"></i></a>

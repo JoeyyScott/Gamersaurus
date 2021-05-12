@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // Credit for Materialize sidenav, collapsible, and form validation
+    // Credit for Materialize sidenav and collapsible
     $(".sidenav").sidenav({edge: "right"});
     $(".collapsible").collapsible();
     $('.modal').modal();
@@ -31,6 +31,7 @@ $( "#formAdd" ).submit(function( event ) { event.preventDefault(); submitTerm(th
 //Function to validate text area fields against double spaces, symbols and empty fields.
 function stringCheck(x) { if (RegExp(/^([a-zA-Z0-9_]+\s?){1,}\\*$/).test(x) === false) { return 'nomatch'; } else { return 'match'; } }
 
+//Function to check whether the values from formAdd match the requested string
 function submitTerm() {
     let termErrors = [];
     let noaddTerm = (addTerm.value === null || addTerm.value === "");
@@ -62,8 +63,6 @@ function sendMail() {
     if (nocontactEmail) { errors.push("Email field required."); contactEmail.classList.add('invalid'); }
     if (nocontactMessage) { errors.push("Message field required."); contactMessage.classList.add('invalid'); } else if (stringCheck(contactMessage.value) === 'nomatch')
         { errors.push('Message must be min 5 alphanumeric characters and no double spaces/symbols.'); contactMessage.classList.add('invalid'); } else { contactMessage.classList.add('valid'); }
-
-    
     // Clears previous error messages
     $("#msgError").empty();
     if (errors.length === 0) { emailjs.send("service_qtd8qrn", "gamersaurusContact", {

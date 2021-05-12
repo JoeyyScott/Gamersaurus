@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Schoolbell&display=swap" rel="stylesheet"> 
     <!-- Materialize CSS credit -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+        <!-- My CSS -->
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
         {% block styles %}
         {% endblock %}
@@ -29,6 +30,7 @@
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars navIcon"></i></a>
                     </div>
                     <div class="col s12 m12 l6">
+                        <!-- Nav Menu -->
                         <ul class="right hide-on-med-and-down navMenu">
                             <li><a class="navLink" href="{{ url_for('terms') }}">Terms</a></li>
                             {% if session.user %}
@@ -62,8 +64,7 @@
             {% endif %}
         </ul>
     </header>
-
-
+    <!-- Section to contain any flashes messages -->
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             {% for msg in messages %}
@@ -77,28 +78,20 @@
             {% endfor %}
         {% endif %}
     {% endwith %}
-
+    <!-- Main content -->
     <main class="container-content">
         {% block contentmain %}
         {% endblock %}
     </main>
-
+    <!-- Blank space div to allow for mobile scrolling -->
     <div class="container-space"></div>
-    
+    <!-- Footer container -->
     <footer class="gsStyle container-footer">
         <div class="row footer-msg">
-            <div class="col s6">
-                <p>Check us out elsewhere!</p>
-            </div>
-            <div class="col s2">
-                <a href="https://www.twitter.com" target="_blank" aria-label="Our Twitter"><i class="fab fa-twitter iconSocial"></i></a>
-            </div>
-            <div class="col s2">
-                <a href="https://www.youtube.com" target="_blank" aria-label="Our Youbtube"><i class="fab fa-youtube iconSocial"></i></a>
-            </div>
-            <div class="col s2">
-                <a href="https://www.instagram.com" target="_blank" aria-label="Our Instagram"><i class="fab fa-instagram iconSocial"></i></a>
-            </div>
+            <div class="col s6"><p>Check us out elsewhere!</p></div>
+            <div class="col s2"><a href="https://www.twitter.com" target="_blank" aria-label="Our Twitter"><i class="fab fa-twitter iconSocial"></i></a></div>
+            <div class="col s2"><a href="https://www.youtube.com" target="_blank" aria-label="Our Youbtube"><i class="fab fa-youtube iconSocial"></i></a></div>
+            <div class="col s2"><a href="https://www.instagram.com" target="_blank" aria-label="Our Instagram"><i class="fab fa-instagram iconSocial"></i></a></div>
         </div>
     </footer>
 

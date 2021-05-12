@@ -277,6 +277,16 @@ Included in **contact.html** is:
     + This validation is handled by the same regex used in add/edit term.
 + **Submit button**: Submits the form after all validation has passed and sends an email to the website owners.
 
+Included in **404.html** is:
+
++ **Error Description**: Contains a message telling the user they have navigated to a non existent page.
++ **Take me back!**: Button with a link to return to the homepage.
+
+Included in **500.html** is:
+
++ **Error Description**: Contains a message telling the user that an internal server error has happened.
++ **Take me back!**: Button with a link to return to the homepage.
+
 ### Features to be added
 
 + **Pagination** - This would take control if the amount of terms went over a threshold required too much work for the time available for the project.
@@ -299,10 +309,12 @@ Included in **contact.html** is:
 ### Frameworks, libraries and programs
 + [GIMP](https://www.gimp.org) - I used this programme to design the background image, wireframes and favicon image.
 + [coolors.co](https://coolors.co) - I used this tool to generate a colour scheme based on the Gamersaurus logo.
-+ [Accessible Color Generator](https://learnui.design/tools/accessible-color-generator.html) - I used this tool in conjunction with coolors.co to provide a better colour contrast for accessibility. 
++ [Accessible Color Generator](https://learnui.design/tools/accessible-color-generator.html) - I used this tool in conjunction with coolors.co to provide a better colour contrast for accessibility.
++ [Google Fonts](https://fonts.google.com/) - I used two fonts from the Google fonts library - "Schoolbell" and "Rock Salt".
 + [Font Awesome](https://fontawesome.com/) - I used the Font Awesome icon library to provide icons for some of my hints, my home button and my footer links. 
 + [GitPod](https://gitpod.io) - GitPod was the online IDE (Integrated Development Engine) I used to develop this site.
-+ [Git](https://git-scm.com) - Git is an open source version control system where you can commit changes to the associated Github repository and push changes to Github pages.
++ [Git](https://git-scm.com) - Git is an open source version control system where you can commit and push changes to the associated Github repository.
++ [GitHub](https://github.com/) - GitHub was used to store the project code pushed from GitPod using Git.
 + [FavIcon](https://favicon.io/) - I used this tool to convert an image I made into icon form and provide the code (stated in HTML comments) to link this icon to index.html.
 + [Am I Responsive?](http://ami.responsivedesign.is/) - I used this tool to easily display the responsiveness of my site for my README.md introduction.
 + [emailJS](https://www.emailjs.com/) - I used this tool to add functionality in the form of an email service from the form in the contact page.
@@ -311,6 +323,17 @@ Included in **contact.html** is:
 + [Heroku](https://dashboard.heroku.com/) - A cloud platform that was used to deploy and run the code pushed to the associated GitHub repository.
 + [MongoDB](https://www.mongodb.com/) - A cloud database service that allows for creation, modification, deletion and storage of database collections used in the application.
 + [Materialize](https://materializecss.com/) - A CSS framework that allows for responsive design to be applied to the entire site.
+
+### Dependencies
+
++ [click](https://palletsprojects.com/p/click/) - Composable command line interface creation toolkit.
++ [dnspython](https://www.dnspython.org/) - A DNS toolkit for Python.
++ [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Flask was used as a microframework to construct the application.
++ [Flask-PyMongo](https://flask-pymongo.readthedocs.io/en/latest/) - Bridges between PyMongo and Flask for application creation.
++ [itsdangerous](https://palletsprojects.com/p/itsdangerous/) - Contains various helpers to pass data between your application and untrusted environments.
++ [pymongo](https://pypi.org/project/pymongo/) - Allows interacting with MongoDB databases using Python.
++ [Werkzeug](https://werkzeug.palletsprojects.com/en/1.0.x/) - A comprehensive WSGI (Web server gateway interface) web application library.
++ [Jinja2](https://palletsprojects.com/p/jinja/) - Used to construct pages from a base template (base.html) and generate content based on data.
 
 #### [Back to top](#contents)
 

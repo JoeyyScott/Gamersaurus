@@ -21,17 +21,20 @@ mongo = PyMongo(app)
 
 @app.route("/")
 @app.route("/home")
+# Render Home
 def home():
     return render_template("index.html")
 
 
 @app.route("/terms")
+# Render Terms page
 def terms():
     terms = list(mongo.db.thesaurus.find())
     return render_template("gamersaurus.html", terms=terms)
 
 
 @app.route("/search", methods=["GET", "POST"])
+# Search functionality
 def search():
     query = request.form.get("query")
     terms = list(mongo.db.thesaurus.find({"$text": {"$search": query}}))
@@ -39,6 +42,7 @@ def search():
 
 
 @app.route("/register", methods=["GET", "POST"])
+# Register functionality
 def register():
     if request.method == "POST":
         # Checking if user already exists in the database
@@ -69,6 +73,7 @@ def register():
 
 
 @app.route("/login", methods=["GET", "POST"])
+# Login functionality
 def login():
     if request.method == "POST":
         # Checking if user already exists in the database
@@ -96,7 +101,17 @@ def login():
     return render_template("login.html")
 
 
+@app.route("/logout")
+# Logout Functionality
+def logout():
+    # remove user from session cookie
+    flash("Successfully logged out")
+    session.pop("user")
+    return redirect(url_for("login"))
+
+
 @app.route("/profile/<username>", methods=["GET", "POST"])
+# Render Profile page for session user
 def profile(username):
     if request.method == "GET":
         if not session.get('user'):
@@ -118,15 +133,8 @@ def profile(username):
     return redirect(url_for("login"))
 
 
-@app.route("/logout")
-def logout():
-    # remove user from session cookie
-    flash("Successfully logged out")
-    session.pop("user")
-    return redirect(url_for("login"))
-
-
 @app.route("/add_term", methods=["GET", "POST"])
+# Render Add Term page and functionality
 def add_term():
     if request.method == "GET":
         if not session.get('user'):
@@ -158,6 +166,7 @@ def add_term():
 
 
 @app.route("/edit_term/<term_id>", methods=["GET", "POST"])
+# Render Edit Term page and functionality
 def edit_term(term_id):
     if request.method == "GET":
         if not session.get('user'):
@@ -179,6 +188,7 @@ def edit_term(term_id):
 
 
 @app.route("/delete_term/<term_id>")
+# Deleting terms functionality
 def delete_term(term_id):
     if not session.get('user'):
         flash('Please login or register first')
@@ -199,6 +209,12 @@ def contact():
 # 404 Error Handler
 def page_not_found(e):
     return render_template("404.html"), 404
+
+
+@app.errorhandler(500)
+# 500 Error Handler
+def internal_server_error(e):
+    return render_template("500.html"), 500
 
 
 if __name__ == "__main__":
