@@ -69,7 +69,7 @@ input, input:focus { color: #f3ca40; }
 
 /* Errors/Helper text */
 .error-text { font-size: 1.15rem; font-family: 'Schoolbell', cursive; padding-bottom: 1vh; display: inline-block; }
-.input-field .helper-text { text-align: left; font-size: 0.85rem; font-family: 'Schoolbell', curvsive; }
+.input-field .helper-text { text-align: left; font-size: 0.85rem; font-family: 'Schoolbell', curvsive; margin-bottom: 1vh; }
 
 /* Gamersaurus.html */
 .termTitle { margin: 1vw; font-weight: bold; font-size: 1.25rem; letter-spacing: 3px; }
