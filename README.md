@@ -471,6 +471,8 @@ This section includes areas/sections of code and properties I was unaware of. I 
 + **Custom 404/500 Error Pages** - I knew I had to create a route for these pages.
     + I researched it and used the official Flask documentation [here](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/) create these custom pages within Flask.
 
++ **Recoloring Materialize Input Fields** - When setting up my forms I used the text input documentation [here](https://materializecss.com/text-inputs.html) and adapted the values to suit my needs.
+
 ### Media
 
 #### Images

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    // Credit for Materialize sidenav and collapsible
+    // Credit for Materialize sidenav collapsible and modal
     $(".sidenav").sidenav({edge: "right"});
     $(".collapsible").collapsible();
     $('.modal').modal();
