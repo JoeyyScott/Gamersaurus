@@ -399,7 +399,8 @@ I tested the appearance and responsiveness of the website across 6 different bro
 + **Contact Bug** - This minor bug occurs when submitting a message in the contact form that is over 1 line in length.
     + Upon selecting the input field again it returns to it's intended size.
 
-        _Contact Message_
-        ![Contact Textarea Bug](static/images/testing/contact-bug.png)
+        | _Contact Message_ |
+        |:-----------------:|
+        | ![Contact Textarea Bug](static/images/testing/contact-bug.png) |
 
 [Return to README.md](README.md).
