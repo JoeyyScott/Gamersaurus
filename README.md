@@ -463,6 +463,9 @@ This section includes areas/sections of code and properties I was unaware of. I 
     + I was able to find [this post](https://regexr.com/3bfsi) which is a regex site I have used before. It contained the code:
         ```^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$``` which was able to provide the majority of what I wanted as I only had to change the 8 to a 5 and add 20 for the max.
 
++ **Custom 404/500 Error Pages** - I knew I had to create a route for these pages.
+    + I researched it and used the official Flask documentation [here](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/) create these custom pages within Flask.
+
 ### Media
 
 #### Images

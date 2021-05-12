@@ -205,6 +205,13 @@ def contact():
     return render_template("contact.html")
 
 
+# Error Handlers
+"""
+Code is from Flask documentation for Error Handlers:
+https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/
+"""
+
+
 @app.errorhandler(404)
 # 404 Error Handler
 def page_not_found(e):
