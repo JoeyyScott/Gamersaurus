@@ -152,7 +152,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
             | ![Success](static/images/testing/userstories/user4success.png) |
     + As a **user**, I want to be able to contact the site owner with any queries I have regarding the site.
         + I have included a contact page (contact.html) which allows the user to contact the site owner.
-        + When submitting a query, the form has custom validation that I have included in my script.js file to prevent empty fields, multiple spaces and symbols and numbers in the before submission.
+        + When submitting a query, the form has custom validation that I have included in my script.js file to prevent empty fields, multiple spaces/symbols and numbers in the name before submission.
             + Firstly the checks are to make sure there are no empty fields. If that is true, produce the required field error for the field(s) triggered on.
                 + If the previous check is false then check the string against my regex. If that is 'no match' then produce an error else continue.
                     + Email regex was not included as after research I found common practice is to use the built in browser check.
@@ -354,7 +354,13 @@ I tested the appearance and responsiveness of the website across 6 different bro
         + Access Login page.
 
 **User called "Admin"**:
-+ Is able to Edit/Delete any terms on the site.
++ Is able to Edit/Delete any terms on the site. I have included the two screenshots below to illustrate this.
+
+    | _Admin Screenshot of Profile_ |
+    |:-----------------------------:|
+    | ![Admin Profile](static/images/testing/adminprofile.png) |
+    |  _Admin Screenshot of Terms_  |
+    | ![Admin Terms](static/images/testing/adminterms.png) |
 
 **Validation**:
 + Form validation works throughout the site.
