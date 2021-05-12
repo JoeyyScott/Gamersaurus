@@ -38,12 +38,12 @@ function submitTerm() {
     let noaddExample = (addExample.value === null || addExample.value === "");
 
     // If no input detected display an error then check input on same field against stringCheck; to display an error and/or update valid class on the field
-    if (noaddTerm) { termErrors.push("Term field required."); } else if (stringCheck(addTerm.value) === 'nomatch')
+    if (noaddTerm) { termErrors.push("Term field required."); addTerm.classList.add('invalid'); } else if (stringCheck(addTerm.value) === 'nomatch')
         { termErrors.push('Term must be min 2 alphanumeric characters with no double spaces.'); addTerm.classList.add('invalid'); } else { addTerm.classList.add('valid'); }
-    if (noaddDefinition) { termErrors.push("Definition field required."); } else if (stringCheck(addDefinition.value) === 'nomatch')
+    if (noaddDefinition) { termErrors.push("Definition field required."); addDefinition.classList.add('invalid'); } else if (stringCheck(addDefinition.value) === 'nomatch')
         { termErrors.push('Definition must be min 5 alphanumeric characters with no double spaces.'); addDefinition.classList.add('invalid'); } else { addDefinition.classList.add('valid'); }
-    if (noaddExample) { termErrors.push("Example field required."); } else if (stringCheck(addExample.value) === 'nomatch')
-        { termErrors.push('Example must be min 5 alphanumeric characters with no double spaces.'); addTerm.classList.add('invalid'); } else { addTerm.classList.add('valid'); }
+    if (noaddExample) { termErrors.push("Example field required."); addExample.classList.add('invalid'); } else if (stringCheck(addExample.value) === 'nomatch')
+        { termErrors.push('Example must be min 5 alphanumeric characters with no double spaces.'); addExample.classList.add('invalid'); } else { addExample.classList.add('valid'); }
 
     // Clears previous error messages
     $("#msgError").empty();
@@ -57,10 +57,10 @@ function sendMail() {
     let nocontactMessage = (contactMessage.value === null || contactMessage.value === "");
 
     // If no input detected display an error
-    if (nocontactName) { errors.push("Name field required."); } else if (!RegExp(/^([a-zA-Z_]+\s?){2,}\\*$/).test(contactName.value))
+    if (nocontactName) { errors.push("Name field required."); contactName.classList.add('invalid'); } else if (!RegExp(/^([a-zA-Z_]+\s?){2,}\\*$/).test(contactName.value))
         { errors.push('Name must be min 2 alpha characters and no double spaces/symbols.'); contactName.classList.add('invalid'); } else { contactName.classList.add('valid'); }
-    if (nocontactEmail) { errors.push("Email field required."); }
-    if (nocontactMessage) { errors.push("Message field required."); } else if (stringCheck(contactMessage.value) === 'nomatch')
+    if (nocontactEmail) { errors.push("Email field required."); contactEmail.classList.add('invalid'); }
+    if (nocontactMessage) { errors.push("Message field required."); contactMessage.classList.add('invalid'); } else if (stringCheck(contactMessage.value) === 'nomatch')
         { errors.push('Message must be min 5 alphanumeric characters and no double spaces/symbols.'); contactMessage.classList.add('invalid'); } else { contactMessage.classList.add('valid'); }
 
     

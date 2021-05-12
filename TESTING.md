@@ -13,6 +13,7 @@ I used [w3.org's validator](https://validator.w3.org) for my HTML validation che
 I used [w3.org's validator](https://jigsaw.w3.org/css-validator/) for my CSS validation checks.
 
 + No errors were found within "style.css" the only css file.
+
     | _CSS Validation_ |
     |:----------------:|
     | ![CSS Validation](static/images/testing/css-test.png) |
@@ -33,6 +34,7 @@ I used [JSHint](https://jshint.com) to check the javascript file in my project t
 I used [PEP8 online](http://pep8online.com/) to test my Python code against PEP8 standards.
 
 + No errors were found within the document.
+
     | _PEP8 Validation_ |
     |:-----------------:|
     |![PEP8 Validation](static/images/testing/pep8-test.png)|
@@ -150,16 +152,28 @@ I tested the appearance and responsiveness of the website across 6 different bro
             | ![Success](static/images/testing/userstories/user4success.png) |
     + As a **user**, I want to be able to contact the site owner with any queries I have regarding the site.
         + I have included a contact page (contact.html) which allows the user to contact the site owner.
+        + When submitting a query, the form has custom validation that I have included in my script.js file to prevent empty fields, multiple spaces and symbols and numbers in the before submission.
+            + Firstly the checks are to make sure there are no empty fields. If that is true, produce the required field error for the field(s) triggered on.
+                + If the previous check is false then check the string against my regex. If that is 'no match' then produce an error else continue.
+                    + Email regex was not included as after research I found common practice is to use the built in browser check.
 
-            | _Contact_ |
-            |:---------:|
-            | ![Success](static/images/testing/userstories/user5contact.png) |
-        + Upon filling out valid information in the form the user will have their form inputs cleared and the submit button text changed to confirm a successful query.
+                |   _All empty Fields_    |
+                |:----------------------------------:|
+                | ![Empty Fields](static/images/testing/userstories/user5empty.png) |
+                | _Double spaces, symbols or numbers in Name_ |
+                | ![Name validation](static/images/testing/userstories/user5namespaces.png) |
+                | _Email Validation_ |
+                | ![Email validation](static/images/testing/userstories/user5emailerror.png) |
+                | _Double spaces or symbols in Message_ |
+                | ![Message validation](static/images/testing/userstories/user5messagespaces.png) |
+                | _Once all fields match correct input_ |
+                | ![Example correct input](static/images/testing/userstories/user5successful.png) |
+            + Upon filling out valid information in the form the user will have their form inputs cleared and the submit button text changed to confirm a successful query.
 
-            | _Success_ |
-            |:---------:|
-            | ![Success](static/images/testing/userstories/user5success.png) |
-        + Upon filling out valid information in the form the user will have their form inputs cleared and the submit button text changed to confirm a successful query.
+                | _Success_ |
+                |:---------:|
+                | ![Success](static/images/testing/userstories/user5successfulbutton.png) |            
+            + Once this happens EmailJS will have me sent me an email using the data provided in the form submission in the template layout I have set up on EmailJS. The contents of the email is displayed below.
 
             | _Email for Gamersaurus Query_ |
             |:-----------------------------:|
@@ -271,6 +285,24 @@ I tested the appearance and responsiveness of the website across 6 different bro
             | _Profile Add Term_ |
             |:------------------:|
             | ![Profile Add Term](static/images/testing/userstories/siteowner3profile.png) |
+        + When adding a term, the form has custom validation that I have included in my script.js file to prevent empty fields, multiple spaces and symbols before submission.
+            + Firstly the checks are to make sure there are no empty fields. If that is true, produce the required field error for the field(s) triggered on.
+                + If the previous check is false then check the string against my regex. If that is 'no match' then produce an error else continue.
+
+            |   _All empty Fields_    |
+            |:----------------------------------:|
+            | ![Empty Fields](static/images/testing/userstories/siteowner3empty.png) |
+            | _Double spaces or symbols in Term_ |
+            | ![Term double spaces](static/images/testing/userstories/siteowner3termspaces.png) |
+            | _Double spaces or symbols in Definition_ |
+            | ![Definition double spaces](static/images/testing/userstories/siteowner3defspaces.png) |
+            | _Double spaces or symbols in Example_ |
+            | ![Example double spaces](static/images/testing/userstories/siteowner3examplespaces.png) |
+            | _Once all fields match correct input_ |
+            | ![Example correct input](static/images/testing/userstories/siteowner3successful.png) |
+            | _New Term showing in list_ |
+            | ![Example double spaces](static/images/testing/userstories/siteowner3newterm.png) |
+            
 	+ As a **site owner**, I want the user to be able to edit and delete terms they have added.
         + Using the account and term created in the earlier test you can see the icons displaying on the "Terms" page here.
 
