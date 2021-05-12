@@ -134,7 +134,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
             |:--------:|
             | ![Header](static/images/testing/userstories/user3header.png) |
         + All the buttons contain text pertaining to their action (Add term, Edit Term, Delete, Submit) and perform the correct action.
-        + The footer contains external links for the brands socials and opens in a new tab for user retention.
+        + The footer contains external links for the brand's socials and opens in a new tab for user retention.
 
             | _Footer_ |
             |:--------:|
@@ -173,7 +173,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
                 | _Success_ |
                 |:---------:|
                 | ![Success](static/images/testing/userstories/user5successfulbutton.png) |            
-            + Once this happens EmailJS will have me sent me an email using the data provided in the form submission using the template layout I have set up on EmailJS. The contents of the email is displayed below.
+            + Once this happens EmailJS will have sent me an email using the data provided in the form submission using the template layout I have set up on EmailJS. The contents of the email is displayed below.
 
             | _Email for Gamersaurus Query_ |
             |:-----------------------------:|
@@ -206,8 +206,8 @@ I tested the appearance and responsiveness of the website across 6 different bro
             |:---------:|
             | ![Login](static/images/testing/userstories/siteowner3profile.png) |
     + As a **registered user**, I want to be able to edit any terms I have submitted to the site.
-        + When the user is logged into their account, two icons appear on **only** terms they have submitted to the Gamersaurus on the "Terms" page.
-        + I used the account and I created earlier as an example.
+        + When the user is logged into their account, two icons appear **only** on terms they have submitted to the Gamersaurus on the "Terms" page.
+        + I used the account I created earlier as an example.
 
             | _Term submitted for test_ |
             |:-------------------------:|
@@ -230,7 +230,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
             |:-------------:|
             | ![Edit Screen](static/images/testing/userstories/registered3edit.png) |
     + As a **registered user**, I want to be able to delete any terms I have submitted to the site.
-        + When the user is logged into their account, two icons appear on **only** terms they have submitted to the Gamersaurus on the "Terms" page.
+        + When the user is logged into their account, two icons appear **only** on terms they have submitted to the Gamersaurus on the "Terms" page.
             + Refer to screenshots in previous User Story for proof of this.
         + The second is a "Delete" icon.
             
@@ -262,7 +262,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
             | _Mobile Navigation Menu_ |
             |:------------------------:|
             | ![Mobile Navigation Menu](static/images/testing/userstories/siteowner2mobile.png) |
-        + All the buttons contain text pertaining to their action (Add term, Edit Term, Delete, Submit) and perform the correct action which allow for intuitive navigation.
+        + All the buttons contain text pertaining to their action (Add Term, Edit Term, Delete, Submit) and perform the correct action which allows for intuitive navigation.
 	+ As a **site owner**, I want the user to be able to view the thesaurus without having an account.
         + On the Terms page (gamersaurus.html) which is **accessible to all users** there is a collapsible accordion that contains all terms currently added to the site.
 
@@ -364,7 +364,7 @@ I tested the appearance and responsiveness of the website across 6 different bro
 
 **Validation**:
 + Form validation works throughout the site.
-    + Add term, Edit term and Contact.
+    + Add Term, Edit Term and Contact.
 
 **Flash Messages**:
 + Flash messages appear correctly when a user has:
@@ -373,9 +373,9 @@ I tested the appearance and responsiveness of the website across 6 different bro
     + Successfully logged in to their account
     + Successfully logged out of their account
     + Entered an incorrect username/password combination
-    + Successfully added a word to the Gamersaurus
-    + Successfully edited a word in the Gamersaurus
-    + Successfully deleted a word in the Gamersaurus
+    + Successfully added a term to the Gamersaurus
+    + Successfully edited a term in the Gamersaurus
+    + Successfully deleted a term in the Gamersaurus
     + Attempted to add a term already in the Gamersaurus
 
 ### Bugs

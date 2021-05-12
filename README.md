@@ -156,7 +156,7 @@ The SchoolBell font was chosen as it resembles handwriting on a school white boa
 
 ### Design Changes
 
-+ **Duplicate Gamersaurus link** - I was originally going to include a "Gamersaurus" (thesaurus in website structure pictures) link in the nav bar but opted to remove it to save screen space and remove redunancy as the logo redirects to the same link.
++ **Duplicate Gamersaurus link** - I was originally going to include a "Gamersaurus" (thesaurus in website structure pictures) link in the nav bar but opted to remove it to save screen space and remove redundancy as the logo redirects to the same link.
     + Further into the development of this project I decided to make the brand logo and title redirect to ```index.html``` and added "Terms" link to the nav links for a redirect to ```gamersaurus.html```.
 
 ## Database Schema
@@ -236,7 +236,7 @@ Included in **profile.html** is:
 Included in **add_term.html** is:
 
 + **Form for term data**: Can be filled out with a term, definition and example (with associated validation).
-    + This functionality is handled by python upon form submission.
+    + This functionality is handled by Python upon form submission.
     + There are checks to make sure:
         + The term does not already exist in the database.
         + The data submitted passes all validation.
@@ -251,7 +251,7 @@ Included in **edit_term.html** is:
 Included in **register.html** is:
 
 + **Registration form**: Contains fields for username and password (with associated validation).
-    + This functionality is handled by python upon form submission.
+    + This functionality is handled by Python upon form submission.
     + There are checks to make sure:
         + The username does not already exist.
         + The two password fields match.
@@ -262,7 +262,7 @@ Included in **register.html** is:
 Included in **login.html** is:
 
 + **Login form**: Contains fields for username and password (with associated validation).
-    + This functionality is handled by python upon form submission.
+    + This functionality is handled by Python upon form submission.
     + There are checks to make sure:
         + The username exists in the database.
         + The username and password matches that record in the database.
@@ -289,9 +289,9 @@ Included in **500.html** is:
 
 ### Features to be added
 
-+ **Pagination** - This would take control if the amount of terms went over a threshold required too much work for the time available for the project.
++ **Pagination** - This would take control if the amount of terms went over a threshold; which required too much work for the time available for the project.
 + **Allowing extra examples** - Allow users to add examples to other people's terms but must be confirmed by the term submitter.
-    + This requires a lot more database/python knowledge and time so I am including this under features to be added.
+    + This requires a lot more database/Python knowledge and time so I am including this under features to be added.
 
 #### [Back to top](#contents)
 
@@ -418,7 +418,7 @@ Once you have done the above you can follow these steps to create a local copy o
 4. Open with your preferred IDE or copy Git URL from the HTTPS field.
 
 If you chose to copy the Git URL then follow these additional steps:
-1. Open your a terminal window on your computer (or in your preferred IDE) in a directory of your choice.
+1. Open a terminal window on your computer (or in your preferred IDE) in a directory of your choice.
 2. In the terminal window type  ```git clone https://github.com/JoeyyScott/Gamersaurus.git``` and press enter to confirm.
 3. This will create a local clone of the project in your chosen directory.
 4. For the project to function fully you must install the required dependencies from "requirements.txt"
